@@ -1,0 +1,26 @@
+<table>
+    <tr>
+        <th>id</th>
+        <th>position</th>
+        <th>username</th>
+        <th>is_verified</th>
+        <th>fullname</th>
+        <th>profile_image</th>
+    </tr>
+  <% @items.each do |user| %>
+
+    <tr>
+        <%= content_tag :td, user["user"]["id"] %>
+        <%= content_tag :td, user["position"] %>
+        <%= content_tag :td, user["user"]["username"] %>
+        <%= content_tag :td, user["user"]["is_verified"] %>
+        <%= content_tag :td, user["user"]["full_name"] %>
+        <td>
+            <%= link_to "http://127.0.0.1:3000/instagram_profile?id=#{user["user"]["id"]}" do %>
+                <%= image_tag proxy_image_url(url: user["user"]["profile_pic_url"]), alt: "Profile Pic", width: "100", height: "100" %>
+            <% end %>
+        </td>
+    </tr>
+  <% end %>
+
+</table>

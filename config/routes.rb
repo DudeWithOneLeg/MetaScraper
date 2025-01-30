@@ -8,7 +8,12 @@ Rails.application.routes.draw do
   # get 'welcome/index'
   # get '/request_info', to: 'my_controller#request_info'
 
-  root 'welcome#request_info'
+  get '/instagram_profile', to: 'welcome#instagram_profile'
+  get '/instagram_profile_reels', to: 'welcome#instagram_profile_reels'
+  get '/marketplace_search', to: 'welcome#marketplace_search'
+  get '/marketplace_listing', to: 'welcome#marketplace_listing'
+  get '/instagram_search', to: 'welcome#instagram_search'
+  get '/proxy_image', to: 'welcome#proxy'
 
   # Render dynamic PWA files from app/views/pwa/* (remember to link manifest in application.html.erb)
   # get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
