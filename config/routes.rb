@@ -10,9 +10,14 @@ Rails.application.routes.draw do
 
   get '/instagram_profile', to: 'welcome#instagram_profile'
   get '/instagram_profile_reels', to: 'welcome#instagram_profile_reels'
+  get '/instagram_reel', to: 'welcome#instagram_reel'
   get '/marketplace_search', to: 'welcome#marketplace_search'
   get '/marketplace_listing', to: 'welcome#marketplace_listing'
   get '/instagram_search', to: 'welcome#instagram_search'
+  get '/facebook_user_search', to: 'welcome#facebook_user_search'
+  get '/facebook_image_search', to: 'welcome#facebook_image_search'
+  get '/facebook_post_search', to: 'welcome#facebook_post_search'
+  get '/facebook_profile', to: 'welcome#facebook_profile'
   get '/proxy_image', to: 'welcome#proxy'
 
   # Render dynamic PWA files from app/views/pwa/* (remember to link manifest in application.html.erb)
