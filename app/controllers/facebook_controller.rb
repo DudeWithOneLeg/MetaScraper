@@ -82,6 +82,31 @@ class FacebookController < ApplicationController
     puts JSON.parse(body.split("\r\n")[0])["data"]["node"]["timeline_list_feed_units"]["edges"].size
     render json: JSON.parse(body.split("\r\n")[0])
   end
+
+  def facebook_friends
+    id = request.query_parameters["id"]
+    variables = {
+      collectionToken: nil,
+      feedbackSource: 65,
+      feedLocation: "COMET_MEDIA_VIEWER",
+      scale: 1,
+      sectionToken: "YXBwX3NlY3Rpb246MTAwMDAwMzUxMTI2NDUwOjIzNTYzMTgzNDk=",
+      userID: "100000351126450",
+      __relay_internal__pv__CometUFIReactionsEnableShortNamerelayprovider: false,
+      __relay_internal__pv__FBReelsMediaFooter_comet_enable_reels_ads_gkrelayprovider: false,
+      __relay_internal__pv__IsWorkUserrelayprovider: false
+  }
+
+    variables = variables.to_json
+    puts variables
+    variables = URI.encode_www_form_component(variables)
+    doc_id = "28459325330380447"
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    body = res.body
+    # puts JSON.parse(body.split("\r\n")[0])["data"]["node"]["timeline_list_feed_units"]["edges"].size
+    render json: JSON.parse(body)
+  end
+
   def facebook_image_search
     query = request.query_parameters["query"]
     variables = {
@@ -407,11 +432,54 @@ class FacebookController < ApplicationController
 
 
       # MAKE && model && body type (seperate bodytype by comma, no space)
-      # Acura => [{"name":"make","value":"\"280909549507187\""},,{"name":"model","value":"\"754638875658882\""},{"name":"body_style","value":"\"convertible\""}]
+      # Acura => [{"name":"make","value":"make_id"},{"name":"model","value":"\"754638875658882\""},{"name":"body_style","value":""}]
       contextual_data: [],
 
+      # TYPES
+      # convertible
+      # coupe
+      # hatchback
+      # minivan
+      # sedan
+      # station wagon => wagon
+      # suv
+      # truck
+      # small_car
+      # other => other_body_style
+
       # MAKE && model && body type (seperate bodytype by comma, no space)
-      # Acura => [{"name":"canonical_make_id","value":"280909549507187"},{"name":"canonical_model_id","value":"754638875658882"},{"name":"vehicle_type","value":"convertible"}]
+      # [{"name":"canonical_make_id","value":"make_id"},{"name":"canonical_model_id","value":"754638875658882"},{"name":"vehicle_type","value":"convertible,coupe"}]
+
+      # HISTORY (string, comma seperated)
+      # includes free carfax report
+      # 1 no accidents or damage reported
+      # 2 only one owner
+      # 3 personal use
+      # 4 service records available
+      # carfax
+      # {"name":"carfax_history","value":"0,1,2,3,4"}
+
+      # COLORS (string, comma seperated) exteriror_colors interiror_colors
+      # black
+      # charcoal
+      # grey
+      # silver
+      # off_white
+      # tan
+      # beige
+      # yellow
+      # gold
+      # brown
+      # orange
+      # red
+      # burgundy
+      # pink
+      # purple
+      # blue
+      # turqoise
+      # green
+      # other
+      # {"name":"exterior_colors","value":"black,charcoal,off_white"}
       stringVerticalFields: [],
 
       count: 24,
@@ -439,6 +507,12 @@ class FacebookController < ApplicationController
 
       # YEAR
       # [{"max":2001,"min":2000,"name":"year"}]
+
+      # MILEAGE
+      # {"max":2147483647,"min":200000,"name":"odometer"}
+      # TRANSMISSION
+      # all => nil
+      # {"name":"is_manual_transmission","value":0} or 1
       numericVerticalFieldsBetween: [],
 
       # PRICE => num + 00
@@ -473,6 +547,212 @@ class FacebookController < ApplicationController
     render json: JSON.parse(res.body)
   end
 
+  def marketplace_property_search
+    query = request.query_parameters["query"]
+    limit = request.query_parameters["limit"]
+    latitude = request.query_parameters["latitude"]
+    longitude = request.query_parameters["longitude"]
+    radius_km = request.query_parameters["radius_km"]
+    max_price = request.query_parameters["max_price"]
+    min_price = request.query_parameters["min_price"]
+    page = request.query_parameters["page"]
+    cursor = {
+        pg: page,
+        # b2c: {
+        #     br:"",
+        #     it: 0,
+        #     hmsr: false,
+        #     tbi: 0
+        # },
+        c2c: {
+            br: "AbrvkJqYcXPwR-JW82eTCB8PMU3mqW7sTa92L5bQ0F8gKoO-UVP6u305mnJTh1dwhQvozgjwXWAUolCxoUIw-RZSqkFDx40E0ysNl8SnoqMn1Cud1xjNDb2pZHFE1dbTUnQqQ-n3H-5KNKj7Fa7gxFvmH2_w8IvySHyH0_puIHx2SEGsFfFaBLOYrB2rGBE5ccEnTy52uVpU0xhSk5avpKienrkGs6h3Be2wTMfRxO_Vzput9KoitqgrAwxDV56W8iPvKNB_Qdea17-5LS2hqjp2cnYElgTQhtHNr1VreJQcQjFKl_HCAvAz2BNBVoBIBb4xmgaaZLP0XipFougXr1aTDylvFJTMFDa7XLPEQLNSOboYaVZQMsvurT55GaAmiqkIaUraxkZ20EO6rqgvPCllopIz-l1S4kIm-b51lrMZ8J3Aqh8gTA4bH3oQoFOP2AJ_1kFYWNRKXTQxG2CGkVH77iL2MTULwSgh89cmK6NYOHGU3jqO483X3fOv-ALm4HTVlPBkptTUrP-R3tSY1WgckjzRZSdqBmuijfzNY9MRPwrf1W5KwQLF3zUENE8_Aw8"
+          # it: 13,
+          # rpbr: "",
+          # rphr:false,
+          # rmhr:false
+        }
+      # irr:false,
+      # serp_cta:false,
+      # rui:[],
+      # mpid:[],
+      # ubp: nil,
+      # ncrnd:0,
+      # irsr:false,
+      # bmpr:[],
+      # bmpeid:[],
+      # nmbmp:false,
+      # skrr:false,
+      # ioour:false,
+      # ise:false
+    }
+    puts cursor.to_json
+    variable_json = {
+      buyLocation: {
+        latitude: 33.046289,
+        longitude: -96.994123
+      },
+      categoryIDArray: [ 1468271819871448 ],
+      count: 24,
+      cursor: nil,
+      marketplaceBrowseContext: "CATEGORY_FEED",
+
+      # LISTINGS FROM INDIVIDUALS
+      # {"name":"is_c2c_listing_only","value":1}
+      numericVerticalFields: [],
+
+      # NUM BEDROOMS
+      # 1+ - 6+ => [{"max":120,"min":1,"name":"bedrooms"}]
+      # NUM BATHROOMS 1 => 4, 1.5 => 6, 2 => 8, 3 => 12, 4 => 16, 5 => 20
+      # 1+ - 6+ => [{"max":120,"min":6,"name":"bathrooms"}]
+      # SQ FEET
+      # {"max":2147483647,"min":3000,"name":"area_size"}
+      numericVerticalFieldsBetween: [],
+
+      # amount + 00
+      priceRange: [ 0, 214748364700 ],
+      radius: 64000,
+      savedSearchID: "",
+      scale: 1,
+
+      # RENTAL TYPE [{"name":"property_type","value":"apartment-condo"}]
+      # comma seperated
+      # apt-condo => apartment-condo
+      # house => house
+      # townhouse => townhouse
+      # PRIVATE ROOM => {"name":"rental_room_type","value":"private_room"}
+      stringVerticalFields: [],
+
+      # SORT
+      # price low => { sort_by_filter: "PRICE_AMOUNT", sort_order: "ASCEND" }
+      # price high => { sort_by_filter: "PRICE_AMOUNT", sort_order: "DESCEND" }
+      # distance near => { sort_by_filter: "DISTANCE", sort_order: "ASCEND" }
+      # distance far => { sort_by_filter: "DISTANCE", sort_order: "DESCEND" }
+      # date-listed-new => { sort_by_filter: "CREATION_TIME", sort_order: "DESCEND" }
+      filterSortingParams: nil,
+      topicPageParams: {
+        location_id: "category",
+        url: "propertyrentals"
+      }
+    }
+
+    variable_json = variable_json.to_json
+    variables = URI.encode_www_form_component(variable_json)
+    doc_id = "8785063341556521"
+    # puts variable_json
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    # results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
+    # puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
+    # results.each do |result|
+    # puts result["node"]["listing"]["primary_listing_photo"]["image"]["uri"]
+    # end
+    # render json: {results: results, search_info: {count: results.size}}
+    # puts [].methods
+    render json: JSON.parse(res.body)
+  end
+
+  def marketplace_property_search
+    query = request.query_parameters["query"]
+    limit = request.query_parameters["limit"]
+    latitude = request.query_parameters["latitude"]
+    longitude = request.query_parameters["longitude"]
+    radius_km = request.query_parameters["radius_km"]
+    max_price = request.query_parameters["max_price"]
+    min_price = request.query_parameters["min_price"]
+    page = request.query_parameters["page"]
+    cursor = {
+        pg: page,
+        # b2c: {
+        #     br:"",
+        #     it: 0,
+        #     hmsr: false,
+        #     tbi: 0
+        # },
+        c2c: {
+            br: "AbrvkJqYcXPwR-JW82eTCB8PMU3mqW7sTa92L5bQ0F8gKoO-UVP6u305mnJTh1dwhQvozgjwXWAUolCxoUIw-RZSqkFDx40E0ysNl8SnoqMn1Cud1xjNDb2pZHFE1dbTUnQqQ-n3H-5KNKj7Fa7gxFvmH2_w8IvySHyH0_puIHx2SEGsFfFaBLOYrB2rGBE5ccEnTy52uVpU0xhSk5avpKienrkGs6h3Be2wTMfRxO_Vzput9KoitqgrAwxDV56W8iPvKNB_Qdea17-5LS2hqjp2cnYElgTQhtHNr1VreJQcQjFKl_HCAvAz2BNBVoBIBb4xmgaaZLP0XipFougXr1aTDylvFJTMFDa7XLPEQLNSOboYaVZQMsvurT55GaAmiqkIaUraxkZ20EO6rqgvPCllopIz-l1S4kIm-b51lrMZ8J3Aqh8gTA4bH3oQoFOP2AJ_1kFYWNRKXTQxG2CGkVH77iL2MTULwSgh89cmK6NYOHGU3jqO483X3fOv-ALm4HTVlPBkptTUrP-R3tSY1WgckjzRZSdqBmuijfzNY9MRPwrf1W5KwQLF3zUENE8_Aw8"
+          # it: 13,
+          # rpbr: "",
+          # rphr:false,
+          # rmhr:false
+        }
+      # irr:false,
+      # serp_cta:false,
+      # rui:[],
+      # mpid:[],
+      # ubp: nil,
+      # ncrnd:0,
+      # irsr:false,
+      # bmpr:[],
+      # bmpeid:[],
+      # nmbmp:false,
+      # skrr:false,
+      # ioour:false,
+      # ise:false
+    }
+    puts cursor.to_json
+    variable_json = {
+      buyLocation: {
+        latitude: 33.046289,
+        longitude: -96.994123
+      },
+      categoryIDArray: [ 1468271819871448 ],
+      count: 24,
+      cursor: nil,
+      marketplaceBrowseContext: "CATEGORY_FEED",
+
+      # LISTINGS FROM INDIVIDUALS
+      # {"name":"is_c2c_listing_only","value":1}
+      numericVerticalFields: [],
+
+      # NUM BEDROOMS
+      # 1+ - 6+ => [{"max":120,"min":1,"name":"bedrooms"}]
+      # NUM BATHROOMS 1 => 4, 1.5 => 6, 2 => 8, 3 => 12, 4 => 16, 5 => 20
+      # 1+ - 6+ => [{"max":120,"min":6,"name":"bathrooms"}]
+      # SQ FEET
+      # {"max":2147483647,"min":3000,"name":"area_size"}
+      numericVerticalFieldsBetween: [],
+
+      # amount + 00
+      priceRange: [ 0, 214748364700 ],
+      radius: 64000,
+      savedSearchID: "",
+      scale: 1,
+
+      # RENTAL TYPE [{"name":"property_type","value":"apartment-condo"}]
+      # comma seperated
+      # apt-condo => apartment-condo
+      # house => house
+      # townhouse => townhouse
+      # PRIVATE ROOM => {"name":"rental_room_type","value":"private_room"}
+      stringVerticalFields: [],
+
+      # SORT
+      # price low => { sort_by_filter: "PRICE_AMOUNT", sort_order: "ASCEND" }
+      # price high => { sort_by_filter: "PRICE_AMOUNT", sort_order: "DESCEND" }
+      # distance near => { sort_by_filter: "DISTANCE", sort_order: "ASCEND" }
+      # distance far => { sort_by_filter: "DISTANCE", sort_order: "DESCEND" }
+      # date-listed-new => { sort_by_filter: "CREATION_TIME", sort_order: "DESCEND" }
+      filterSortingParams: nil,
+      topicPageParams: {
+        location_id: "category",
+        url: "propertyrentals"
+      }
+    }
+
+    variable_json = variable_json.to_json
+    variables = URI.encode_www_form_component(variable_json)
+    doc_id = "8785063341556521"
+    # puts variable_json
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    # results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
+    # puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
+    # results.each do |result|
+    # puts result["node"]["listing"]["primary_listing_photo"]["image"]["uri"]
+    # end
+    # render json: {results: results, search_info: {count: results.size}}
+    # puts [].methods
+    render json: JSON.parse(res.body)
+  end
+
   def facebook_location_id_search
     variables = {
       params: {
@@ -493,7 +773,7 @@ class FacebookController < ApplicationController
     # results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
     # puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
     # results.each do |result|
-      # puts result["node"]["listing"]["primary_listing_photo"]["image"]["uri"]
+    # puts result["node"]["listing"]["primary_listing_photo"]["image"]["uri"]
     # end
     # render json: {results: results, search_info: {count: results.size}}
     # puts [].methods

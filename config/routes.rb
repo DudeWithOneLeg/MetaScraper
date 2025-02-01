@@ -23,8 +23,10 @@ Rails.application.routes.draw do
   get "/facebook_post_search", to: "facebook#facebook_post_search"
   get "/facebook_video_search", to: "facebook#facebook_video_search"
   get "/facebook_vehicle_search", to: "facebook#marketplace_vehicle_search"
+  get "/facebook_property_search", to: "facebook#marketplace_property_search"
   get "/facebook_company_search", to: "facebook#facebook_company_search"
   get "/facebook_profile", to: "facebook#facebook_profile"
+  get "/facebook_friends", to: "facebook#facebook_friends"
   get "/facebook_location_id_search", to: "facebook#facebook_location_id_search"
 
 
