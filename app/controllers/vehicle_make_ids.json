@@ -1,0 +1,596 @@
+[
+    {
+        "display_name": "Acura",
+        "value": "280909549507187",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "acura",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Alfa Romeo",
+        "value": "2070821889637770",
+        "active": true,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "alfa-romeo",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Aston Martin",
+        "value": "341553276467626",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "aston-martin",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Audi",
+        "value": "1274042129420222",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "audi",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "BMW",
+        "value": "313316249374727",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "bmw",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Bentley",
+        "value": "382125202569476",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "bentley",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Buick",
+        "value": "436791410393181",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "buick",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "CODA",
+        "value": "2213968175561432",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "coda",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Cadillac",
+        "value": "489276414939966",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "cadillac",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Chevrolet",
+        "value": "1914016008726893",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "chevrolet",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Chrysler",
+        "value": "398368117562414",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "chrysler",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Daewoo",
+        "value": "636736676747295",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "daewoo",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Daihatsu",
+        "value": "588251554976200",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "daihatsu",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Dodge",
+        "value": "402915273826151",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "dodge",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Eagle",
+        "value": "2290564671025286",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "eagle",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Ferrari",
+        "value": "2233936113511813",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "ferrari",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Fiat",
+        "value": "973850736337551",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "fiat",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Fisker",
+        "value": "499111387328354",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "fisker",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Ford",
+        "value": "297354680962030",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "ford",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Freightliner",
+        "value": "377980153105393",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "freightliner",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "GMC",
+        "value": "304317923578325",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "gmc",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Genesis",
+        "value": "407635216562551",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "genesis",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Geo",
+        "value": "814598985558222",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "geo",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Honda",
+        "value": "308436969822020",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "honda",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Hummer",
+        "value": "351240532159178",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "hummer",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Hyundai",
+        "value": "590755841400441",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "hyundai",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Infiniti",
+        "value": "1361484827327051",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "infiniti",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Isuzu",
+        "value": "1865279260243853",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "isuzu",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Jaguar",
+        "value": "2127086467326917",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "jaguar",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Jeep",
+        "value": "408221723080125",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "jeep",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Kia",
+        "value": "417670842327686",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "kia",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Lamborghini",
+        "value": "622700624835375",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "lamborghini",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Land Rover",
+        "value": "264916861051142",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "land-rover",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Lexus",
+        "value": "2101813456521413",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "lexus",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Lincoln",
+        "value": "1928095167294293",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "lincoln",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Lotus",
+        "value": "764630980585596",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "lotus",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Lucid",
+        "value": "1392638391528793",
+        "active": false,
+        "seo_navigable_filters": null,
+        "slug": null,
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "MINI",
+        "value": "357388888199059",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "mini",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Maserati",
+        "value": "382869215628928",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "maserati",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Maybach",
+        "value": "332060044117902",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "maybach",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Mazda",
+        "value": "410067716491465",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "mazda",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Mclaren",
+        "value": "258881574989122",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "mclaren",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Mercedes-Benz",
+        "value": "391196981458827",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "mercedes-benz",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Mercury",
+        "value": "847473558938602",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "mercury",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Mitsubishi",
+        "value": "343841119808433",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "mitsubishi",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Nissan",
+        "value": "2621742507840619",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "nissan",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Oldsmobile",
+        "value": "1106796456195640",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "oldsmobile",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Panoz",
+        "value": "479344332646027",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "panoz",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Plymouth",
+        "value": "2261395987279029",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "plymouth",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Polestar",
+        "value": "957475401927349",
+        "active": false,
+        "seo_navigable_filters": null,
+        "slug": null,
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Pontiac",
+        "value": "2034940493472692",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "pontiac",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Porsche",
+        "value": "2233878893526787",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "porsche",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Ram",
+        "value": "262465364692582",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "ram",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Rivian",
+        "value": "408165216441351",
+        "active": false,
+        "seo_navigable_filters": null,
+        "slug": null,
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Rolls-Royce",
+        "value": "1199922706845728",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "rolls-royce",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "SRT",
+        "value": "2475781979123406",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "srt",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Saab",
+        "value": "327726657883762",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "saab",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Saturn",
+        "value": "570058930184524",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "saturn",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Scion",
+        "value": "1546786558785480",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "scion",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Smart",
+        "value": "573131263170521",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "smart",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Subaru",
+        "value": "2571870739551112",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "subaru",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Suzuki",
+        "value": "2449096741789800",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "suzuki",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Tesla",
+        "value": "621439278281940",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "tesla",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Toyota",
+        "value": "2318041991806363",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "toyota",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Volkswagen",
+        "value": "523665818157652",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "volkswagen",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    },
+    {
+        "display_name": "Volvo",
+        "value": "367577657422824",
+        "active": false,
+        "seo_navigable_filters": "{\"make\":\"*\",\"model\":\"*\"}",
+        "slug": "volvo",
+        "virtual_attribute_value": null,
+        "contextual_filters": null
+    }
+]
