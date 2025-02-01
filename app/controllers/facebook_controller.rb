@@ -650,7 +650,7 @@ class FacebookController < ApplicationController
     render json: JSON.parse(res.body)
   end
 
-  def marketplace_property_search
+  def marketplace_apparel_search
     query = request.query_parameters["query"]
     limit = request.query_parameters["limit"]
     latitude = request.query_parameters["latitude"]
@@ -694,49 +694,75 @@ class FacebookController < ApplicationController
         latitude: 33.046289,
         longitude: -96.994123
       },
-      categoryIDArray: [ 1468271819871448 ],
+      contextual_data: nil,
       count: 24,
       cursor: nil,
-      marketplaceBrowseContext: "CATEGORY_FEED",
+      params: {
+        bqf: {
+          callsite: "COMMERCE_MKTPLACE_SEO",
+          query: ""
+        },
+        browse_request_params: {
 
-      # LISTINGS FROM INDIVIDUALS
-      # {"name":"is_c2c_listing_only","value":1}
-      numericVerticalFields: [],
+          # LOCAL PICKUP
+          commerce_enable_local_pickup: true,
+          # SHIPPING
+          commerce_enable_shipping: true,
 
-      # NUM BEDROOMS
-      # 1+ - 6+ => [{"max":120,"min":1,"name":"bedrooms"}]
-      # NUM BATHROOMS 1 => 4, 1.5 => 6, 2 => 8, 3 => 12, 4 => 16, 5 => 20
-      # 1+ - 6+ => [{"max":120,"min":6,"name":"bathrooms"}]
-      # SQ FEET
-      # {"max":2147483647,"min":3000,"name":"area_size"}
-      numericVerticalFieldsBetween: [],
 
-      # amount + 00
-      priceRange: [ 0, 214748364700 ],
-      radius: 64000,
-      savedSearchID: "",
+          commerce_search_and_rp_available: true,
+          commerce_search_and_rp_category_id: [
+            1266429133383966,
+            931157863635831,
+            214968118845643,
+            1567543000236608,
+            836969846440937
+          ],
+
+          # CONDITION (string, comma seperated)
+          # new => new
+          # used like new => used_like_new
+          # used good => used_good
+          # used fair => used_fair
+          commerce_search_and_rp_condition: nil,
+          commerce_search_and_rp_ctime_days: nil,
+          filter_location_latitude: 33.046289,
+          filter_location_longitude: -96.994123,
+
+          # PRICE
+          # amount + 00
+          filter_price_lower_bound: 0,
+          filter_price_upper_bound: 214748364700,
+
+
+          filter_radius_km: 64
+        },
+        custom_request_params: {
+          browse_context: nil,
+          contextual_filters: [],
+          referral_code: nil,
+          saved_search_strid: nil,
+          search_vertical: nil,
+          seo_url: "apparel",
+          surface: "TOPIC_PAGE",
+
+          # BRANDS (sub-array, comma seperated)
+          # abercombie & finch => [499554926467420]
+          # banana republic => [2710634839246754]
+          # chicos => [2710634839246754]
+          virtual_contextual_filters: []
+        }
+      },
+      savedSearchID: nil,
+      savedSearchQuery: nil,
       scale: 1,
-
-      # RENTAL TYPE [{"name":"property_type","value":"apartment-condo"}]
-      # comma seperated
-      # apt-condo => apartment-condo
-      # house => house
-      # townhouse => townhouse
-      # PRIVATE ROOM => {"name":"rental_room_type","value":"private_room"}
-      stringVerticalFields: [],
-
-      # SORT
-      # price low => { sort_by_filter: "PRICE_AMOUNT", sort_order: "ASCEND" }
-      # price high => { sort_by_filter: "PRICE_AMOUNT", sort_order: "DESCEND" }
-      # distance near => { sort_by_filter: "DISTANCE", sort_order: "ASCEND" }
-      # distance far => { sort_by_filter: "DISTANCE", sort_order: "DESCEND" }
-      # date-listed-new => { sort_by_filter: "CREATION_TIME", sort_order: "DESCEND" }
-      filterSortingParams: nil,
+      shouldIncludePopularSearches: false,
       topicPageParams: {
         location_id: "category",
-        url: "propertyrentals"
+        url: "apparel"
       }
     }
+
 
     variable_json = variable_json.to_json
     variables = URI.encode_www_form_component(variable_json)
@@ -752,6 +778,8 @@ class FacebookController < ApplicationController
     # puts [].methods
     render json: JSON.parse(res.body)
   end
+
+  
 
   def facebook_location_id_search
     variables = {
