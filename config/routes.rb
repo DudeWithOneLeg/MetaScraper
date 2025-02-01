@@ -25,6 +25,7 @@ Rails.application.routes.draw do
   get "/facebook_vehicle_search", to: "facebook#marketplace_vehicle_search"
   get "/facebook_property_search", to: "facebook#marketplace_property_search"
   get "/facebook_apparel_search", to: "facebook#marketplace_apparel_search"
+  get "/facebook_electronics_search", to: "facebook#marketplace_electronics_search"
   get "/facebook_company_search", to: "facebook#facebook_company_search"
   get "/facebook_classifieds_search", to: "facebook#marketplace_classifieds_search"
   get "/facebook_profile", to: "facebook#facebook_profile"
