@@ -1215,8 +1215,8 @@ class FacebookController < ApplicationController
       scale: 1,
       shouldIncludePopularSearches: false,
       topicPageParams: {
-        location_id: "free",
-        url: "family"
+        location_id: "category",
+        url: "free"
       }
     }
 
