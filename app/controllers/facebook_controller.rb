@@ -1552,8 +1552,8 @@ class FacebookController < ApplicationController
       scale: 1,
       shouldIncludePopularSearches: false,
       topicPageParams: {
-        location_id: "hobbies",
-        url: "garden"
+        location_id: "category",
+        url: "hobbies"
       }
     }
 
