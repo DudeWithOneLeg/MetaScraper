@@ -36,7 +36,7 @@ class InstagramController < ApplicationController
             include_clips_attribution_info: false,
             first: 12
         }
-        'https://www.instagram.com/graphql/query/?doc_id=7950326061742207&variables={"id":"20236507","first":12}'
+        "https://www.instagram.com/graphql/query/?doc_id=7950326061742207&variables={"id":"20236507","first":12}"
         variables = variables.to_json
         puts variables
         variables = URI.encode_www_form_component(variables)
