@@ -37,6 +37,7 @@ Rails.application.routes.draw do
   get "/facebook_home_improvement_search", to: "facebook#marketplace_home_improvement_search"
   get "/facebook_home_sales_search", to: "facebook#marketplace_home_sales_search"
   get "/facebook_musical_instrument_search", to: "facebook#marketplace_musical_instrument_search"
+  get "/facebook_office_supplies_search", to: "facebook#marketplace_office_supplies_search"
   get "/facebook_profile", to: "facebook#facebook_profile"
   get "/facebook_friends", to: "facebook#facebook_friends"
   get "/facebook_location_id_search", to: "facebook#facebook_location_id_search"
