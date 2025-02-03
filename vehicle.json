@@ -1,0 +1,11 @@
+{
+    params: {
+        caller: "MARKETPLACE",
+        country_filter: null,
+        integration_strategy: "STRING_MATCH",
+        page_category: ["CITY", "SUBCITY", "NEIGHBORHOOD", "POSTAL_CODE"],
+        query: "Lewisville, Texas",
+        search_type: "PLACE_TYPEAHEAD",
+        viewer_coordinates: { latitude: 33.046289, longitude: -96.994123 }
+    }
+}
