@@ -1120,6 +1120,7 @@ class FacebookController < ApplicationController
     # puts [].methods
     render json: JSON.parse(res.body)
   end
+  
 
   def facebook_location_id_search
     variables = {
