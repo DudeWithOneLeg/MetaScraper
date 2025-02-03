@@ -1007,7 +1007,7 @@ class FacebookController < ApplicationController
     render json: JSON.parse(res.body)
   end
 
-  def marketplace_entertainment_search
+  def marketplace_family_search
     query = request.query_parameters["query"]
     limit = request.query_parameters["limit"]
     latitude = request.query_parameters["latitude"]
