@@ -1119,7 +1119,7 @@ class FacebookController < ApplicationController
     render json: JSON.parse(res.body)
   end
 
-  def marketplace_electronics_search
+  def marketplace_family_search
     query = request.query_parameters["query"]
     limit = request.query_parameters["limit"]
     latitude = request.query_parameters["latitude"]
@@ -1200,7 +1200,7 @@ class FacebookController < ApplicationController
           referral_code: nil,
           saved_search_strid: nil,
           search_vertical: nil,
-          seo_url: "electronics",
+          seo_url: "family",
           surface: "TOPIC_PAGE",
 
           # BRANDS (SUB ARRAY)
@@ -1213,7 +1213,7 @@ class FacebookController < ApplicationController
       shouldIncludePopularSearches: false,
       topicPageParams: {
         location_id: "category",
-        url: "electronics"
+        url: "family"
       }
     }
 
