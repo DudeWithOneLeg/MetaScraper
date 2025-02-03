@@ -31,6 +31,7 @@ Rails.application.routes.draw do
   get "/facebook_entertainment_search", to: "facebook#marketplace_entertainment_search"
   get "/facebook_family_search", to: "facebook#marketplace_family_search"
   get "/facebook_free_search", to: "facebook#marketplace_free_search"
+  get "/facebook_garden_search", to: "facebook#marketplace_garden_search"
   get "/facebook_profile", to: "facebook#facebook_profile"
   get "/facebook_friends", to: "facebook#facebook_friends"
   get "/facebook_location_id_search", to: "facebook#facebook_location_id_search"
