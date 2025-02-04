@@ -12,6 +12,8 @@ class FacebookController < ApplicationController
   @@proxy_url = nil
   @@proxy_port = nil
 
+
+  # userId is in user[logging_model][tapped_result_id]
   def facebook_user_search
     query = request.query_parameters["query"]
     variables = {
