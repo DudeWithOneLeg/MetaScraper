@@ -5,6 +5,13 @@ require "open-uri"
 require "nokogiri"
 
 class FacebookController < ApplicationController
+
+  
+  # @@proxy_url = "192.168.49.1"
+  # @@proxy_port = "8000"
+  @@proxy_url = nil
+  @@proxy_port = nil
+
   def facebook_user_search
     query = request.query_parameters["query"]
     variables = {
@@ -22,7 +29,7 @@ class FacebookController < ApplicationController
                 client_defined_experiences: [ "ADS_PARALLEL_FETCH" ],
                 encoded_server_defined_params: "AbqYQQCuIq_5M5MKYA4Iw2z-7xyPApveqAXCe28_Flb57xRVS02IPjGGG4DWRathWwaD0uN042zmnORXBhq4wEPf",
                 fbid: nil,
-                type: "SERVER_DEFINED"
+                type: "PEOPLE_TAB"
             },
             filters: [],
             text: query
@@ -44,8 +51,8 @@ class FacebookController < ApplicationController
     puts variables
     variables = URI.encode_www_form_component(variables)
     doc_id = "28131523769829398"
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
-    puts JSON.parse(res.body)["data"]["serpResponse"]["results"]["edges"].size
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
+    puts JSON.parse(res.body)
     render json: JSON.parse(res.body)
   end
 
@@ -70,14 +77,14 @@ class FacebookController < ApplicationController
         taggedInOnly: nil,
         trackingCode: nil,
         useDefaultActor: false,
-        id: "100000351126450"
+        # id: id
       }
 
     variables = variables.to_json
     puts variables
     variables = URI.encode_www_form_component(variables)
     doc_id = "9132077713517532"
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     body = res.body
     puts JSON.parse(body.split("\r\n")[0])["data"]["node"]["timeline_list_feed_units"]["edges"].size
     render json: JSON.parse(body.split("\r\n")[0])
@@ -101,7 +108,7 @@ class FacebookController < ApplicationController
     puts variables
     variables = URI.encode_www_form_component(variables)
     doc_id = "28459325330380447"
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     body = res.body
     # puts JSON.parse(body.split("\r\n")[0])["data"]["node"]["timeline_list_feed_units"]["edges"].size
     render json: JSON.parse(body)
@@ -144,7 +151,7 @@ class FacebookController < ApplicationController
     puts variables
     variables = URI.encode_www_form_component(variables)
     doc_id = "9310443525686377"
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     puts res.body
     render json: JSON.parse(res.body)
   end
@@ -191,7 +198,7 @@ class FacebookController < ApplicationController
     # puts variables
     variables = URI.encode_www_form_component(variables)
     doc_id = "9310443525686377"
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     # puts res.body
     body = res.body
     render json: JSON.parse(body.split("\r\n")[0])["data"]["serpResponse"]["results"]["edges"]
@@ -210,8 +217,8 @@ class FacebookController < ApplicationController
   # puts variables
   variables = URI.encode_www_form_component(variables)
   doc_id = "8960381707365732"
-  res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
-  puts "https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}"
+  res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
+  puts "https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port
   # puts res.body
   body = res.body
   render json: JSON.parse(body)
@@ -257,7 +264,7 @@ class FacebookController < ApplicationController
     # puts variables
     variables = URI.encode_www_form_component(variables)
     doc_id = "9310443525686377"
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     # puts res.body
     body = res.body
     render json: JSON.parse(body.split("\r\n")[0])["data"]["serpResponse"]["results"]
@@ -376,7 +383,7 @@ class FacebookController < ApplicationController
     variables = URI.encode_www_form_component(variable_json)
     doc_id = "8558510667564038"
     # puts variable_json
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
     puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
     results.each do |result|
@@ -536,7 +543,7 @@ class FacebookController < ApplicationController
     variables = URI.encode_www_form_component(variable_json)
     doc_id = "8964905813540955"
     # puts variable_json
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     # results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
     # puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
     # results.each do |result|
@@ -639,7 +646,7 @@ class FacebookController < ApplicationController
     variables = URI.encode_www_form_component(variable_json)
     doc_id = "8785063341556521"
     # puts variable_json
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     # results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
     # puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
     # results.each do |result|
@@ -768,7 +775,7 @@ class FacebookController < ApplicationController
     variables = URI.encode_www_form_component(variable_json)
     doc_id = "8785063341556521"
     # puts variable_json
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     # results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
     # puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
     # results.each do |result|
@@ -882,7 +889,7 @@ class FacebookController < ApplicationController
     variables = URI.encode_www_form_component(variable_json)
     doc_id = "8996372187041574"
     # puts variable_json
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     # results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
     # puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
     # results.each do |result|
@@ -995,7 +1002,7 @@ class FacebookController < ApplicationController
     variables = URI.encode_www_form_component(variable_json)
     doc_id = "8996372187041574"
     # puts variable_json
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     # results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
     # puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
     # results.each do |result|
@@ -1108,7 +1115,7 @@ class FacebookController < ApplicationController
     variables = URI.encode_www_form_component(variable_json)
     doc_id = "8996372187041574"
     # puts variable_json
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     # results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
     # puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
     # results.each do |result|
@@ -1221,7 +1228,7 @@ class FacebookController < ApplicationController
     variables = URI.encode_www_form_component(variable_json)
     doc_id = "8996372187041574"
     # puts variable_json
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     # results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
     # puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
     # results.each do |result|
@@ -1334,7 +1341,7 @@ class FacebookController < ApplicationController
     variables = URI.encode_www_form_component(variable_json)
     doc_id = "6978471575593570"
     # puts variable_json
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     # results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
     # puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
     # results.each do |result|
@@ -1448,7 +1455,7 @@ class FacebookController < ApplicationController
     variables = URI.encode_www_form_component(variable_json)
     doc_id = "8996372187041574"
     # puts variable_json
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     # results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
     # puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
     # results.each do |result|
@@ -1561,7 +1568,7 @@ class FacebookController < ApplicationController
     variables = URI.encode_www_form_component(variable_json)
     doc_id = "6978471575593570"
     # puts variable_json
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     # results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
     # puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
     # results.each do |result|
@@ -1674,7 +1681,7 @@ class FacebookController < ApplicationController
     variables = URI.encode_www_form_component(variable_json)
     doc_id = "6978471575593570"
     # puts variable_json
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     # results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
     # puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
     # results.each do |result|
@@ -1787,7 +1794,7 @@ class FacebookController < ApplicationController
     variables = URI.encode_www_form_component(variable_json)
     doc_id = "8996372187041574"
     # puts variable_json
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     # results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
     # puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
     # results.each do |result|
@@ -1900,7 +1907,7 @@ class FacebookController < ApplicationController
     variables = URI.encode_www_form_component(variable_json)
     doc_id = "8996372187041574"
     # puts variable_json
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     # results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
     # puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
     # results.each do |result|
@@ -2013,7 +2020,7 @@ class FacebookController < ApplicationController
     variables = URI.encode_www_form_component(variable_json)
     doc_id = "8996372187041574"
     # puts variable_json
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     # results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
     # puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
     # results.each do |result|
@@ -2126,7 +2133,7 @@ class FacebookController < ApplicationController
     variables = URI.encode_www_form_component(variable_json)
     doc_id = "8996372187041574"
     # puts variable_json
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     # results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
     # puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
     # results.each do |result|
@@ -2214,7 +2221,7 @@ class FacebookController < ApplicationController
     variables = URI.encode_www_form_component(variable_json)
     doc_id = "8785063341556521"
     # puts variable_json
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     # results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
     # puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
     # results.each do |result|
@@ -2241,7 +2248,7 @@ class FacebookController < ApplicationController
     variables = URI.encode_www_form_component(variables)
     doc_id = "7321914954515895"
     # puts variable_json
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     # results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
     # puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
     # results.each do |result|
@@ -2260,7 +2267,7 @@ class FacebookController < ApplicationController
     variables = URI.encode_www_form_component(variables)
     puts variables
     doc_id = "7820841627934041"
-    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
     render json: JSON.parse(res.body)["data"]["viewer"]["marketplace_product_details_page"]
   end
 end
