@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   get "/marketplace_search", to: "facebook#marketplace_search"
   get "/marketplace_listing", to: "facebook#marketplace_listing"
   get "/facebook_user_search", to: "facebook#facebook_user_search"
-  get "/facebook_image_search", to: "facebook#facebook_image_search"
+  get "/facebook_photo_search", to: "facebook#facebook_photo_search"
   get "/facebook_post_search", to: "facebook#facebook_post_search"
   get "/facebook_video_search", to: "facebook#facebook_video_search"
   get "/facebook_vehicle_search", to: "facebook#marketplace_vehicle_search"

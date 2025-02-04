@@ -141,7 +141,7 @@ class FacebookController < ApplicationController
     render json: JSON.parse(body)
   end
 
-  def facebook_image_search
+  def facebook_photo_search
     query = request.query_parameters["query"]
     variables = {
         count: 5,
@@ -159,6 +159,8 @@ class FacebookController < ApplicationController
             encoded_server_defined_params: "Abq_qBUYGcG6-WLu7nIlwAoUfoW3d2rn7Gn9QsTMg8TXhuMQLoXyzesw563bhT1RGyyr2E5L-DvhFjaDMOHaO20p1mVfnVMWUx1l77tUdk9JDw",
             type: "SERVER_DEFINED"
           },
+
+          # location => "{\"name\":\"location\",\"args\":\"104060076298330\"}"
           # year 2025 => ["{\"name\":\"creation_time\",\"args\":\"{\\\"start_year\\\":\\\"2025\\\",\\\"start_month\\\":\\\"2025-1\\\",\\\"end_year\\\":\\\"2025\\\",\\\"end_month\\\":\\\"2025-12\\\",\\\"start_day\\\":\\\"2025-1-1\\\",\\\"end_day\\\":\\\"2025-12-31\\\"}\"}"]
           filters: [],
           text: query
