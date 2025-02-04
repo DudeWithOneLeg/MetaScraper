@@ -56,6 +56,31 @@ class FacebookController < ApplicationController
     render json: JSON.parse(res.body)
   end
 
+  def facebook_profile_bio_photos
+    id = request.query_parameters["id"]
+    variables = {
+      privacySelectorRenderLocation: "COMET_STREAM",
+      renderLocation: "timeline",
+      scale: 2,
+      userID: "761932066",
+      __relay_internal__pv__GHLShouldChangeSponsoredDataFieldNamerelayprovider: false,
+      __relay_internal__pv__GHLShouldChangeAdIdFieldNamerelayprovider: false,
+      __relay_internal__pv__WorkCometIsEmployeeGKProviderrelayprovider: false,
+      __relay_internal__pv__GroupsCometGroupChatLazyLoadLastMessageSnippetrelayprovider: false,
+      __relay_internal__pv__CometFeedStoryDynamicResolutionPhotoAttachmentRenderer_experimentWidthrelayprovider: 500
+    }
+    
+
+    variables = variables.to_json
+    puts variables
+    variables = URI.encode_www_form_component(variables)
+    doc_id = "8795610053899267"
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
+    body = res.body
+    puts JSON.parse(body)
+    render json:JSON.parse(body)
+  end
+
   def facebook_profile
     id = request.query_parameters["id"]
     variables = {
