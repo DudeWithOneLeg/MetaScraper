@@ -2374,6 +2374,120 @@ class FacebookController < ApplicationController
     # puts [].methods
     render json: JSON.parse(res.body)
   end
+
+  def marketplace_toys_games_search
+    query = request.query_parameters["query"]
+    limit = request.query_parameters["limit"]
+    latitude = request.query_parameters["latitude"]
+    longitude = request.query_parameters["longitude"]
+    radius_km = request.query_parameters["radius_km"]
+    max_price = request.query_parameters["max_price"]
+    min_price = request.query_parameters["min_price"]
+    page = request.query_parameters["page"]
+    cursor = {
+        pg: page,
+        # b2c: {
+        #     br:"",
+        #     it: 0,
+        #     hmsr: false,
+        #     tbi: 0
+        # },
+        c2c: {
+            br: "AbrvkJqYcXPwR-JW82eTCB8PMU3mqW7sTa92L5bQ0F8gKoO-UVP6u305mnJTh1dwhQvozgjwXWAUolCxoUIw-RZSqkFDx40E0ysNl8SnoqMn1Cud1xjNDb2pZHFE1dbTUnQqQ-n3H-5KNKj7Fa7gxFvmH2_w8IvySHyH0_puIHx2SEGsFfFaBLOYrB2rGBE5ccEnTy52uVpU0xhSk5avpKienrkGs6h3Be2wTMfRxO_Vzput9KoitqgrAwxDV56W8iPvKNB_Qdea17-5LS2hqjp2cnYElgTQhtHNr1VreJQcQjFKl_HCAvAz2BNBVoBIBb4xmgaaZLP0XipFougXr1aTDylvFJTMFDa7XLPEQLNSOboYaVZQMsvurT55GaAmiqkIaUraxkZ20EO6rqgvPCllopIz-l1S4kIm-b51lrMZ8J3Aqh8gTA4bH3oQoFOP2AJ_1kFYWNRKXTQxG2CGkVH77iL2MTULwSgh89cmK6NYOHGU3jqO483X3fOv-ALm4HTVlPBkptTUrP-R3tSY1WgckjzRZSdqBmuijfzNY9MRPwrf1W5KwQLF3zUENE8_Aw8"
+          # it: 13,
+          # rpbr: "",
+          # rphr:false,
+          # rmhr:false
+        }
+      # irr:false,
+      # serp_cta:false,
+      # rui:[],
+      # mpid:[],
+      # ubp: nil,
+      # ncrnd:0,
+      # irsr:false,
+      # bmpr:[],
+      # bmpeid:[],
+      # nmbmp:false,
+      # skrr:false,
+      # ioour:false,
+      # ise:false
+    }
+    puts cursor.to_json
+    variable_json = {
+      buyLocation: {
+        latitude: 33.046289,
+        longitude: -96.994123
+      },
+      contextual_data: nil,
+      count: 24,
+      cursor: nil,
+      params: {
+        bqf: {
+          callsite: "COMMERCE_MKTPLACE_SEO",
+          query: ""
+        },
+        browse_request_params: {
+
+          # SHIPPING AND LOCAL PICKUP
+          commerce_enable_local_pickup: true,
+          commerce_enable_shipping: true,
+
+          commerce_search_and_rp_available: true,
+          commerce_search_and_rp_category_id: [
+            1834536343472201,
+            895487550471874,
+            288273351613190
+          ],
+
+          # CONDITION (comma seperated)
+          # used,used_like_new,used_good,used_fair
+          commerce_search_and_rp_condition: nil,
+          commerce_search_and_rp_ctime_days: nil,
+          filter_location_latitude: 33.046289,
+          filter_location_longitude: -96.994123,
+
+          # PRICE
+          # amount + 00
+          filter_price_lower_bound: 0,
+          filter_price_upper_bound: 214748364700,
+          filter_radius_km: 64
+        },
+        custom_request_params: {
+          browse_context: nil,
+          contextual_filters: [],
+          referral_code: nil,
+          saved_search_strid: nil,
+          search_vertical: nil,
+          seo_url: "toys",
+          surface: "TOPIC_PAGE",
+          virtual_contextual_filters: []
+        }
+      },
+      savedSearchID: nil,
+      savedSearchQuery: nil,
+      scale: 1,
+      shouldIncludePopularSearches: false,
+      topicPageParams: {
+        location_id: "category",
+        url: "toys"
+      }
+    }
+
+    variable_json = variable_json.to_json
+    variables = URI.encode_www_form_component(variable_json)
+    doc_id = "8996372187041574"
+    # puts variable_json
+    res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
+    # results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
+    # puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
+    # results.each do |result|
+    # puts result["node"]["listing"]["primary_listing_photo"]["image"]["uri"]
+    # end
+    # render json: {results: results, search_info: {count: results.size}}
+    # puts [].methods
+    render json: JSON.parse(res.body)
+  end
   
   def facebook_location_id_search
     variables = {
