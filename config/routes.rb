@@ -42,6 +42,7 @@ Rails.application.routes.draw do
   get "/facebook_profile_bio_photos", to: "facebook#facebook_profile_bio_photos"
   get "/facebook_friends", to: "facebook#facebook_friends"
   get "/facebook_location_id_search", to: "facebook#facebook_location_id_search"
+  get "/facebook_school_id_search", to: "facebook#facebook_school_id_search"
 
 
   # Render dynamic PWA files from app/views/pwa/* (remember to link manifest in application.html.erb)

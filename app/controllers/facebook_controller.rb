@@ -2286,6 +2286,28 @@ class FacebookController < ApplicationController
     render json: JSON.parse(res.body)
   end
 
+  # UNAUTHORIZED
+  # def facebook_school_id_search
+  #   variables = {
+  #     "count":8,
+  #     # "filterID":"Z3NxZjp7IjAiOiJicm93c2VfaW5zdGFudF9maWx0ZXIiLCIxIjoia2V5d29yZHNfdXNlcnMoZ2FyeSticmlhbikiLCIzIjoiYjFjOTJjMzQtNTViOC00ODIwLTk5NzMtZmU1ODkxOWY2ZGY4IiwiY3VzdG9tX3ZhbHVlIjoiQnJvd3NlVXNlcnNTY2hvb2xJbnN0YW50RmlsdGVyQ3VzdG9tVmFsdWUifQ==",
+  #     "query":"somewthing"
+  # }
+  #   variables = variables.to_json
+  #   variables = URI.encode_www_form_component(variables)
+  #   doc_id = "8960381707365732"
+  #   # puts variable_json
+  #   res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
+  #   # results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
+  #   # puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
+  #   # results.each do |result|
+  #   # puts result["node"]["listing"]["primary_listing_photo"]["image"]["uri"]
+  #   # end
+  #   # render json: {results: results, search_info: {count: results.size}}
+  #   # puts [].methods
+  #   render json: JSON.parse(res.body)
+  # end
+
   def marketplace_listing
     targetId = request.query_parameters["targetId"]
     variables = { targetId: targetId }
