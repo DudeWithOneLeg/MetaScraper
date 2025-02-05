@@ -556,7 +556,7 @@ class FacebookController < ApplicationController
       radius: 64000,
       scale: 1,
 
-      # VEHICLE TYPE
+      # VEHICLE TYPE (body style)
       # cars & trucks => [{"name":"vehicle_type","value":"car_truck"}]
       # motorcycle => [{"name":"vehicle_type","value":"motorcycle"}]
       # powersport => [{"name":"vehicle_type","value":"powersport"}]
@@ -582,6 +582,77 @@ class FacebookController < ApplicationController
     # puts [].methods
     render json: JSON.parse(res.body)
   end
+
+  # FETCHES VEHICLE MAKE BY MODEL AND WRITES TO JSON
+  # def fetch_data
+  #   # VEHICLE_DATA_FILE = 'vehicle_make_ids.json'
+  #   # OUTPUT_SLUG_FILE = 'slug_data.json'
+  #   # OUTPUT_VALUE_FILE = 'value_data.json'
+  #   # API_URL = 'https://www.facebook.com/api/graphql'
+  #   # DOC_ID = '6978471575593570'
+  #   begin
+  #     # Read the JSON file
+  #     file_path = File.join(__dir__, 'vehicle_make_ids.json')
+  #     file = File.read(file_path)
+  #     vehicles = JSON.parse(file)
+
+  #     slug_map = {}
+  #     value_map = {}
+
+  #     vehicles.each do |vehicle|
+  #       slug = vehicle['slug']
+  #       value = vehicle['value']
+  #       next if slug.nil? || value.nil?
+
+  #       # Construct the variables object
+  #       variables = {
+  #         buyLocation: {
+  #           latitude: 33.046289,
+  #           longitude: -96.994123
+  #         },
+  #         category_ids: [],
+  #         category_ranking_enabled: true,
+  #         contextual_data: [{ name: 'seo_url', value: "\"#{slug}\"" }],
+  #         hide_l2_cats: true,
+  #         params: nil,
+  #         savedSearchID: '',
+  #         savedSearchQuery: nil,
+  #         sellerID: nil,
+  #         shouldIncludePopularSearches: false,
+  #         surface: 'CATEGORY_FEED',
+  #         topicPageParams: {
+  #           location_id: 'category',
+  #           url: slug
+  #         },
+  #         virtual_category_ids: []
+  #       }
+
+  #       # Encode the variables for the request
+  #       encoded_variables = URI.encode_www_form_component(variables.to_json)
+
+  #       # Make the request
+  #       response = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{encoded_variables}&doc_id=6978471575593570",
+  #                               headers: { 'Content-Type' => 'application/json' })
+
+  #       # Parse the response
+  #       result = JSON.parse(response.body) rescue {}
+  #       choices = result.dig('data', 'viewer', 'marketplace_structured_fields', 6, 'choices')
+
+  #       if choices
+  #         slug_map[slug] = choices
+  #         value_map[value] = choices
+  #       end
+  #     end
+
+  #     # Write results to JSON files
+  #     File.write("slug_data.json", JSON.pretty_generate(slug_map))
+  #     File.write("value_data.json", JSON.pretty_generate(value_map))
+
+  #     puts 'Data successfully saved!'
+  #   rescue StandardError => e
+  #     puts "Error fetching data: #{e.message}"
+  #   end
+  # end
 
   def marketplace_property_search
     query = request.query_parameters["query"]
