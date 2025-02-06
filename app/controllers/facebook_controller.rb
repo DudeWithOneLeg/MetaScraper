@@ -583,6 +583,134 @@ class FacebookController < ApplicationController
     render json: JSON.parse(res.body)
   end
 
+  def fetch_apparel_categories
+    # VEHICLE_DATA_FILE = 'vehicle_make_ids.json'
+    # OUTPUT_SLUG_FILE = 'slug_data.json'
+    # OUTPUT_VALUE_FILE = 'value_data.json'
+    # API_URL = 'https://www.facebook.com/api/graphql'
+    # DOC_ID = '6978471575593570'
+    begin
+    # Read the JSON file
+    # file_path = File.join(__dir__, 'vehicle_make_ids.json')
+    # file = File.read(file_path)
+    # vehicles = JSON.parse(file)
+
+    slug_map = {}
+    value_map = {}
+    categories = ["baby-clothing", "bags", "mens", "womens", "shoes", "costumes", "jewelery", "kids-clothing"]
+
+    categories.each do |category|
+      # slug = vehicle['slug']
+      # value = vehicle['value']
+      # next if slug.nil? || value.nil?
+
+      # Construct the variables object
+      variables = {
+        buyLocation: {
+          latitude: 33.046289,
+          longitude: -96.994123
+        },
+        category_ids: [],
+        category_ranking_enabled: true,
+        contextual_data: [{ name: 'seo_url', value: "\"#{category}\"" }],
+        hide_l2_cats: true,
+        params: nil,
+        savedSearchID: '',
+        savedSearchQuery: nil,
+        sellerID: nil,
+        shouldIncludePopularSearches: false,
+        surface: 'CATEGORY_FEED',
+        topicPageParams: {
+          location_id: 'category',
+          url: category
+        },
+        virtual_category_ids: []
+      }
+
+      variables2 = {
+        buyLocation: {
+          latitude: 33.046289,
+          longitude: -96.994123
+        },
+        contextual_data: nil,
+        count: 24,
+        cursor: nil,
+        params: {
+          bqf: {
+            callsite: "COMMERCE_MKTPLACE_SEO",
+            query: ""
+          },
+          browse_request_params: {
+            commerce_enable_local_pickup: true,
+            commerce_enable_shipping: true,
+            commerce_search_and_rp_available: true,
+            commerce_search_and_rp_category_id: [],
+            commerce_search_and_rp_condition: nil,
+            commerce_search_and_rp_ctime_days: nil,
+            filter_location_latitude: 33.046289,
+            filter_location_longitude: -96.994123,
+            filter_price_lower_bound: 0,
+            filter_price_upper_bound: 214748364700,
+            filter_radius_km: 64
+          },
+          custom_request_params: {
+            browse_context: nil,
+            contextual_filters: [],
+            referral_code: nil,
+            saved_search_strid: nil,
+            search_vertical: nil,
+            seo_url: category,
+            surface: "TOPIC_PAGE",
+            virtual_contextual_filters: []
+          }
+        },
+        savedSearchID: nil,
+        savedSearchQuery: nil,
+        scale: 2,
+        shouldIncludePopularSearches: false,
+        topicPageParams: {
+          location_id: "category",
+          url: category
+        }
+      }
+      
+
+      # Encode the variables for the request
+      encoded_variables = URI.encode_www_form_component(variables.to_json)
+      encoded_variables2 = URI.encode_www_form_component(variables2.to_json)
+
+      # Make the request
+      response = HTTParty.post(
+        "https://www.facebook.com/api/graphql?variables=#{encoded_variables}&doc_id=6978471575593570",
+        headers: { 'Content-Type' => 'application/json' })
+      response2 = HTTParty.post(
+        "https://www.facebook.com/api/graphql?variables=#{encoded_variables2}&doc_id=8996372187041574",
+          headers: { 'Content-Type' => 'application/json' })
+      # Parse the response
+      result = JSON.parse(response.body) rescue {}
+      result2 = JSON.parse(response2.body) rescue {}
+      # puts result
+      sub_categories = result2.dig('data', 'marketplace_seo_page', 'seo_navigation')
+      sizes = result.dig('data', 'viewer', 'marketplace_structured_fields')
+      sizes = sizes.filter {|el| el["filter_key"] != "price" && el["filter_key"] != "deliveryMethodSERP" && el["filter_key"] != "itemCondition"}
+      brands = result.dig('data', 'viewer', 'marketplace_structured_fields', 4, 'choices')
+      
+      
+      slug_map[category] = {sub_categories: sub_categories, fields: sizes}
+      
+    end
+    render json: slug_map
+
+    # Write results to JSON files
+    # File.write("slug_data.json", JSON.pretty_generate(slug_map))
+    # File.write("value_data.json", JSON.pretty_generate(value_map))
+
+    puts 'Data successfully saved!'
+    rescue StandardError => e
+      puts "Error fetching data: #{e.message}"
+    end
+  end
+
   # FETCHES VEHICLE MAKE BY MODEL AND WRITES TO JSON
   # def fetch_data
   #   # VEHICLE_DATA_FILE = 'vehicle_make_ids.json'
