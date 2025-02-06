@@ -1,0 +1,2169 @@
+{
+  "baby-clothing": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "baby-boy-clothes",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Baby Boys' Clothes",
+        "virtual_category": {
+          "name": "Baby Boys' Clothing",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "895993467897366"
+        },
+        "id": "2783905671646196",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "baby&ToddlerSize",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Baby & Toddler Size",
+            "choices": [
+              {
+                "display_name": "Preemie",
+                "value": "1078671262496252",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "345926960067581",
+                "contextual_filters": "{\"baby&ToddlerSize\":[345926960067581]}"
+              },
+              {
+                "display_name": "Newborn",
+                "value": "1295880130583172",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "3329080303876011",
+                "contextual_filters": "{\"baby&ToddlerSize\":[3329080303876011]}"
+              },
+              {
+                "display_name": "0-3 Months",
+                "value": "914151898957216",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "742353066343390",
+                "contextual_filters": "{\"baby&ToddlerSize\":[742353066343390]}"
+              },
+              {
+                "display_name": "3-6 Months",
+                "value": "1388725917946041",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "1062501930876945",
+                "contextual_filters": "{\"baby&ToddlerSize\":[1062501930876945]}"
+              },
+              {
+                "display_name": "6-9 Months",
+                "value": "2400961996818597",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "664712727779162",
+                "contextual_filters": "{\"baby&ToddlerSize\":[664712727779162]}"
+              },
+              {
+                "display_name": "9-12 Months",
+                "value": "702773026801251",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "986447795195593",
+                "contextual_filters": "{\"baby&ToddlerSize\":[986447795195593]}"
+              },
+              {
+                "display_name": "12-18 Months",
+                "value": "2544477828966125",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "336240337470906",
+                "contextual_filters": "{\"baby&ToddlerSize\":[336240337470906]}"
+              },
+              {
+                "display_name": "18-24 Months",
+                "value": "707050819780028",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "339826547347671",
+                "contextual_filters": "{\"baby&ToddlerSize\":[339826547347671]}"
+              },
+              {
+                "display_name": "2T",
+                "value": "501217460723088",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "366615791202927",
+                "contextual_filters": "{\"baby&ToddlerSize\":[366615791202927]}"
+              },
+              {
+                "display_name": "3T",
+                "value": "2318105238298068",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "2881304555484774",
+                "contextual_filters": "{\"baby&ToddlerSize\":[2881304555484774]}"
+              },
+              {
+                "display_name": "4T",
+                "value": "865692130493905",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "393776441626712",
+                "contextual_filters": "{\"baby&ToddlerSize\":[393776441626712]}"
+              },
+              {
+                "display_name": "5T",
+                "value": "1377858435708901",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "340691613687008",
+                "contextual_filters": "{\"baby&ToddlerSize\":[340691613687008]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "baby-clothing"
+            },
+            "range": null
+          },
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "babyGap",
+                "value": "283213596149293",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-gap-baby-clothing",
+                "virtual_attribute_value": "836735973573941",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "Uniqlo",
+                "value": "255592099051692",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "260169572140618",
+                "contextual_filters": "{\"brand\":[260169572140618]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "baby-clothing"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "baby-girl-clothes",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Baby Girl Clothes",
+        "virtual_category": {
+          "name": "Baby Girls' Clothing",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "117296556958618"
+        },
+        "id": "2807875762582026",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "baby&ToddlerSize",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Baby & Toddler Size",
+            "choices": [
+              {
+                "display_name": "Preemie",
+                "value": "1078671262496252",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "345926960067581",
+                "contextual_filters": "{\"baby&ToddlerSize\":[345926960067581]}"
+              },
+              {
+                "display_name": "Newborn",
+                "value": "1295880130583172",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "3329080303876011",
+                "contextual_filters": "{\"baby&ToddlerSize\":[3329080303876011]}"
+              },
+              {
+                "display_name": "0-3 Months",
+                "value": "914151898957216",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "742353066343390",
+                "contextual_filters": "{\"baby&ToddlerSize\":[742353066343390]}"
+              },
+              {
+                "display_name": "3-6 Months",
+                "value": "1388725917946041",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "1062501930876945",
+                "contextual_filters": "{\"baby&ToddlerSize\":[1062501930876945]}"
+              },
+              {
+                "display_name": "6-9 Months",
+                "value": "2400961996818597",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "664712727779162",
+                "contextual_filters": "{\"baby&ToddlerSize\":[664712727779162]}"
+              },
+              {
+                "display_name": "9-12 Months",
+                "value": "702773026801251",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "986447795195593",
+                "contextual_filters": "{\"baby&ToddlerSize\":[986447795195593]}"
+              },
+              {
+                "display_name": "12-18 Months",
+                "value": "2544477828966125",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "336240337470906",
+                "contextual_filters": "{\"baby&ToddlerSize\":[336240337470906]}"
+              },
+              {
+                "display_name": "18-24 Months",
+                "value": "707050819780028",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "339826547347671",
+                "contextual_filters": "{\"baby&ToddlerSize\":[339826547347671]}"
+              },
+              {
+                "display_name": "2T",
+                "value": "501217460723088",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "366615791202927",
+                "contextual_filters": "{\"baby&ToddlerSize\":[366615791202927]}"
+              },
+              {
+                "display_name": "3T",
+                "value": "2318105238298068",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "2881304555484774",
+                "contextual_filters": "{\"baby&ToddlerSize\":[2881304555484774]}"
+              },
+              {
+                "display_name": "4T",
+                "value": "865692130493905",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "393776441626712",
+                "contextual_filters": "{\"baby&ToddlerSize\":[393776441626712]}"
+              },
+              {
+                "display_name": "5T",
+                "value": "1377858435708901",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "340691613687008",
+                "contextual_filters": "{\"baby&ToddlerSize\":[340691613687008]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "baby-clothing"
+            },
+            "range": null
+          },
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "babyGap",
+                "value": "283213596149293",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-gap-baby-clothing",
+                "virtual_attribute_value": "836735973573941",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "Uniqlo",
+                "value": "255592099051692",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "260169572140618",
+                "contextual_filters": "{\"brand\":[260169572140618]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "baby-clothing"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "baby-shoes",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Baby Shoes",
+        "virtual_category": {
+          "name": "Newborn & Baby Shoes",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "235172934771570"
+        },
+        "id": "2855264641254048",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "baby&ToddlerSize",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Baby & Toddler Size",
+            "choices": [
+              {
+                "display_name": "Preemie",
+                "value": "1078671262496252",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "345926960067581",
+                "contextual_filters": "{\"baby&ToddlerSize\":[345926960067581]}"
+              },
+              {
+                "display_name": "Newborn",
+                "value": "1295880130583172",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "3329080303876011",
+                "contextual_filters": "{\"baby&ToddlerSize\":[3329080303876011]}"
+              },
+              {
+                "display_name": "0-3 Months",
+                "value": "914151898957216",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "742353066343390",
+                "contextual_filters": "{\"baby&ToddlerSize\":[742353066343390]}"
+              },
+              {
+                "display_name": "3-6 Months",
+                "value": "1388725917946041",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "1062501930876945",
+                "contextual_filters": "{\"baby&ToddlerSize\":[1062501930876945]}"
+              },
+              {
+                "display_name": "6-9 Months",
+                "value": "2400961996818597",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "664712727779162",
+                "contextual_filters": "{\"baby&ToddlerSize\":[664712727779162]}"
+              },
+              {
+                "display_name": "9-12 Months",
+                "value": "702773026801251",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "986447795195593",
+                "contextual_filters": "{\"baby&ToddlerSize\":[986447795195593]}"
+              },
+              {
+                "display_name": "12-18 Months",
+                "value": "2544477828966125",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "336240337470906",
+                "contextual_filters": "{\"baby&ToddlerSize\":[336240337470906]}"
+              },
+              {
+                "display_name": "18-24 Months",
+                "value": "707050819780028",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "339826547347671",
+                "contextual_filters": "{\"baby&ToddlerSize\":[339826547347671]}"
+              },
+              {
+                "display_name": "2T",
+                "value": "501217460723088",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "366615791202927",
+                "contextual_filters": "{\"baby&ToddlerSize\":[366615791202927]}"
+              },
+              {
+                "display_name": "3T",
+                "value": "2318105238298068",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "2881304555484774",
+                "contextual_filters": "{\"baby&ToddlerSize\":[2881304555484774]}"
+              },
+              {
+                "display_name": "4T",
+                "value": "865692130493905",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "393776441626712",
+                "contextual_filters": "{\"baby&ToddlerSize\":[393776441626712]}"
+              },
+              {
+                "display_name": "5T",
+                "value": "1377858435708901",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "340691613687008",
+                "contextual_filters": "{\"baby&ToddlerSize\":[340691613687008]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "baby-clothing"
+            },
+            "range": null
+          },
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "babyGap",
+                "value": "283213596149293",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-gap-baby-clothing",
+                "virtual_attribute_value": "836735973573941",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "Uniqlo",
+                "value": "255592099051692",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "baby-clothing",
+                "virtual_attribute_value": "260169572140618",
+                "contextual_filters": "{\"brand\":[260169572140618]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "baby-clothing"
+            },
+            "range": null
+          }
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "baby&ToddlerSize",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Baby & Toddler Size",
+        "choices": [
+          {
+            "display_name": "Preemie",
+            "value": "1078671262496252",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "baby-clothing",
+            "virtual_attribute_value": "345926960067581",
+            "contextual_filters": "{\"baby&ToddlerSize\":[345926960067581]}"
+          },
+          {
+            "display_name": "Newborn",
+            "value": "1295880130583172",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "baby-clothing",
+            "virtual_attribute_value": "3329080303876011",
+            "contextual_filters": "{\"baby&ToddlerSize\":[3329080303876011]}"
+          },
+          {
+            "display_name": "0-3 Months",
+            "value": "914151898957216",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "baby-clothing",
+            "virtual_attribute_value": "742353066343390",
+            "contextual_filters": "{\"baby&ToddlerSize\":[742353066343390]}"
+          },
+          {
+            "display_name": "3-6 Months",
+            "value": "1388725917946041",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "baby-clothing",
+            "virtual_attribute_value": "1062501930876945",
+            "contextual_filters": "{\"baby&ToddlerSize\":[1062501930876945]}"
+          },
+          {
+            "display_name": "6-9 Months",
+            "value": "2400961996818597",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "baby-clothing",
+            "virtual_attribute_value": "664712727779162",
+            "contextual_filters": "{\"baby&ToddlerSize\":[664712727779162]}"
+          },
+          {
+            "display_name": "9-12 Months",
+            "value": "702773026801251",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "baby-clothing",
+            "virtual_attribute_value": "986447795195593",
+            "contextual_filters": "{\"baby&ToddlerSize\":[986447795195593]}"
+          },
+          {
+            "display_name": "12-18 Months",
+            "value": "2544477828966125",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "baby-clothing",
+            "virtual_attribute_value": "336240337470906",
+            "contextual_filters": "{\"baby&ToddlerSize\":[336240337470906]}"
+          },
+          {
+            "display_name": "18-24 Months",
+            "value": "707050819780028",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "baby-clothing",
+            "virtual_attribute_value": "339826547347671",
+            "contextual_filters": "{\"baby&ToddlerSize\":[339826547347671]}"
+          },
+          {
+            "display_name": "2T",
+            "value": "501217460723088",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "baby-clothing",
+            "virtual_attribute_value": "366615791202927",
+            "contextual_filters": "{\"baby&ToddlerSize\":[366615791202927]}"
+          },
+          {
+            "display_name": "3T",
+            "value": "2318105238298068",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "baby-clothing",
+            "virtual_attribute_value": "2881304555484774",
+            "contextual_filters": "{\"baby&ToddlerSize\":[2881304555484774]}"
+          },
+          {
+            "display_name": "4T",
+            "value": "865692130493905",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "baby-clothing",
+            "virtual_attribute_value": "393776441626712",
+            "contextual_filters": "{\"baby&ToddlerSize\":[393776441626712]}"
+          },
+          {
+            "display_name": "5T",
+            "value": "1377858435708901",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "baby-clothing",
+            "virtual_attribute_value": "340691613687008",
+            "contextual_filters": "{\"baby&ToddlerSize\":[340691613687008]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "baby-clothing"
+        },
+        "range": null
+      },
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "brand",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Brand",
+        "choices": [
+          {
+            "display_name": "babyGap",
+            "value": "283213596149293",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "baby-gap-baby-clothing",
+            "virtual_attribute_value": "836735973573941",
+            "contextual_filters": null
+          },
+          {
+            "display_name": "Uniqlo",
+            "value": "255592099051692",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "baby-clothing",
+            "virtual_attribute_value": "260169572140618",
+            "contextual_filters": "{\"brand\":[260169572140618]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "baby-clothing"
+        },
+        "range": null
+      }
+    ]
+  },
+  "bags": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "backpacks",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Backpacks",
+        "virtual_category": {
+          "name": "Backpacks",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "612272263056379"
+        },
+        "id": "2131975260260640",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Loungefly",
+                "value": "926092254484789",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "loungefly-bags",
+                "virtual_attribute_value": "936985850148014",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "bags"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "fanny-packs",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Fanny Packs",
+        "virtual_category": {
+          "name": "Fanny Packs",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "697646257482744"
+        },
+        "id": "3403515763015905",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Loungefly",
+                "value": "926092254484789",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "loungefly-bags",
+                "virtual_attribute_value": "936985850148014",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "bags"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "laptop-bags",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Laptop Bags",
+        "virtual_category": {
+          "name": "Laptop Bags",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "1470451749824428"
+        },
+        "id": "3845120692217491",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Loungefly",
+                "value": "926092254484789",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "loungefly-bags",
+                "virtual_attribute_value": "936985850148014",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "bags"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "luggage",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Luggage",
+        "virtual_category": {
+          "name": "Luggage",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "423843385176922"
+        },
+        "id": "2522615407852607",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Loungefly",
+                "value": "926092254484789",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "loungefly-bags",
+                "virtual_attribute_value": "936985850148014",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "bags"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "handbags",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Women's Handbags & Purses",
+        "virtual_category": {
+          "name": "Women's Handbags & Purses",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "594390358033060"
+        },
+        "id": "3334561973251837",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Loungefly",
+                "value": "926092254484789",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "loungefly-bags",
+                "virtual_attribute_value": "936985850148014",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "bags"
+            },
+            "range": null
+          }
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "brand",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Brand",
+        "choices": [
+          {
+            "display_name": "Loungefly",
+            "value": "926092254484789",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "loungefly-bags",
+            "virtual_attribute_value": "936985850148014",
+            "contextual_filters": null
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "bags"
+        },
+        "range": null
+      }
+    ]
+  },
+  "mens": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "mens-clothing",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Men's Clothing",
+        "virtual_category": {
+          "name": "Men's Clothing",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "406170223604249"
+        },
+        "id": "2554155004639023",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "mens-shoes",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Men's Shoes",
+        "virtual_category": {
+          "name": "Men's Shoes",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "634767820588271"
+        },
+        "id": "2847854771918705",
+        "fields": []
+      }
+    ],
+    "fields": []
+  },
+  "womens": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "womens-clothing",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Women's Clothing",
+        "virtual_category": {
+          "name": "Women's Clothing",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "416889235886221"
+        },
+        "id": "2746178595412364",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Lulus",
+                "value": "273583387027520",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "womens",
+                "virtual_attribute_value": "1101646824838886",
+                "contextual_filters": "{\"brand\":[1101646824838886]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "womens"
+            },
+            "range": null
+          },
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "color",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Color",
+            "choices": [
+              {
+                "display_name": "Beige",
+                "value": "341461063096138",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "womens",
+                "virtual_attribute_value": "2821426671297542",
+                "contextual_filters": "{\"color\":[2821426671297542]}"
+              },
+              {
+                "display_name": "Gold",
+                "value": "771568663235432",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "womens",
+                "virtual_attribute_value": "914533529022597",
+                "contextual_filters": "{\"color\":[914533529022597]}"
+              },
+              {
+                "display_name": "Gray",
+                "value": "475732936281162",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "womens",
+                "virtual_attribute_value": "201016494302625",
+                "contextual_filters": "{\"color\":[201016494302625]}"
+              },
+              {
+                "display_name": "Multi-Color",
+                "value": "305378153390139",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "womens",
+                "virtual_attribute_value": "228396151543225",
+                "contextual_filters": "{\"color\":[228396151543225]}"
+              },
+              {
+                "display_name": "Pink",
+                "value": "187136975509220",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "womens",
+                "virtual_attribute_value": "647408556034997",
+                "contextual_filters": "{\"color\":[647408556034997]}"
+              },
+              {
+                "display_name": "Purple",
+                "value": "250003719018037",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "womens",
+                "virtual_attribute_value": "600728193817417",
+                "contextual_filters": "{\"color\":[600728193817417]}"
+              },
+              {
+                "display_name": "Red",
+                "value": "187175802159435",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "womens",
+                "virtual_attribute_value": "2259153617711417",
+                "contextual_filters": "{\"color\":[2259153617711417]}"
+              },
+              {
+                "display_name": "Silver",
+                "value": "244955682852509",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "womens",
+                "virtual_attribute_value": "2516915895240666",
+                "contextual_filters": "{\"color\":[2516915895240666]}"
+              },
+              {
+                "display_name": "Yellow",
+                "value": "1905758852839462",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "womens",
+                "virtual_attribute_value": "1063256230695297",
+                "contextual_filters": "{\"color\":[1063256230695297]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "womens"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "womens-shoes",
+        "seo_page_is_geo_agnostic": true,
+        "seo_localized_page_title": "Women's Shoes",
+        "virtual_category": {
+          "name": "Women's Shoes",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "1006303249743864"
+        },
+        "id": "3167435179965432",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Lulus",
+                "value": "273583387027520",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "womens",
+                "virtual_attribute_value": "1101646824838886",
+                "contextual_filters": "{\"brand\":[1101646824838886]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "womens"
+            },
+            "range": null
+          },
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "color",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Color",
+            "choices": [
+              {
+                "display_name": "Beige",
+                "value": "341461063096138",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "womens",
+                "virtual_attribute_value": "2821426671297542",
+                "contextual_filters": "{\"color\":[2821426671297542]}"
+              },
+              {
+                "display_name": "Gold",
+                "value": "771568663235432",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "womens",
+                "virtual_attribute_value": "914533529022597",
+                "contextual_filters": "{\"color\":[914533529022597]}"
+              },
+              {
+                "display_name": "Gray",
+                "value": "475732936281162",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "womens",
+                "virtual_attribute_value": "201016494302625",
+                "contextual_filters": "{\"color\":[201016494302625]}"
+              },
+              {
+                "display_name": "Multi-Color",
+                "value": "305378153390139",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "womens",
+                "virtual_attribute_value": "228396151543225",
+                "contextual_filters": "{\"color\":[228396151543225]}"
+              },
+              {
+                "display_name": "Pink",
+                "value": "187136975509220",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "womens",
+                "virtual_attribute_value": "647408556034997",
+                "contextual_filters": "{\"color\":[647408556034997]}"
+              },
+              {
+                "display_name": "Purple",
+                "value": "250003719018037",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "womens",
+                "virtual_attribute_value": "600728193817417",
+                "contextual_filters": "{\"color\":[600728193817417]}"
+              },
+              {
+                "display_name": "Red",
+                "value": "187175802159435",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "womens",
+                "virtual_attribute_value": "2259153617711417",
+                "contextual_filters": "{\"color\":[2259153617711417]}"
+              },
+              {
+                "display_name": "Silver",
+                "value": "244955682852509",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "womens",
+                "virtual_attribute_value": "2516915895240666",
+                "contextual_filters": "{\"color\":[2516915895240666]}"
+              },
+              {
+                "display_name": "Yellow",
+                "value": "1905758852839462",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "womens",
+                "virtual_attribute_value": "1063256230695297",
+                "contextual_filters": "{\"color\":[1063256230695297]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "womens"
+            },
+            "range": null
+          }
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "brand",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Brand",
+        "choices": [
+          {
+            "display_name": "Lulus",
+            "value": "273583387027520",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "womens",
+            "virtual_attribute_value": "1101646824838886",
+            "contextual_filters": "{\"brand\":[1101646824838886]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "womens"
+        },
+        "range": null
+      },
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "color",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Color",
+        "choices": [
+          {
+            "display_name": "Beige",
+            "value": "341461063096138",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "womens",
+            "virtual_attribute_value": "2821426671297542",
+            "contextual_filters": "{\"color\":[2821426671297542]}"
+          },
+          {
+            "display_name": "Gold",
+            "value": "771568663235432",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "womens",
+            "virtual_attribute_value": "914533529022597",
+            "contextual_filters": "{\"color\":[914533529022597]}"
+          },
+          {
+            "display_name": "Gray",
+            "value": "475732936281162",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "womens",
+            "virtual_attribute_value": "201016494302625",
+            "contextual_filters": "{\"color\":[201016494302625]}"
+          },
+          {
+            "display_name": "Multi-Color",
+            "value": "305378153390139",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "womens",
+            "virtual_attribute_value": "228396151543225",
+            "contextual_filters": "{\"color\":[228396151543225]}"
+          },
+          {
+            "display_name": "Pink",
+            "value": "187136975509220",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "womens",
+            "virtual_attribute_value": "647408556034997",
+            "contextual_filters": "{\"color\":[647408556034997]}"
+          },
+          {
+            "display_name": "Purple",
+            "value": "250003719018037",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "womens",
+            "virtual_attribute_value": "600728193817417",
+            "contextual_filters": "{\"color\":[600728193817417]}"
+          },
+          {
+            "display_name": "Red",
+            "value": "187175802159435",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "womens",
+            "virtual_attribute_value": "2259153617711417",
+            "contextual_filters": "{\"color\":[2259153617711417]}"
+          },
+          {
+            "display_name": "Silver",
+            "value": "244955682852509",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "womens",
+            "virtual_attribute_value": "2516915895240666",
+            "contextual_filters": "{\"color\":[2516915895240666]}"
+          },
+          {
+            "display_name": "Yellow",
+            "value": "1905758852839462",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "womens",
+            "virtual_attribute_value": "1063256230695297",
+            "contextual_filters": "{\"color\":[1063256230695297]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "womens"
+        },
+        "range": null
+      }
+    ]
+  },
+  "shoes": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "boys-shoes",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Boys' Shoes",
+        "virtual_category": {
+          "name": "Boys' Shoes",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "338366830642404"
+        },
+        "id": "3766122153430364",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Adidas",
+                "value": "2212957609029733",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "adidas-nite-jogger-shoes",
+                "virtual_attribute_value": "636596877058930",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "Comme des Garcons",
+                "value": "925510687649150",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "comme-des-garcons-shoes",
+                "virtual_attribute_value": "1866940373475303",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "Esprit",
+                "value": "316720835581837",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "shoes",
+                "virtual_attribute_value": "3733824136702869",
+                "contextual_filters": "{\"brand\":[3733824136702869]}"
+              },
+              {
+                "display_name": "Gucci",
+                "value": "506410009874953",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "shoes",
+                "virtual_attribute_value": "2763025557299394",
+                "contextual_filters": "{\"brand\":[2763025557299394]}"
+              },
+              {
+                "display_name": "KEEN",
+                "value": "1270756369765422",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "shoes",
+                "virtual_attribute_value": "181814370332328",
+                "contextual_filters": "{\"brand\":[181814370332328]}"
+              },
+              {
+                "display_name": "New Balance",
+                "value": "330903610822884",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "shoes",
+                "virtual_attribute_value": "776563126613276",
+                "contextual_filters": "{\"brand\":[776563126613276]}"
+              },
+              {
+                "display_name": "Nike",
+                "value": "721384328263081",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "nike-pg-4-basketball-shoes",
+                "virtual_attribute_value": "3116344611774691",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "Reebok",
+                "value": "1655813187857539",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "reebok-sneakers",
+                "virtual_attribute_value": "879328712802905",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "Vans",
+                "value": "331922207519870",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "shoes",
+                "virtual_attribute_value": "895824297856603",
+                "contextual_filters": "{\"brand\":[895824297856603]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "shoes"
+            },
+            "range": null
+          },
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "gender",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Gender",
+            "choices": [
+              {
+                "display_name": "Women",
+                "value": "484888245347023",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "shoes",
+                "virtual_attribute_value": "215428199722233",
+                "contextual_filters": "{\"gender\":[215428199722233]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "shoes"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "girls-shoes",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Girls' Shoes",
+        "virtual_category": {
+          "name": "Girls' Shoes",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "856388384892773"
+        },
+        "id": "4348786128480442",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Adidas",
+                "value": "2212957609029733",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "adidas-nite-jogger-shoes",
+                "virtual_attribute_value": "636596877058930",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "Comme des Garcons",
+                "value": "925510687649150",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "comme-des-garcons-shoes",
+                "virtual_attribute_value": "1866940373475303",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "Esprit",
+                "value": "316720835581837",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "shoes",
+                "virtual_attribute_value": "3733824136702869",
+                "contextual_filters": "{\"brand\":[3733824136702869]}"
+              },
+              {
+                "display_name": "Gucci",
+                "value": "506410009874953",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "shoes",
+                "virtual_attribute_value": "2763025557299394",
+                "contextual_filters": "{\"brand\":[2763025557299394]}"
+              },
+              {
+                "display_name": "KEEN",
+                "value": "1270756369765422",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "shoes",
+                "virtual_attribute_value": "181814370332328",
+                "contextual_filters": "{\"brand\":[181814370332328]}"
+              },
+              {
+                "display_name": "New Balance",
+                "value": "330903610822884",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "shoes",
+                "virtual_attribute_value": "776563126613276",
+                "contextual_filters": "{\"brand\":[776563126613276]}"
+              },
+              {
+                "display_name": "Nike",
+                "value": "721384328263081",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "nike-pg-4-basketball-shoes",
+                "virtual_attribute_value": "3116344611774691",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "Reebok",
+                "value": "1655813187857539",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "reebok-sneakers",
+                "virtual_attribute_value": "879328712802905",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "Vans",
+                "value": "331922207519870",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "shoes",
+                "virtual_attribute_value": "895824297856603",
+                "contextual_filters": "{\"brand\":[895824297856603]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "shoes"
+            },
+            "range": null
+          },
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "gender",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Gender",
+            "choices": [
+              {
+                "display_name": "Women",
+                "value": "484888245347023",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "shoes",
+                "virtual_attribute_value": "215428199722233",
+                "contextual_filters": "{\"gender\":[215428199722233]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "shoes"
+            },
+            "range": null
+          }
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "brand",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Brand",
+        "choices": [
+          {
+            "display_name": "Adidas",
+            "value": "2212957609029733",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "adidas-nite-jogger-shoes",
+            "virtual_attribute_value": "636596877058930",
+            "contextual_filters": null
+          },
+          {
+            "display_name": "Comme des Garcons",
+            "value": "925510687649150",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "comme-des-garcons-shoes",
+            "virtual_attribute_value": "1866940373475303",
+            "contextual_filters": null
+          },
+          {
+            "display_name": "Esprit",
+            "value": "316720835581837",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "shoes",
+            "virtual_attribute_value": "3733824136702869",
+            "contextual_filters": "{\"brand\":[3733824136702869]}"
+          },
+          {
+            "display_name": "Gucci",
+            "value": "506410009874953",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "shoes",
+            "virtual_attribute_value": "2763025557299394",
+            "contextual_filters": "{\"brand\":[2763025557299394]}"
+          },
+          {
+            "display_name": "KEEN",
+            "value": "1270756369765422",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "shoes",
+            "virtual_attribute_value": "181814370332328",
+            "contextual_filters": "{\"brand\":[181814370332328]}"
+          },
+          {
+            "display_name": "New Balance",
+            "value": "330903610822884",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "shoes",
+            "virtual_attribute_value": "776563126613276",
+            "contextual_filters": "{\"brand\":[776563126613276]}"
+          },
+          {
+            "display_name": "Nike",
+            "value": "721384328263081",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "nike-pg-4-basketball-shoes",
+            "virtual_attribute_value": "3116344611774691",
+            "contextual_filters": null
+          },
+          {
+            "display_name": "Reebok",
+            "value": "1655813187857539",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "reebok-sneakers",
+            "virtual_attribute_value": "879328712802905",
+            "contextual_filters": null
+          },
+          {
+            "display_name": "Vans",
+            "value": "331922207519870",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "shoes",
+            "virtual_attribute_value": "895824297856603",
+            "contextual_filters": "{\"brand\":[895824297856603]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "shoes"
+        },
+        "range": null
+      },
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "gender",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Gender",
+        "choices": [
+          {
+            "display_name": "Women",
+            "value": "484888245347023",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "shoes",
+            "virtual_attribute_value": "215428199722233",
+            "contextual_filters": "{\"gender\":[215428199722233]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "shoes"
+        },
+        "range": null
+      }
+    ]
+  },
+  "costumes": {
+    "sub_categories": [],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "character",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Character",
+        "choices": [
+          {
+            "display_name": "Akira",
+            "value": "300404704773317",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "costumes",
+            "virtual_attribute_value": "299924771654207",
+            "contextual_filters": "{\"character\":[299924771654207]}"
+          },
+          {
+            "display_name": "Harley Quinn",
+            "value": "1005050149957403",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "costumes",
+            "virtual_attribute_value": "2764732153839168",
+            "contextual_filters": "{\"character\":[2764732153839168]}"
+          },
+          {
+            "display_name": "Hatsune Miku",
+            "value": "2674951146049708",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "costumes",
+            "virtual_attribute_value": "2818724661673418",
+            "contextual_filters": "{\"character\":[2818724661673418]}"
+          },
+          {
+            "display_name": "Iron Man",
+            "value": "678709426080779",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "costumes",
+            "virtual_attribute_value": "459730421746403",
+            "contextual_filters": "{\"character\":[459730421746403]}"
+          },
+          {
+            "display_name": "Moana",
+            "value": "2741686546148167",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "costumes",
+            "virtual_attribute_value": "444581456642717",
+            "contextual_filters": "{\"character\":[444581456642717]}"
+          },
+          {
+            "display_name": "Spider-Man",
+            "value": "932351303929459",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "costumes",
+            "virtual_attribute_value": "206167287605361",
+            "contextual_filters": "{\"character\":[206167287605361]}"
+          },
+          {
+            "display_name": "Tinker Bell",
+            "value": "792774468140566",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "costumes",
+            "virtual_attribute_value": "951901088905036",
+            "contextual_filters": "{\"character\":[951901088905036]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "costumes"
+        },
+        "range": null
+      },
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "costumeTheme",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Costume Theme",
+        "choices": [
+          {
+            "display_name": "Lolita",
+            "value": "296913025248501",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "costumes",
+            "virtual_attribute_value": "1943299559161491",
+            "contextual_filters": "{\"costumeTheme\":[1943299559161491]}"
+          },
+          {
+            "display_name": "Pirate",
+            "value": "125335536186476",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "costumes",
+            "virtual_attribute_value": "376493030311916",
+            "contextual_filters": "{\"costumeTheme\":[376493030311916]}"
+          },
+          {
+            "display_name": "Zombie",
+            "value": "2942629722688224",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "costumes",
+            "virtual_attribute_value": "807695886530764",
+            "contextual_filters": "{\"costumeTheme\":[807695886530764]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "costumes"
+        },
+        "range": null
+      }
+    ]
+  },
+  "jewelery": {
+    "sub_categories": null,
+    "fields": []
+  },
+  "kids-clothing": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "boys-clothing",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Boys' Clothing",
+        "virtual_category": {
+          "name": "Boys' Clothing",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "225377825932731"
+        },
+        "id": "3537439062991203",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Adidas",
+                "value": "2212957609029733",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "kids-clothing",
+                "virtual_attribute_value": "636596877058930",
+                "contextual_filters": "{\"brand\":[636596877058930]}"
+              },
+              {
+                "display_name": "Matilda Jane",
+                "value": "1292969094241371",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "matilda-jane-girls-clothing",
+                "virtual_attribute_value": "810279539516294",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "Mini Boden",
+                "value": "247009689729303",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "mini-boden-kids-clothing",
+                "virtual_attribute_value": "314466113317436",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "kids-clothing"
+            },
+            "range": null
+          },
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "character",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Character",
+            "choices": [
+              {
+                "display_name": "Peppa Pig",
+                "value": "324520138854521",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "peppa-pig-clothes",
+                "virtual_attribute_value": "466158124702170",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "Snoopy",
+                "value": "235202551256690",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "kids-clothing",
+                "virtual_attribute_value": "355026795928870",
+                "contextual_filters": "{\"character\":[355026795928870]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "kids-clothing"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "girls-clothing",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Girls' Clothing",
+        "virtual_category": {
+          "name": "Girls' Clothing",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "167075698276370"
+        },
+        "id": "3459922510800238",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Adidas",
+                "value": "2212957609029733",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "kids-clothing",
+                "virtual_attribute_value": "636596877058930",
+                "contextual_filters": "{\"brand\":[636596877058930]}"
+              },
+              {
+                "display_name": "Matilda Jane",
+                "value": "1292969094241371",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "matilda-jane-girls-clothing",
+                "virtual_attribute_value": "810279539516294",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "Mini Boden",
+                "value": "247009689729303",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "mini-boden-kids-clothing",
+                "virtual_attribute_value": "314466113317436",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "kids-clothing"
+            },
+            "range": null
+          },
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "character",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Character",
+            "choices": [
+              {
+                "display_name": "Peppa Pig",
+                "value": "324520138854521",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "peppa-pig-clothes",
+                "virtual_attribute_value": "466158124702170",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "Snoopy",
+                "value": "235202551256690",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "kids-clothing",
+                "virtual_attribute_value": "355026795928870",
+                "contextual_filters": "{\"character\":[355026795928870]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "kids-clothing"
+            },
+            "range": null
+          }
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "brand",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Brand",
+        "choices": [
+          {
+            "display_name": "Adidas",
+            "value": "2212957609029733",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "kids-clothing",
+            "virtual_attribute_value": "636596877058930",
+            "contextual_filters": "{\"brand\":[636596877058930]}"
+          },
+          {
+            "display_name": "Matilda Jane",
+            "value": "1292969094241371",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "matilda-jane-girls-clothing",
+            "virtual_attribute_value": "810279539516294",
+            "contextual_filters": null
+          },
+          {
+            "display_name": "Mini Boden",
+            "value": "247009689729303",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "mini-boden-kids-clothing",
+            "virtual_attribute_value": "314466113317436",
+            "contextual_filters": null
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "kids-clothing"
+        },
+        "range": null
+      },
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "character",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Character",
+        "choices": [
+          {
+            "display_name": "Peppa Pig",
+            "value": "324520138854521",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "peppa-pig-clothes",
+            "virtual_attribute_value": "466158124702170",
+            "contextual_filters": null
+          },
+          {
+            "display_name": "Snoopy",
+            "value": "235202551256690",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "kids-clothing",
+            "virtual_attribute_value": "355026795928870",
+            "contextual_filters": "{\"character\":[355026795928870]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "kids-clothing"
+        },
+        "range": null
+      }
+    ]
+  }
+}

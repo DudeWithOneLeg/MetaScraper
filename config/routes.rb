@@ -35,6 +35,7 @@ Rails.application.routes.draw do
   get "/facebook_hobbies_search", to: "facebook#marketplace_hobbies_search"
   get "/facebook_home_search", to: "facebook#marketplace_home_search"
   get "/facebook_make_search", to: "facebook#fetch_data"
+  get "/test_scrape", to: "facebook#test_scrape"
   get "/facebook_apparel_categories_search", to: "facebook#fetch_apparel_categories"
   get "/facebook_home_improvement_search", to: "facebook#marketplace_home_improvement_search"
   get "/facebook_home_sales_search", to: "facebook#marketplace_home_sales_search"
