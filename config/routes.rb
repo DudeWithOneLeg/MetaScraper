@@ -47,6 +47,10 @@ Rails.application.routes.draw do
     scope module: 'places' do
       get "/facebook_places_search", to: "places#places_search"
     end
+
+    scope module: 'groups' do
+      get "/facebook_groups_search", to: "groups#groups_search"
+    end
     
     get "/marketplace_search", to: "facebook#marketplace_search"
     get "/marketplace_listing", to: "facebook#marketplace_listing"
