@@ -39,6 +39,11 @@ Rails.application.routes.draw do
       get "/facebook_toys_games_search", to: "marketplace#marketplace_toys_games_search"
 
     end
+
+    scope module: 'pages' do
+      get "/facebook_pages_search", to: "pages#pages_search"
+    end
+    
     get "/marketplace_search", to: "facebook#marketplace_search"
     get "/marketplace_listing", to: "facebook#marketplace_listing"
     get "/facebook_user_search", to: "facebook#facebook_user_search"
