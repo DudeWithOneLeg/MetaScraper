@@ -1,0 +1,1623 @@
+{
+  "bird-wildlife-accessories": {
+    "sub_categories": [],
+    "fields": []
+  },
+  "fencing-supplies": {
+    "sub_categories": [],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "material",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Material",
+        "choices": [
+          {
+            "display_name": "Metal",
+            "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "fencing-supplies",
+            "virtual_attribute_value": "193510681973743",
+            "contextual_filters": "{\"material\":[193510681973743]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "fencing-supplies"
+        },
+        "range": null
+      }
+    ]
+  },
+  "garden-decor": {
+    "sub_categories": [],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "material",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Material",
+        "choices": [
+          {
+            "display_name": "Fabric",
+            "value": "169154570695701;174077836857230;180978882832501;182239226031260;183372619239640;254619445203702;256983815182270;262186574490614;268577760672455;275235796432738;278618459444954;281010142799636;284339085751144;288205465130294;302999260523638;306746739930061;317148415639509;318788008899557;322445028544129;322868148268177;336922700191849;344896982725214;351371512292948;352218225391232;355136368558413;368639720393113;378047059404621;391482064981785;429874864487748;446839189174644;464608080692701;470777996778391;486542198531351;499322193868117;539462859801178;549773952129079;555721914873915;592007971214850;602443236840619;673459989715595;675139256193936;701025983605269;703627386686783;714156768963764;769092930129138;794360440956942;869378453261098;1117657321740966;1147845638719590;1166063730215291;1736074476520093;1751884761589488;1851742481541962;1913281462312427;2076013692463028;2079511722378570;2156637317752498;2201322886781850;2237911936218892;2264688166879025;2293383864224267;2696393230586090",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "garden-decor",
+            "virtual_attribute_value": "164280945005600",
+            "contextual_filters": "{\"material\":[164280945005600]}"
+          },
+          {
+            "display_name": "Metal",
+            "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "garden-decor",
+            "virtual_attribute_value": "193510681973743",
+            "contextual_filters": "{\"material\":[193510681973743]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "garden-decor"
+        },
+        "range": null
+      }
+    ]
+  },
+  "garden-structures": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "arbors",
+        "seo_page_is_geo_agnostic": true,
+        "seo_localized_page_title": "Arbors",
+        "virtual_category": {
+          "name": "Arbors",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "2721270117951356"
+        },
+        "id": "2732805963468472",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "material",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Material",
+            "choices": [
+              {
+                "display_name": "Metal",
+                "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "garden-structures",
+                "virtual_attribute_value": "193510681973743",
+                "contextual_filters": "{\"material\":[193510681973743]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "garden-structures"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "gazebos",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Gazebos",
+        "virtual_category": {
+          "name": "Gazebos",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "679106562625949"
+        },
+        "id": "2722214617886155",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "material",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Material",
+            "choices": [
+              {
+                "display_name": "Metal",
+                "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "garden-structures",
+                "virtual_attribute_value": "193510681973743",
+                "contextual_filters": "{\"material\":[193510681973743]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "garden-structures"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "greenhouses",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Greenhouses",
+        "virtual_category": {
+          "name": "Greenhouses",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "538284146894921"
+        },
+        "id": "2708515885934923",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "material",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Material",
+            "choices": [
+              {
+                "display_name": "Metal",
+                "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "garden-structures",
+                "virtual_attribute_value": "193510681973743",
+                "contextual_filters": "{\"material\":[193510681973743]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "garden-structures"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "marquees",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Marquees & Tents",
+        "virtual_category": {
+          "name": "Marquees & Tents",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "866893750414652"
+        },
+        "id": "2767675736683971",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "material",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Material",
+            "choices": [
+              {
+                "display_name": "Metal",
+                "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "garden-structures",
+                "virtual_attribute_value": "193510681973743",
+                "contextual_filters": "{\"material\":[193510681973743]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "garden-structures"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "patio-umbrellas",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Patio Umbrellas",
+        "virtual_category": {
+          "name": "Patio Umbrellas",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "172820434028175"
+        },
+        "id": "3624461934260424",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "material",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Material",
+            "choices": [
+              {
+                "display_name": "Metal",
+                "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "garden-structures",
+                "virtual_attribute_value": "193510681973743",
+                "contextual_filters": "{\"material\":[193510681973743]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "garden-structures"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "pergolas",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Pergolas",
+        "virtual_category": {
+          "name": "Pergolas",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "175271343816192"
+        },
+        "id": "2688497124566787",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "material",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Material",
+            "choices": [
+              {
+                "display_name": "Metal",
+                "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "garden-structures",
+                "virtual_attribute_value": "193510681973743",
+                "contextual_filters": "{\"material\":[193510681973743]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "garden-structures"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "shade-sails",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Shade Sails",
+        "virtual_category": {
+          "name": "Shade Sails",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "178197716576932"
+        },
+        "id": "2472561836181693",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "material",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Material",
+            "choices": [
+              {
+                "display_name": "Metal",
+                "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "garden-structures",
+                "virtual_attribute_value": "193510681973743",
+                "contextual_filters": "{\"material\":[193510681973743]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "garden-structures"
+            },
+            "range": null
+          }
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "material",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Material",
+        "choices": [
+          {
+            "display_name": "Metal",
+            "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "garden-structures",
+            "virtual_attribute_value": "193510681973743",
+            "contextual_filters": "{\"material\":[193510681973743]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "garden-structures"
+        },
+        "range": null
+      }
+    ]
+  },
+  "garden-supplies": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "compost-bins",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Composters",
+        "virtual_category": {
+          "name": "Composters",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "786088581901187"
+        },
+        "id": "3275733639120161",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "gardening-tools",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Garden Tools",
+        "virtual_category": {
+          "name": "Garden Tools",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "2488217964617494"
+        },
+        "id": "2572513272808627",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "gardening-gloves",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Gardening Gloves",
+        "virtual_category": {
+          "name": "Gardening Gloves",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "240133640311192"
+        },
+        "id": "2435158716589621",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "hydroponic-supplies",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Hydroponic Supplies",
+        "virtual_category": {
+          "name": "Hydroponic Supplies",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "117925409619698"
+        },
+        "id": "2792898290732685",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "garden-kneelers",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Kneelers, Pads & Seats",
+        "virtual_category": {
+          "name": "Kneelers, Pads & Seats",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "863258690763232"
+        },
+        "id": "2595953087182262",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "landscaping-materials",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Landscaping Materials",
+        "virtual_category": {
+          "name": "Landscaping Materials",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "824112954765316"
+        },
+        "id": "2905758926128682",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "plant-supplies",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Plant Supplies",
+        "virtual_category": {
+          "name": "Plant Supplies",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "249173716491427"
+        },
+        "id": "2799260546863806",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "plants-seeds-bulbs",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Plants, Seeds & Bulbs",
+        "virtual_category": {
+          "name": "Plants, Seeds & Bulbs",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "1490941607734259"
+        },
+        "id": "3818024001572321",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "watering-equipment",
+        "seo_page_is_geo_agnostic": true,
+        "seo_localized_page_title": "Watering Equipment",
+        "virtual_category": {
+          "name": "Watering Equipment",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "2534480173496279"
+        },
+        "id": "4182336595126928",
+        "fields": []
+      }
+    ],
+    "fields": []
+  },
+  "outdoor-cooking-equipment": {
+    "sub_categories": null,
+    "fields": []
+  },
+  "outdoor-lighting": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "landscape-lights",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Landscape Lights",
+        "virtual_category": {
+          "name": "Landscape Lights",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "178155483525014"
+        },
+        "id": "3615680585138755",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "material",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Material",
+            "choices": [
+              {
+                "display_name": "Metal",
+                "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "outdoor-lighting",
+                "virtual_attribute_value": "193510681973743",
+                "contextual_filters": "{\"material\":[193510681973743]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "outdoor-lighting"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "porch-lights",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Porch Lights",
+        "virtual_category": {
+          "name": "Porch Lights",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "599628373948355"
+        },
+        "id": "2730083523742042",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "material",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Material",
+            "choices": [
+              {
+                "display_name": "Metal",
+                "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "outdoor-lighting",
+                "virtual_attribute_value": "193510681973743",
+                "contextual_filters": "{\"material\":[193510681973743]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "outdoor-lighting"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "security-lights",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Security Lights",
+        "virtual_category": {
+          "name": "Security Lights",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "163170458451752"
+        },
+        "id": "3207799315903002",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "material",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Material",
+            "choices": [
+              {
+                "display_name": "Metal",
+                "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "outdoor-lighting",
+                "virtual_attribute_value": "193510681973743",
+                "contextual_filters": "{\"material\":[193510681973743]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "outdoor-lighting"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "string-lights",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "String Lights",
+        "virtual_category": {
+          "name": "String Lights",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "484599379154480"
+        },
+        "id": "2794740200572871",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "material",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Material",
+            "choices": [
+              {
+                "display_name": "Metal",
+                "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "outdoor-lighting",
+                "virtual_attribute_value": "193510681973743",
+                "contextual_filters": "{\"material\":[193510681973743]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "outdoor-lighting"
+            },
+            "range": null
+          }
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "material",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Material",
+        "choices": [
+          {
+            "display_name": "Metal",
+            "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "outdoor-lighting",
+            "virtual_attribute_value": "193510681973743",
+            "contextual_filters": "{\"material\":[193510681973743]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "outdoor-lighting"
+        },
+        "range": null
+      }
+    ]
+  },
+  "power-equipments": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "chainsaws",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Chainsaws",
+        "virtual_category": {
+          "name": "Chainsaws",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "200168564690243"
+        },
+        "id": "2624701750901262",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Craftsman",
+                "value": "237881153776129",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "craftsman-snow-blowers",
+                "virtual_attribute_value": "287826089094325",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "John Deere",
+                "value": "282672509806409",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "596762284599454",
+                "contextual_filters": "{\"brand\":[596762284599454]}"
+              },
+              {
+                "display_name": "STIHL",
+                "value": "1257020074675281",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "911017966369636",
+                "contextual_filters": "{\"brand\":[911017966369636]}"
+              },
+              {
+                "display_name": "Toro",
+                "value": "883281735386949",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "3163746473708217",
+                "contextual_filters": "{\"brand\":[3163746473708217]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "power-equipments"
+            },
+            "range": null
+          },
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "material",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Material",
+            "choices": [
+              {
+                "display_name": "Metal",
+                "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "193510681973743",
+                "contextual_filters": "{\"material\":[193510681973743]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "power-equipments"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "edgers",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Edgers",
+        "virtual_category": {
+          "name": "Edgers",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "231463448063512"
+        },
+        "id": "2865850626835970",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Craftsman",
+                "value": "237881153776129",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "craftsman-snow-blowers",
+                "virtual_attribute_value": "287826089094325",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "John Deere",
+                "value": "282672509806409",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "596762284599454",
+                "contextual_filters": "{\"brand\":[596762284599454]}"
+              },
+              {
+                "display_name": "STIHL",
+                "value": "1257020074675281",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "911017966369636",
+                "contextual_filters": "{\"brand\":[911017966369636]}"
+              },
+              {
+                "display_name": "Toro",
+                "value": "883281735386949",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "3163746473708217",
+                "contextual_filters": "{\"brand\":[3163746473708217]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "power-equipments"
+            },
+            "range": null
+          },
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "material",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Material",
+            "choices": [
+              {
+                "display_name": "Metal",
+                "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "193510681973743",
+                "contextual_filters": "{\"material\":[193510681973743]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "power-equipments"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "hedge-trimmers",
+        "seo_page_is_geo_agnostic": true,
+        "seo_localized_page_title": "Hedge Trimmers",
+        "virtual_category": {
+          "name": "Hedge Trimmers",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "176692040224610"
+        },
+        "id": "2543025269156219",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Craftsman",
+                "value": "237881153776129",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "craftsman-snow-blowers",
+                "virtual_attribute_value": "287826089094325",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "John Deere",
+                "value": "282672509806409",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "596762284599454",
+                "contextual_filters": "{\"brand\":[596762284599454]}"
+              },
+              {
+                "display_name": "STIHL",
+                "value": "1257020074675281",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "911017966369636",
+                "contextual_filters": "{\"brand\":[911017966369636]}"
+              },
+              {
+                "display_name": "Toro",
+                "value": "883281735386949",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "3163746473708217",
+                "contextual_filters": "{\"brand\":[3163746473708217]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "power-equipments"
+            },
+            "range": null
+          },
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "material",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Material",
+            "choices": [
+              {
+                "display_name": "Metal",
+                "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "193510681973743",
+                "contextual_filters": "{\"material\":[193510681973743]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "power-equipments"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "lawn-mowers",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Lawn Mowers",
+        "virtual_category": {
+          "name": "Lawn Mowers",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "498015897583441"
+        },
+        "id": "2883223928358642",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Craftsman",
+                "value": "237881153776129",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "craftsman-snow-blowers",
+                "virtual_attribute_value": "287826089094325",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "John Deere",
+                "value": "282672509806409",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "596762284599454",
+                "contextual_filters": "{\"brand\":[596762284599454]}"
+              },
+              {
+                "display_name": "STIHL",
+                "value": "1257020074675281",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "911017966369636",
+                "contextual_filters": "{\"brand\":[911017966369636]}"
+              },
+              {
+                "display_name": "Toro",
+                "value": "883281735386949",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "3163746473708217",
+                "contextual_filters": "{\"brand\":[3163746473708217]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "power-equipments"
+            },
+            "range": null
+          },
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "material",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Material",
+            "choices": [
+              {
+                "display_name": "Metal",
+                "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "193510681973743",
+                "contextual_filters": "{\"material\":[193510681973743]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "power-equipments"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "leaf-blowers",
+        "seo_page_is_geo_agnostic": true,
+        "seo_localized_page_title": "Leaf Blowers",
+        "virtual_category": {
+          "name": "Leaf Blowers",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "792350967918445"
+        },
+        "id": "2123204421113703",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Craftsman",
+                "value": "237881153776129",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "craftsman-snow-blowers",
+                "virtual_attribute_value": "287826089094325",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "John Deere",
+                "value": "282672509806409",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "596762284599454",
+                "contextual_filters": "{\"brand\":[596762284599454]}"
+              },
+              {
+                "display_name": "STIHL",
+                "value": "1257020074675281",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "911017966369636",
+                "contextual_filters": "{\"brand\":[911017966369636]}"
+              },
+              {
+                "display_name": "Toro",
+                "value": "883281735386949",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "3163746473708217",
+                "contextual_filters": "{\"brand\":[3163746473708217]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "power-equipments"
+            },
+            "range": null
+          },
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "material",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Material",
+            "choices": [
+              {
+                "display_name": "Metal",
+                "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "193510681973743",
+                "contextual_filters": "{\"material\":[193510681973743]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "power-equipments"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "pressure-washers",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Pressure Washers",
+        "virtual_category": {
+          "name": "Pressure Washers",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "1117122358631125"
+        },
+        "id": "2532882156802486",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Craftsman",
+                "value": "237881153776129",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "craftsman-snow-blowers",
+                "virtual_attribute_value": "287826089094325",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "John Deere",
+                "value": "282672509806409",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "596762284599454",
+                "contextual_filters": "{\"brand\":[596762284599454]}"
+              },
+              {
+                "display_name": "STIHL",
+                "value": "1257020074675281",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "911017966369636",
+                "contextual_filters": "{\"brand\":[911017966369636]}"
+              },
+              {
+                "display_name": "Toro",
+                "value": "883281735386949",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "3163746473708217",
+                "contextual_filters": "{\"brand\":[3163746473708217]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "power-equipments"
+            },
+            "range": null
+          },
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "material",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Material",
+            "choices": [
+              {
+                "display_name": "Metal",
+                "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "193510681973743",
+                "contextual_filters": "{\"material\":[193510681973743]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "power-equipments"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "snow-blowers",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Snow Blowers",
+        "virtual_category": {
+          "name": "Snow Blowers",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "605260186937936"
+        },
+        "id": "2590071371054471",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Craftsman",
+                "value": "237881153776129",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "craftsman-snow-blowers",
+                "virtual_attribute_value": "287826089094325",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "John Deere",
+                "value": "282672509806409",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "596762284599454",
+                "contextual_filters": "{\"brand\":[596762284599454]}"
+              },
+              {
+                "display_name": "STIHL",
+                "value": "1257020074675281",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "911017966369636",
+                "contextual_filters": "{\"brand\":[911017966369636]}"
+              },
+              {
+                "display_name": "Toro",
+                "value": "883281735386949",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "3163746473708217",
+                "contextual_filters": "{\"brand\":[3163746473708217]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "power-equipments"
+            },
+            "range": null
+          },
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "material",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Material",
+            "choices": [
+              {
+                "display_name": "Metal",
+                "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "193510681973743",
+                "contextual_filters": "{\"material\":[193510681973743]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "power-equipments"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "tillers",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Tillers",
+        "virtual_category": {
+          "name": "Tillers",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "251448429825292"
+        },
+        "id": "4092719494136348",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Craftsman",
+                "value": "237881153776129",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "craftsman-snow-blowers",
+                "virtual_attribute_value": "287826089094325",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "John Deere",
+                "value": "282672509806409",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "596762284599454",
+                "contextual_filters": "{\"brand\":[596762284599454]}"
+              },
+              {
+                "display_name": "STIHL",
+                "value": "1257020074675281",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "911017966369636",
+                "contextual_filters": "{\"brand\":[911017966369636]}"
+              },
+              {
+                "display_name": "Toro",
+                "value": "883281735386949",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "3163746473708217",
+                "contextual_filters": "{\"brand\":[3163746473708217]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "power-equipments"
+            },
+            "range": null
+          },
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "material",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Material",
+            "choices": [
+              {
+                "display_name": "Metal",
+                "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "power-equipments",
+                "virtual_attribute_value": "193510681973743",
+                "contextual_filters": "{\"material\":[193510681973743]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "power-equipments"
+            },
+            "range": null
+          }
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "brand",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Brand",
+        "choices": [
+          {
+            "display_name": "Craftsman",
+            "value": "237881153776129",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "craftsman-snow-blowers",
+            "virtual_attribute_value": "287826089094325",
+            "contextual_filters": null
+          },
+          {
+            "display_name": "John Deere",
+            "value": "282672509806409",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "power-equipments",
+            "virtual_attribute_value": "596762284599454",
+            "contextual_filters": "{\"brand\":[596762284599454]}"
+          },
+          {
+            "display_name": "STIHL",
+            "value": "1257020074675281",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "power-equipments",
+            "virtual_attribute_value": "911017966369636",
+            "contextual_filters": "{\"brand\":[911017966369636]}"
+          },
+          {
+            "display_name": "Toro",
+            "value": "883281735386949",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "power-equipments",
+            "virtual_attribute_value": "3163746473708217",
+            "contextual_filters": "{\"brand\":[3163746473708217]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "power-equipments"
+        },
+        "range": null
+      },
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "material",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Material",
+        "choices": [
+          {
+            "display_name": "Metal",
+            "value": "112241159701616;218601238856767;223054755075269;254891675219206;268509864082638;269688310418712;307061096562357;313969799432256;316293305769104;319470682212758;334983853815606;358165408253807;549438562175001;569400823506620;736949356658126;1837159313079667;2110065669025533;2174037872867856",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "power-equipments",
+            "virtual_attribute_value": "193510681973743",
+            "contextual_filters": "{\"material\":[193510681973743]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "power-equipments"
+        },
+        "range": null
+      }
+    ]
+  },
+  "pools-spas": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "hot-tub-covers",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Hot Tub Covers",
+        "virtual_category": {
+          "name": "Hot Tub Covers",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "490823684935928"
+        },
+        "id": "2839833926055054",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "hot-tubs",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Hot Tubs",
+        "virtual_category": {
+          "name": "Hot Tubs",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "574392793143647"
+        },
+        "id": "2513148152064448",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "pool-equipment",
+        "seo_page_is_geo_agnostic": true,
+        "seo_localized_page_title": "Pool Equipment",
+        "virtual_category": {
+          "name": "Pool Equipment",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "595560961290585"
+        },
+        "id": "2747993558654912",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "pool-floats",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Pool Floats",
+        "virtual_category": {
+          "name": "Pool Floats",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "260478414931226"
+        },
+        "id": "3005772759455550",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "saunas",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Saunas",
+        "virtual_category": {
+          "name": "Saunas",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "115251596583424"
+        },
+        "id": "3100156460025873",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "swimming-pools",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Swimming Pools",
+        "virtual_category": {
+          "name": "Swimming Pools",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "227945034869647"
+        },
+        "id": "3249540538468591",
+        "fields": []
+      }
+    ],
+    "fields": []
+  },
+  "water-features": {
+    "sub_categories": [],
+    "fields": []
+  }
+}

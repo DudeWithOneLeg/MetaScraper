@@ -1,0 +1,387 @@
+{
+  "kids": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "baby-feeding-supplies",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Baby & Toddler Feeding Supplies",
+        "virtual_category": {
+          "name": "Baby & Toddler Feeding Supplies",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "231406051470424"
+        },
+        "id": "1712923062165156",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "baby-bathing-supplies",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Baby Bathing Supplies",
+        "virtual_category": {
+          "name": "Baby Bathing Supplies",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "711725362967453"
+        },
+        "id": "3190935897618135",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "baby-carriers",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Baby Carriers",
+        "virtual_category": {
+          "name": "Baby Carriers",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "426457621319759"
+        },
+        "id": "2655578241127528",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "baby-diapers",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Baby Diapering Items",
+        "virtual_category": {
+          "name": "Baby Diapering Items",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "741960612917872"
+        },
+        "id": "1922457144524723",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "baby-gear",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Baby Gear",
+        "virtual_category": {
+          "name": "Baby Gear",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "938285159864923"
+        },
+        "id": "2333958046641155",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "baby-health-and-safety",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Baby Safety & Health",
+        "virtual_category": {
+          "name": "Baby Safety & Health",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "804217713327168"
+        },
+        "id": "2271112336349915",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "strollers",
+        "seo_page_is_geo_agnostic": true,
+        "seo_localized_page_title": "Strollers",
+        "virtual_category": {
+          "name": "Baby Strollers",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "235209920765529"
+        },
+        "id": "2145433598890058",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "baby-toys",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Baby Toys",
+        "virtual_category": {
+          "name": "Baby Toys",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "552326112356529"
+        },
+        "id": "2819323991508754",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "car-seats",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Car Seats & Accessories",
+        "virtual_category": {
+          "name": "Car Seats & Accessories",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "2287798107985866"
+        },
+        "id": "2445862795480806",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "nursery-bedding",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Nursery Bedding",
+        "virtual_category": {
+          "name": "Nursery Bedding",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "492052664949692"
+        },
+        "id": "1975157815921199",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "nursery-decor",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Nursery Decor",
+        "virtual_category": {
+          "name": "Nursery Decor",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "229613128124547"
+        },
+        "id": "3073280739360766",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "potty-training",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Potty Training Items",
+        "virtual_category": {
+          "name": "Potty Training Items",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "497069874408366"
+        },
+        "id": "2985724434835001",
+        "fields": []
+      }
+    ],
+    "fields": []
+  },
+  "health": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "beauty-products",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Beauty Products",
+        "virtual_category": {
+          "name": "Beauty Products",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "1824335987707985"
+        },
+        "id": "2942884012461872",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Fitbit",
+                "value": "2253226981373807",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "health",
+                "virtual_attribute_value": "513331546237221",
+                "contextual_filters": "{\"brand\":[513331546237221]}"
+              },
+              {
+                "display_name": "Secret",
+                "value": "326666418129280",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "health",
+                "virtual_attribute_value": "297154608504091",
+                "contextual_filters": "{\"brand\":[297154608504091]}"
+              },
+              {
+                "display_name": "Victoria's Secret",
+                "value": "270027640315332",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "health",
+                "virtual_attribute_value": "470272020820413",
+                "contextual_filters": "{\"brand\":[470272020820413]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "health"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "health-care-products",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Health Care Products",
+        "virtual_category": {
+          "name": "Health Care Products",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "639841780196295"
+        },
+        "id": "3152015928150945",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Fitbit",
+                "value": "2253226981373807",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "health",
+                "virtual_attribute_value": "513331546237221",
+                "contextual_filters": "{\"brand\":[513331546237221]}"
+              },
+              {
+                "display_name": "Secret",
+                "value": "326666418129280",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "health",
+                "virtual_attribute_value": "297154608504091",
+                "contextual_filters": "{\"brand\":[297154608504091]}"
+              },
+              {
+                "display_name": "Victoria's Secret",
+                "value": "270027640315332",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "health",
+                "virtual_attribute_value": "470272020820413",
+                "contextual_filters": "{\"brand\":[470272020820413]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "health"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "personal-care-products",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Personal Care Products",
+        "virtual_category": {
+          "name": "Personal Care Products",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "528406664487817"
+        },
+        "id": "2672755502833562",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Fitbit",
+                "value": "2253226981373807",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "health",
+                "virtual_attribute_value": "513331546237221",
+                "contextual_filters": "{\"brand\":[513331546237221]}"
+              },
+              {
+                "display_name": "Secret",
+                "value": "326666418129280",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "health",
+                "virtual_attribute_value": "297154608504091",
+                "contextual_filters": "{\"brand\":[297154608504091]}"
+              },
+              {
+                "display_name": "Victoria's Secret",
+                "value": "270027640315332",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "health",
+                "virtual_attribute_value": "470272020820413",
+                "contextual_filters": "{\"brand\":[470272020820413]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "health"
+            },
+            "range": null
+          }
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "brand",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Brand",
+        "choices": [
+          {
+            "display_name": "Fitbit",
+            "value": "2253226981373807",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "health",
+            "virtual_attribute_value": "513331546237221",
+            "contextual_filters": "{\"brand\":[513331546237221]}"
+          },
+          {
+            "display_name": "Secret",
+            "value": "326666418129280",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "health",
+            "virtual_attribute_value": "297154608504091",
+            "contextual_filters": "{\"brand\":[297154608504091]}"
+          },
+          {
+            "display_name": "Victoria's Secret",
+            "value": "270027640315332",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "health",
+            "virtual_attribute_value": "470272020820413",
+            "contextual_filters": "{\"brand\":[470272020820413]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "health"
+        },
+        "range": null
+      }
+    ]
+  }
+}

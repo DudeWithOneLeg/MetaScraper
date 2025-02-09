@@ -1,0 +1,963 @@
+{
+  "exercise-fitness": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "ab-machines",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Ab Machines",
+        "virtual_category": {
+          "name": "Ab Machines",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "203652810685382"
+        },
+        "id": "2753943354692057",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "SOLE",
+                "value": "488584368328489",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "exercise-fitness",
+                "virtual_attribute_value": "3932172656865427",
+                "contextual_filters": "{\"brand\":[3932172656865427]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "exercise-fitness"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "aerobic-steppers",
+        "seo_page_is_geo_agnostic": true,
+        "seo_localized_page_title": "Aerobic Steps",
+        "virtual_category": {
+          "name": "Aerobic Steps",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "204068290736311"
+        },
+        "id": "3327142897356488",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "SOLE",
+                "value": "488584368328489",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "exercise-fitness",
+                "virtual_attribute_value": "3932172656865427",
+                "contextual_filters": "{\"brand\":[3932172656865427]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "exercise-fitness"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "cardio-equipment",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Cardio Equipment",
+        "virtual_category": {
+          "name": "Cardio Equipment",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "1519892204852513"
+        },
+        "id": "2746107675478141",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "SOLE",
+                "value": "488584368328489",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "exercise-fitness",
+                "virtual_attribute_value": "3932172656865427",
+                "contextual_filters": "{\"brand\":[3932172656865427]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "exercise-fitness"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "exercise-balls",
+        "seo_page_is_geo_agnostic": true,
+        "seo_localized_page_title": "Exercise Balls",
+        "virtual_category": {
+          "name": "Exercise Balls",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "602915457170541"
+        },
+        "id": "3000113540021661",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "SOLE",
+                "value": "488584368328489",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "exercise-fitness",
+                "virtual_attribute_value": "3932172656865427",
+                "contextual_filters": "{\"brand\":[3932172656865427]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "exercise-fitness"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "exercise-bands",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Exercise Bands",
+        "virtual_category": {
+          "name": "Exercise Bands",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "475382680038371"
+        },
+        "id": "2991600604217436",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "SOLE",
+                "value": "488584368328489",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "exercise-fitness",
+                "virtual_attribute_value": "3932172656865427",
+                "contextual_filters": "{\"brand\":[3932172656865427]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "exercise-fitness"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "weight-benches",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Weight benches",
+        "virtual_category": {
+          "name": "Exercise Benches",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "2678147462267864"
+        },
+        "id": "2743994685708085",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "SOLE",
+                "value": "488584368328489",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "exercise-fitness",
+                "virtual_attribute_value": "3932172656865427",
+                "contextual_filters": "{\"brand\":[3932172656865427]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "exercise-fitness"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "pilates-machines",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Pilates Machines",
+        "virtual_category": {
+          "name": "Pilates Machines",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "489727761927160"
+        },
+        "id": "3495866123820963",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "SOLE",
+                "value": "488584368328489",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "exercise-fitness",
+                "virtual_attribute_value": "3932172656865427",
+                "contextual_filters": "{\"brand\":[3932172656865427]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "exercise-fitness"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "pull-up-bars",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Pull Up Bars",
+        "virtual_category": {
+          "name": "Pull Up Bars",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "1444264389066256"
+        },
+        "id": "2853968717993600",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "SOLE",
+                "value": "488584368328489",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "exercise-fitness",
+                "virtual_attribute_value": "3932172656865427",
+                "contextual_filters": "{\"brand\":[3932172656865427]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "exercise-fitness"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "vibration-exercise-machines",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Vibration Exercise Machines",
+        "virtual_category": {
+          "name": "Vibration Exercise Machines",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "680260509452500"
+        },
+        "id": "1994567167335147",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "SOLE",
+                "value": "488584368328489",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "exercise-fitness",
+                "virtual_attribute_value": "3932172656865427",
+                "contextual_filters": "{\"brand\":[3932172656865427]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "exercise-fitness"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "weight-lifting",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Weight Lifting Equipment",
+        "virtual_category": {
+          "name": "Weight Lifting Equipment",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "486270468972173"
+        },
+        "id": "3626349314073682",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "SOLE",
+                "value": "488584368328489",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "exercise-fitness",
+                "virtual_attribute_value": "3932172656865427",
+                "contextual_filters": "{\"brand\":[3932172656865427]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "exercise-fitness"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "yoga-blocks",
+        "seo_page_is_geo_agnostic": true,
+        "seo_localized_page_title": "Yoga Blocks",
+        "virtual_category": {
+          "name": "Yoga Blocks",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "2224283524541709"
+        },
+        "id": "2740538859326149",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "SOLE",
+                "value": "488584368328489",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "exercise-fitness",
+                "virtual_attribute_value": "3932172656865427",
+                "contextual_filters": "{\"brand\":[3932172656865427]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "exercise-fitness"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "yoga-mats",
+        "seo_page_is_geo_agnostic": true,
+        "seo_localized_page_title": "Yoga Mats",
+        "virtual_category": {
+          "name": "Yoga Mats",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "2882155105178856"
+        },
+        "id": "2488152914644695",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "SOLE",
+                "value": "488584368328489",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "exercise-fitness",
+                "virtual_attribute_value": "3932172656865427",
+                "contextual_filters": "{\"brand\":[3932172656865427]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "exercise-fitness"
+            },
+            "range": null
+          }
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "brand",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Brand",
+        "choices": [
+          {
+            "display_name": "SOLE",
+            "value": "488584368328489",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "exercise-fitness",
+            "virtual_attribute_value": "3932172656865427",
+            "contextual_filters": "{\"brand\":[3932172656865427]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "exercise-fitness"
+        },
+        "range": null
+      }
+    ]
+  },
+  "indoor-games": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "air-hockey",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Air Hockey Tables",
+        "virtual_category": {
+          "name": "Air Hockey",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "1057902821275729"
+        },
+        "id": "2601676389958053",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "bowling",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Bowling Accessories",
+        "virtual_category": {
+          "name": "Bowling Accessories",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "792267801292256"
+        },
+        "id": "2615656875223594",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "dartboards",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Dartboards",
+        "virtual_category": {
+          "name": "Dartboards",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "160980381995739"
+        },
+        "id": "2962570847141579",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "foosball-tables",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Foosball Tables",
+        "virtual_category": {
+          "name": "Foosball Tables",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "474463150164870"
+        },
+        "id": "2657466974376486",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "multi-game-tables",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Multi-Game Tables",
+        "virtual_category": {
+          "name": "Multi-Game Tables",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "2901901473458646"
+        },
+        "id": "3606396746134202",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "ping-pong",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Ping Pong Equipment",
+        "virtual_category": {
+          "name": "Ping Pong Equipment",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "523349451631339"
+        },
+        "id": "2813316222078944",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "pool-cues",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Pool Cues",
+        "virtual_category": {
+          "name": "Pool Cues",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "1570818899764486"
+        },
+        "id": "3261290750627910",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "pool-tables",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Pool Tables",
+        "virtual_category": {
+          "name": "Pool Tables",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "2700101150069694"
+        },
+        "id": "2004036343033134",
+        "fields": []
+      }
+    ],
+    "fields": []
+  },
+  "outdoor-games": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "disc-golf",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Disc Golf Equipment",
+        "virtual_category": {
+          "name": "Disc Golf Equipment",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "881024795691742"
+        },
+        "id": "2984365878264749",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "lawn-games",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Lawn Games",
+        "virtual_category": {
+          "name": "Lawn Games",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "636163903805465"
+        },
+        "id": "2702775096426233",
+        "fields": []
+      }
+    ],
+    "fields": []
+  },
+  "outdoor-recreation-gear": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "airsoft-equipment",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Airsoft Equipment",
+        "virtual_category": {
+          "name": "Airsoft Equipment",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "174867330413403"
+        },
+        "id": "3007410405970466",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "camping-hiking-gear",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Camping & Hiking Equipment",
+        "virtual_category": {
+          "name": "Camping & Hiking Equipment",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "676825899493914"
+        },
+        "id": "1663682810423533",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "climbing-gear",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Climbing Gear",
+        "virtual_category": {
+          "name": "Climbing Gear",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "1040233866387963"
+        },
+        "id": "3100131803339932",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "equestrian-equipment",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Equestrian Equipment",
+        "virtual_category": {
+          "name": "Equestrian Equipment",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "3033779696654024"
+        },
+        "id": "3369180313152284",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "fishing-gear",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Fishing Gear",
+        "virtual_category": {
+          "name": "Fishing Gear",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "526865667960331"
+        },
+        "id": "2423503114401932",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "hunting-gear",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Hunting Gear",
+        "virtual_category": {
+          "name": "Hunting Gear",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "1139666863100702"
+        },
+        "id": "3014102015284196",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "roller-skating-gear",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Roller Skating Gear",
+        "virtual_category": {
+          "name": "Roller Skating Gear",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "522276405362683"
+        },
+        "id": "2383415628428914",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "skateboarding-gear",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Skateboarding Gear",
+        "virtual_category": {
+          "name": "Skateboarding Gear",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "227361904955863"
+        },
+        "id": "3056716741013227",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "water-sports-boating-gear",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Water Sports & Boating Equipment",
+        "virtual_category": {
+          "name": "Water Sports & Boating Equipment",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "916296908726161"
+        },
+        "id": "3009684515713522",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "winter-sports-equipment",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Winter Sports Equipment",
+        "virtual_category": {
+          "name": "Winter Sports Equipment",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "227018078301545"
+        },
+        "id": "2897783240280827",
+        "fields": []
+      }
+    ],
+    "fields": []
+  },
+  "sports-gear": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "baseball-gear",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Baseball Gear",
+        "virtual_category": {
+          "name": "Baseball Gear",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "189708388899316"
+        },
+        "id": "3030012780351770",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "basketball-gear",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Basketball Gear",
+        "virtual_category": {
+          "name": "Basketball Gear",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "843706002746659"
+        },
+        "id": "2216984305080307",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "boxing-equipment",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Boxing Equipment",
+        "virtual_category": {
+          "name": "Boxing Equipment",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "799504003910138"
+        },
+        "id": "3369232726426268",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "cheerleading",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Cheerleading Gear",
+        "virtual_category": {
+          "name": "Cheerleading Gear",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "361650341628982"
+        },
+        "id": "2375812819209714",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "dancewear",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Dance Costumes & Shoes",
+        "virtual_category": {
+          "name": "Dancewear",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "1826022710907284"
+        },
+        "id": "3753499494742679",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "fencing",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Fencing",
+        "virtual_category": {
+          "name": "Fencing Gear",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "783355735938453"
+        },
+        "id": "2565044630289438",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "football-gear",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Football Gear",
+        "virtual_category": {
+          "name": "Football Gear",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "854603808296679"
+        },
+        "id": "2434751986630907",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "golf-gear",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Golf Equipment",
+        "virtual_category": {
+          "name": "Golf Equipment",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "454894901783768"
+        },
+        "id": "2533431590068383",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "gymnastics-equipment",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Gymnastics Equipment",
+        "virtual_category": {
+          "name": "Gymnastics Equipment",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "656058165082838"
+        },
+        "id": "3577698225583699",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "hockey-equipment",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Hockey Equipment",
+        "virtual_category": {
+          "name": "Hockey Equipment",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "1018300308568875"
+        },
+        "id": "2827383713966400",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "lacrosse-gear",
+        "seo_page_is_geo_agnostic": true,
+        "seo_localized_page_title": "Lacrosse Gear",
+        "virtual_category": {
+          "name": "Lacrosse Gear",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "184086342812000"
+        },
+        "id": "2988529057845838",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "soccer-gear",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Soccer Equipment",
+        "virtual_category": {
+          "name": "Soccer Equipment",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "370828593799372"
+        },
+        "id": "2386736014708454",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "tennis",
+        "seo_page_is_geo_agnostic": true,
+        "seo_localized_page_title": "Tennis Equipment",
+        "virtual_category": {
+          "name": "Tennis Equipment",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "189065192174860"
+        },
+        "id": "4258231617535960",
+        "fields": []
+      }
+    ],
+    "fields": []
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "bird-supplies": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "bird-cages",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Bird Cages",
+        "virtual_category": {
+          "name": "Bird Cages",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "513338772953636"
+        },
+        "id": "3868332289908914",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "bird-perches",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Bird Perches",
+        "virtual_category": {
+          "name": "Bird Perches",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "175389250385958"
+        },
+        "id": "3421744124564362",
+        "fields": []
+      }
+    ],
+    "fields": []
+  },
+  "cat-supplies": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "cat-scratchers",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Cat Scratchers",
+        "virtual_category": {
+          "name": "Cat Scratchers",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "162906181817063"
+        },
+        "id": "2680303705393329",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "cat-toys",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Cat Toys",
+        "virtual_category": {
+          "name": "Cat Toys",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "279252193049215"
+        },
+        "id": "2608066832634920",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "cat-trees",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Cat Trees",
+        "virtual_category": {
+          "name": "Cat Trees",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "2250088558630395"
+        },
+        "id": "2511012892343931",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "litter-boxes",
+        "seo_page_is_geo_agnostic": true,
+        "seo_localized_page_title": "Litter Boxes",
+        "virtual_category": {
+          "name": "Litter Boxes",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "208032590244152"
+        },
+        "id": "3469748049764102",
+        "fields": []
+      }
+    ],
+    "fields": []
+  },
+  "chicken-supplies": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "chicken-coops",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Chicken Coops",
+        "virtual_category": {
+          "name": "Chicken Coops",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "819242758582435"
+        },
+        "id": "3436838673053470",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "chicken-feeders",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Chicken Feeders",
+        "virtual_category": {
+          "name": "Chicken Feeders",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "159271042191784"
+        },
+        "id": "2273829402716960",
+        "fields": []
+      }
+    ],
+    "fields": []
+  },
+  "dog-supplies": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "dog-houses",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Dog Houses",
+        "virtual_category": {
+          "name": "Dog Houses",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "863014924149819"
+        },
+        "id": "2500411603400461",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "dog-toys",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Dog Toys",
+        "virtual_category": {
+          "name": "Dog Toys",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "257536705261286"
+        },
+        "id": "2810602679029337",
+        "fields": []
+      }
+    ],
+    "fields": []
+  },
+  "fish-supplies": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "aquarium-decorations",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Aquarium Decorations",
+        "virtual_category": {
+          "name": "Aquarium Decorations",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "3433387016703586"
+        },
+        "id": "2703985562970501",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "aquarium-filters",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Aquarium Filters",
+        "virtual_category": {
+          "name": "Aquarium Filters",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "184586719449403"
+        },
+        "id": "3434642369911189",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "fish-aquariums",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Aquarium",
+        "virtual_category": {
+          "name": "Fish Aquariums",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "466508454257591"
+        },
+        "id": "2665059856946079",
+        "fields": []
+      }
+    ],
+    "fields": []
+  },
+  "pet-collars-leashes": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "pet-tags",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Pet Tags",
+        "virtual_category": {
+          "name": "Pet Tags",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "262548598864892"
+        },
+        "id": "5266825390056761",
+        "fields": []
+      }
+    ],
+    "fields": []
+  },
+  "pet-crates": {
+    "sub_categories": [],
+    "fields": []
+  },
+  "pet-feeding-supplies": {
+    "sub_categories": [],
+    "fields": []
+  },
+  "pet-grooming": {
+    "sub_categories": [],
+    "fields": []
+  },
+  "pet-kennels": {
+    "sub_categories": [],
+    "fields": []
+  },
+  "reptile-supplies": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "reptile-cages",
+        "seo_page_is_geo_agnostic": true,
+        "seo_localized_page_title": "Reptile Cages",
+        "virtual_category": {
+          "name": "Reptile Cages",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "554488311813237"
+        },
+        "id": "3445153808893444",
+        "fields": []
+      }
+    ],
+    "fields": []
+  }
+}

@@ -1,0 +1,869 @@
+{
+  "action-figures": {
+    "sub_categories": [],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "character",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Character",
+        "choices": [
+          {
+            "display_name": "Akira",
+            "value": "300404704773317",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "action-figures",
+            "virtual_attribute_value": "299924771654207",
+            "contextual_filters": "{\"character\":[299924771654207]}"
+          },
+          {
+            "display_name": "Doctor Strange",
+            "value": "2865816100296874",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "doctor-strange-dolls-figures",
+            "virtual_attribute_value": "5352493354792375",
+            "contextual_filters": null
+          },
+          {
+            "display_name": "Frieza",
+            "value": "351207729585096",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "action-figures",
+            "virtual_attribute_value": "757156481638592",
+            "contextual_filters": "{\"character\":[757156481638592]}"
+          },
+          {
+            "display_name": "Godzilla",
+            "value": "611061506242514",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "action-figures",
+            "virtual_attribute_value": "465968521400653",
+            "contextual_filters": "{\"character\":[465968521400653]}"
+          },
+          {
+            "display_name": "Goku",
+            "value": "2338354573138780",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "action-figures",
+            "virtual_attribute_value": "1612722642263138",
+            "contextual_filters": "{\"character\":[1612722642263138]}"
+          },
+          {
+            "display_name": "Goten",
+            "value": "848778732323831",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "action-figures",
+            "virtual_attribute_value": "207469457444112",
+            "contextual_filters": "{\"character\":[207469457444112]}"
+          },
+          {
+            "display_name": "Gundam",
+            "value": "332653274515246",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "action-figures",
+            "virtual_attribute_value": "215023670382390",
+            "contextual_filters": "{\"character\":[215023670382390]}"
+          },
+          {
+            "display_name": "Hatsune Miku",
+            "value": "2674951146049708",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "action-figures",
+            "virtual_attribute_value": "2818724661673418",
+            "contextual_filters": "{\"character\":[2818724661673418]}"
+          },
+          {
+            "display_name": "Itachi Uchiha",
+            "value": "326377898605047",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "action-figures",
+            "virtual_attribute_value": "461286388515123",
+            "contextual_filters": "{\"character\":[461286388515123]}"
+          },
+          {
+            "display_name": "Naruto Uzumaki",
+            "value": "1229937697340169",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "action-figures",
+            "virtual_attribute_value": "464354517968205",
+            "contextual_filters": "{\"character\":[464354517968205]}"
+          },
+          {
+            "display_name": "Peppa Pig",
+            "value": "324520138854521",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "action-figures",
+            "virtual_attribute_value": "466158124702170",
+            "contextual_filters": "{\"character\":[466158124702170]}"
+          },
+          {
+            "display_name": "Ryder",
+            "value": "1126523234476711",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "action-figures",
+            "virtual_attribute_value": "280568000331805",
+            "contextual_filters": "{\"character\":[280568000331805]}"
+          },
+          {
+            "display_name": "Sonic the Hedgehog",
+            "value": "1451744428349776",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "action-figures",
+            "virtual_attribute_value": "5903555979658117",
+            "contextual_filters": "{\"character\":[5903555979658117]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "action-figures"
+        },
+        "range": null
+      }
+    ]
+  },
+  "building-toys": {
+    "sub_categories": [],
+    "fields": []
+  },
+  "dollhouses": {
+    "sub_categories": [],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "brand",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Brand",
+        "choices": [
+          {
+            "display_name": "KidKraft",
+            "value": "2681317118592210",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "kidkraft-dollhouses",
+            "virtual_attribute_value": "161961745879614",
+            "contextual_filters": null
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "dollhouses"
+        },
+        "range": null
+      }
+    ]
+  },
+  "dolls": {
+    "sub_categories": [],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "brand",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Brand",
+        "choices": [
+          {
+            "display_name": "American Girl",
+            "value": "241320823759054",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "american-girl-dolls",
+            "virtual_attribute_value": "1988895511241687",
+            "contextual_filters": null
+          },
+          {
+            "display_name": "Barbie",
+            "value": "196188221720790",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "barbie-dolls",
+            "virtual_attribute_value": "1292108801160240",
+            "contextual_filters": null
+          },
+          {
+            "display_name": "Cabbage Patch Kids",
+            "value": "946245312511626",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "dolls",
+            "virtual_attribute_value": "132117695192654",
+            "contextual_filters": "{\"brand\":[132117695192654]}"
+          },
+          {
+            "display_name": "L.O.L. Surprise!",
+            "value": "724045448076353",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "lol-dolls",
+            "virtual_attribute_value": "297063701693630",
+            "contextual_filters": null
+          },
+          {
+            "display_name": "Madame Alexander",
+            "value": "3263894710356722",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "dolls",
+            "virtual_attribute_value": "1021469071995179",
+            "contextual_filters": "{\"brand\":[1021469071995179]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "dolls"
+        },
+        "range": null
+      },
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "character",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Character",
+        "choices": [
+          {
+            "display_name": "Chucky",
+            "value": "1059536144461012",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "chucky-dolls",
+            "virtual_attribute_value": "1420512918289464",
+            "contextual_filters": null
+          },
+          {
+            "display_name": "Doctor Strange",
+            "value": "2865816100296874",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "dolls",
+            "virtual_attribute_value": "5352493354792375",
+            "contextual_filters": "{\"character\":[5352493354792375]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "dolls"
+        },
+        "range": null
+      }
+    ]
+  },
+  "educational-toys": {
+    "sub_categories": [],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "ageGroup",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Age Group",
+        "choices": [
+          {
+            "display_name": "Toddler",
+            "value": "2613830392174241",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "educational-toys",
+            "virtual_attribute_value": "183680940107173",
+            "contextual_filters": "{\"ageGroup\":[183680940107173]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "educational-toys"
+        },
+        "range": null
+      },
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "brand",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Brand",
+        "choices": [
+          {
+            "display_name": "LeapFrog",
+            "value": "437134093709510",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "leapfrog-tablets",
+            "virtual_attribute_value": "228902934947171",
+            "contextual_filters": null
+          },
+          {
+            "display_name": "Melissa & Doug",
+            "value": "458339825100149",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "melissa-and-doug-puzzles",
+            "virtual_attribute_value": "427126805202694",
+            "contextual_filters": null
+          },
+          {
+            "display_name": "Tinkertoy",
+            "value": "2820069178310581",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "educational-toys",
+            "virtual_attribute_value": "240992041106054",
+            "contextual_filters": "{\"brand\":[240992041106054]}"
+          },
+          {
+            "display_name": "VTech",
+            "value": "2232654213698957",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "vtech-toys",
+            "virtual_attribute_value": "201100977771838",
+            "contextual_filters": null
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "educational-toys"
+        },
+        "range": null
+      }
+    ]
+  },
+  "math-toys": {
+    "sub_categories": [],
+    "fields": []
+  },
+  "model-kits": {
+    "sub_categories": [],
+    "fields": []
+  },
+  "outdoor-toys": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "backyard-playgrounds",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Backyard Playgrounds",
+        "virtual_category": {
+          "name": "Backyard Playgrounds",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "589603888260964"
+        },
+        "id": "2865519180172443",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "ball-pits",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Ball Pits",
+        "virtual_category": {
+          "name": "Ball Pits",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "2491466567812724"
+        },
+        "id": "3098297346906798",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "dart-guns",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Dart Guns",
+        "virtual_category": {
+          "name": "Dart Guns",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "773325486512221"
+        },
+        "id": "2732964066791357",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "hula-hoops",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Hula Hoops",
+        "virtual_category": {
+          "name": "Hula Hoops",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "979815045753197"
+        },
+        "id": "3478797665527064",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "inflatable-bouncers",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Inflatable Bouncers",
+        "virtual_category": {
+          "name": "Inflatable Bouncers",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "2539502186375697"
+        },
+        "id": "2409990405773315",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "kiddie-pools",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Kiddie Pools",
+        "virtual_category": {
+          "name": "Kiddie Pools",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "265751447731103"
+        },
+        "id": "3798577866819089",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "kites",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Kites",
+        "virtual_category": {
+          "name": "Kites",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "177254550352375"
+        },
+        "id": "2978992585468024",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "pogo-sticks",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Pogo Sticks",
+        "virtual_category": {
+          "name": "Pogo Sticks",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "501241707199651"
+        },
+        "id": "2742650689148457",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "water-tables",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Water Tables",
+        "virtual_category": {
+          "name": "Sand & Water Tables",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "379826553228455"
+        },
+        "id": "3214556621968395",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "sandboxes",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Sandboxes",
+        "virtual_category": {
+          "name": "Sandboxes",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "197676398097404"
+        },
+        "id": "2774077129296530",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "swing-sets",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Swing Sets",
+        "virtual_category": {
+          "name": "Swing Sets",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "180274256666871"
+        },
+        "id": "5248393628504426",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "trampolines",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Trampolines",
+        "virtual_category": {
+          "name": "Trampolines",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "508243550116888"
+        },
+        "id": "2744944538894558",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "water-guns",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Water Guns",
+        "virtual_category": {
+          "name": "Water Guns",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "496611174388667"
+        },
+        "id": "2817361461654208",
+        "fields": []
+      }
+    ],
+    "fields": []
+  },
+  "pretend-play-toys": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "indoor-and-outdoor-playhouses",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Indoor & Outdoor Kids' Playhouses",
+        "virtual_category": {
+          "name": "Play Houses",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "1292929690891051"
+        },
+        "id": "3427887297248645",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "play-kitchens",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Play Kitchens",
+        "virtual_category": {
+          "name": "Play Kitchens",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "202786967964448"
+        },
+        "id": "3108701495892083",
+        "fields": []
+      }
+    ],
+    "fields": []
+  },
+  "puzzles": {
+    "sub_categories": [],
+    "fields": []
+  },
+  "remote-control-toys": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "toy-cars-trucks",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Remote Toy Cars & Trucks",
+        "virtual_category": {
+          "name": "Remote Toy Cars & Trucks",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "3193822353983384"
+        },
+        "id": "3078227002240415",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Axial",
+                "value": "229252658464518",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "axial-remote-control-trucks",
+                "virtual_attribute_value": "403181594055589",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "Traxxas",
+                "value": "1013189295799943",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "traxxas-stampede-rc-cars",
+                "virtual_attribute_value": "408864896798113",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "remote-control-toys"
+            },
+            "range": null
+          }
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "brand",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Brand",
+        "choices": [
+          {
+            "display_name": "Axial",
+            "value": "229252658464518",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "axial-remote-control-trucks",
+            "virtual_attribute_value": "403181594055589",
+            "contextual_filters": null
+          },
+          {
+            "display_name": "Traxxas",
+            "value": "1013189295799943",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "traxxas-stampede-rc-cars",
+            "virtual_attribute_value": "408864896798113",
+            "contextual_filters": null
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "remote-control-toys"
+        },
+        "range": null
+      }
+    ]
+  },
+  "robot-toys": {
+    "sub_categories": [],
+    "fields": []
+  },
+  "stuffed-animals": {
+    "sub_categories": [],
+    "fields": []
+  },
+  "toy-vehicles": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "airplanes",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Toy Airplanes",
+        "virtual_category": {
+          "name": "Toy Airplanes",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "413951056451863"
+        },
+        "id": "3327335017358115",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "character",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Character",
+            "choices": [
+              {
+                "display_name": "Ryder",
+                "value": "1126523234476711",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "toy-vehicles",
+                "virtual_attribute_value": "280568000331805",
+                "contextual_filters": "{\"character\":[280568000331805]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "toy-vehicles"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "toy-boats",
+        "seo_page_is_geo_agnostic": true,
+        "seo_localized_page_title": "Toy Boats",
+        "virtual_category": {
+          "name": "Toy Boats",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "2872288149552427"
+        },
+        "id": "3387631487916816",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "character",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Character",
+            "choices": [
+              {
+                "display_name": "Ryder",
+                "value": "1126523234476711",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "toy-vehicles",
+                "virtual_attribute_value": "280568000331805",
+                "contextual_filters": "{\"character\":[280568000331805]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "toy-vehicles"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "toy-cars",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Toy Cars",
+        "virtual_category": {
+          "name": "Toy Cars",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "938217099954810"
+        },
+        "id": "2905638252818549",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "character",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Character",
+            "choices": [
+              {
+                "display_name": "Ryder",
+                "value": "1126523234476711",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "toy-vehicles",
+                "virtual_attribute_value": "280568000331805",
+                "contextual_filters": "{\"character\":[280568000331805]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "toy-vehicles"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "toy-construction-vehicles",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Toy Construction Vehicles",
+        "virtual_category": {
+          "name": "Toy Construction Vehicles",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "3005891412835452"
+        },
+        "id": "4361272543898395",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "character",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Character",
+            "choices": [
+              {
+                "display_name": "Ryder",
+                "value": "1126523234476711",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "toy-vehicles",
+                "virtual_attribute_value": "280568000331805",
+                "contextual_filters": "{\"character\":[280568000331805]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "toy-vehicles"
+            },
+            "range": null
+          }
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "character",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Character",
+        "choices": [
+          {
+            "display_name": "Ryder",
+            "value": "1126523234476711",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "toy-vehicles",
+            "virtual_attribute_value": "280568000331805",
+            "contextual_filters": "{\"character\":[280568000331805]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "toy-vehicles"
+        },
+        "range": null
+      }
+    ]
+  }
+}

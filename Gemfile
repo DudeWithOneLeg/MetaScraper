@@ -40,6 +40,7 @@ gem 'httparty'
 gem 'ogp'
 gem 'nokogiri'
 gem 'selenium-webdriver', '~> 4.28'
+gem 'rufo', require: false
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
@@ -63,5 +64,5 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
-  gem "selenium-webdriver"
+  # gem "selenium-webdriver"
 end

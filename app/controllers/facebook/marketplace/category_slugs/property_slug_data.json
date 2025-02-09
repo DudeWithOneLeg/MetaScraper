@@ -1,0 +1,230 @@
+{
+  "apartments-for-rent": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "1-bedroom-apartments",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "1 Bedroom Apartments",
+        "virtual_category": {
+          "name": "1 Bedroom Apartments",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "745110912589068"
+        },
+        "id": "2957326297648648",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "2-bedroom-apartments",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "2 Bedroom Apartments",
+        "virtual_category": {
+          "name": "2 Bedroom Apartments",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "498009811029844"
+        },
+        "id": "2732027016907604",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "3-bedroom-apartments",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "3 Bedroom Apartments",
+        "virtual_category": {
+          "name": "3 Bedroom Apartments",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "372558030078593"
+        },
+        "id": "3492506870823474",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "4-bedroom-apartments",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "4 Bedroom Apartments",
+        "virtual_category": {
+          "name": "4 Bedroom Apartments",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "375417943388171"
+        },
+        "id": "4149059375120247",
+        "fields": []
+      }
+    ],
+    "fields": []
+  },
+  "condos-for-rent": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "1-bedroom-condos",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "1 Bedroom Condos",
+        "virtual_category": {
+          "name": "1 Bedroom Condos",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "605906919816154"
+        },
+        "id": "3631422706899436",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "2-bedroom-condos",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "2 Bedroom Condos",
+        "virtual_category": {
+          "name": "2 Bedroom Condos",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "361396018083007"
+        },
+        "id": "3539597552733656",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "3-bedroom-condos",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "3 Bedroom Condos",
+        "virtual_category": {
+          "name": "3 Bedroom Condos",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "509456529831446"
+        },
+        "id": "2563372520457212",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "4-bedroom-condos",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "4 Bedroom Condos",
+        "virtual_category": {
+          "name": "4 Bedroom Condos",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "512594816173225"
+        },
+        "id": "2701854683185422",
+        "fields": []
+      }
+    ],
+    "fields": []
+  },
+  "townhouses-for-rent": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "1-bedroom-townhouses",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "1 Bedroom Townhouses",
+        "virtual_category": {
+          "name": "1 Bedroom Townhouses",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "520410342045355"
+        },
+        "id": "2816548688434623",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "2-bedroom-townhouses",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "2 Bedroom Townhouses",
+        "virtual_category": {
+          "name": "2 Bedroom Townhouses",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "3296446903706642"
+        },
+        "id": "3854239167934665",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "3-bedroom-townhouses",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "3 Bedroom Townhouses",
+        "virtual_category": {
+          "name": "3 Bedroom Townhouses",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "506301869943355"
+        },
+        "id": "2971632846192859",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "4-bedroom-townhouses",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "4 Bedroom Townhouses",
+        "virtual_category": {
+          "name": "4 Bedroom Townhouses",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "541719009907590"
+        },
+        "id": "2860073280744116",
+        "fields": []
+      }
+    ],
+    "fields": []
+  },
+  "houses-for-rent": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "1-bedroom-houses",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "1 Bedroom Houses",
+        "virtual_category": {
+          "name": "1 Bedroom Houses",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "2182595381863132"
+        },
+        "id": "2532050486898766",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "2-bedroom-houses",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "2 Bedroom Houses",
+        "virtual_category": {
+          "name": "2 Bedroom Houses",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "2396073273999065"
+        },
+        "id": "2954907854571626",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "3-bedroom-houses",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "3 Bedroom Houses",
+        "virtual_category": {
+          "name": "3 Bedroom Houses",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "1349850621840926"
+        },
+        "id": "3585794161494931",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "4-bedroom-houses",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "4 Bedroom Houses",
+        "virtual_category": {
+          "name": "4 Bedroom Houses",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "2544433052281413"
+        },
+        "id": "2847329638646009",
+        "fields": []
+      }
+    ],
+    "fields": []
+  }
+}
