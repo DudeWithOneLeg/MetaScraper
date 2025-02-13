@@ -1,0 +1,1326 @@
+{
+  "bathroom-vanities": {
+    "sub_categories": [],
+    "fields": []
+  },
+  "gutters": {
+    "sub_categories": [],
+    "fields": []
+  },
+  "home-heating-cooling": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "air-conditioners",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Air Conditioners",
+        "virtual_category": {
+          "name": "Air Conditioners",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "743018169504686"
+        },
+        "id": "2482704855143440",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Cadet",
+                "value": "620926175239663",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "cadet-wall-heaters",
+                "virtual_attribute_value": "194708355814464",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "home-heating-cooling"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "air-filters",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Air Filters",
+        "virtual_category": {
+          "name": "Air Filters",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "533410204264757"
+        },
+        "id": "2925613197527052",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Cadet",
+                "value": "620926175239663",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "cadet-wall-heaters",
+                "virtual_attribute_value": "194708355814464",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "home-heating-cooling"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "air-purifiers",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Air Purifiers",
+        "virtual_category": {
+          "name": "Air Purifiers",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "795344287620731"
+        },
+        "id": "2541410222634174",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Cadet",
+                "value": "620926175239663",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "cadet-wall-heaters",
+                "virtual_attribute_value": "194708355814464",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "home-heating-cooling"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "dehumidifiers",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Dehumidifiers",
+        "virtual_category": {
+          "name": "Dehumidifiers",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "2633990796727296"
+        },
+        "id": "3331726240176500",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Cadet",
+                "value": "620926175239663",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "cadet-wall-heaters",
+                "virtual_attribute_value": "194708355814464",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "home-heating-cooling"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "fans",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Fans",
+        "virtual_category": {
+          "name": "Fans",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "202141074297142"
+        },
+        "id": "2950444274966621",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Cadet",
+                "value": "620926175239663",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "cadet-wall-heaters",
+                "virtual_attribute_value": "194708355814464",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "home-heating-cooling"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "fireplaces",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Fireplaces & Stoves",
+        "virtual_category": {
+          "name": "Fireplaces & Stoves",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "2715982731834418"
+        },
+        "id": "3763821473635591",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Cadet",
+                "value": "620926175239663",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "cadet-wall-heaters",
+                "virtual_attribute_value": "194708355814464",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "home-heating-cooling"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "furnaces",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Furnaces",
+        "virtual_category": {
+          "name": "Furnaces",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "469175230420307"
+        },
+        "id": "2698762453563901",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Cadet",
+                "value": "620926175239663",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "cadet-wall-heaters",
+                "virtual_attribute_value": "194708355814464",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "home-heating-cooling"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "humidifiers",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Humidifiers",
+        "virtual_category": {
+          "name": "Humidifiers",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "215009329685215"
+        },
+        "id": "2754067134640539",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Cadet",
+                "value": "620926175239663",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "cadet-wall-heaters",
+                "virtual_attribute_value": "194708355814464",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "home-heating-cooling"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "space-heaters",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Space Heaters",
+        "virtual_category": {
+          "name": "Space Heaters",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "587200698496562"
+        },
+        "id": "2381370375298467",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Cadet",
+                "value": "620926175239663",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "cadet-wall-heaters",
+                "virtual_attribute_value": "194708355814464",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "home-heating-cooling"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "thermostats",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Thermostats",
+        "virtual_category": {
+          "name": "Thermostats",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "192595195181279"
+        },
+        "id": "2774637229264129",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Cadet",
+                "value": "620926175239663",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "cadet-wall-heaters",
+                "virtual_attribute_value": "194708355814464",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "home-heating-cooling"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "water-heaters",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Water Heaters",
+        "virtual_category": {
+          "name": "Water Heaters",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "598822020663967"
+        },
+        "id": "2757072337713055",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Cadet",
+                "value": "620926175239663",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "cadet-wall-heaters",
+                "virtual_attribute_value": "194708355814464",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "home-heating-cooling"
+            },
+            "range": null
+          }
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "brand",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Brand",
+        "choices": [
+          {
+            "display_name": "Cadet",
+            "value": "620926175239663",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "cadet-wall-heaters",
+            "virtual_attribute_value": "194708355814464",
+            "contextual_filters": null
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "home-heating-cooling"
+        },
+        "range": null
+      }
+    ]
+  },
+  "kitchen-cabinets": {
+    "sub_categories": [],
+    "fields": []
+  },
+  "mailboxes": {
+    "sub_categories": [],
+    "fields": []
+  },
+  "showers": {
+    "sub_categories": [],
+    "fields": []
+  },
+  "tools": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "air-tools",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Air Tools",
+        "virtual_category": {
+          "name": "Air Tools",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "217924819370114"
+        },
+        "id": "3257241654292047",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Bosch",
+                "value": "789508511504362",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "366843124370433",
+                "contextual_filters": "{\"brand\":[366843124370433]}"
+              },
+              {
+                "display_name": "Lincoln",
+                "value": "337471074240655",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "665077517483345",
+                "contextual_filters": "{\"brand\":[665077517483345]}"
+              },
+              {
+                "display_name": "Makita",
+                "value": "617404445810165",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "1130126504056899",
+                "contextual_filters": "{\"brand\":[1130126504056899]}"
+              },
+              {
+                "display_name": "Miller",
+                "value": "633368987541382",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "3419327211494963",
+                "contextual_filters": "{\"brand\":[3419327211494963]}"
+              },
+              {
+                "display_name": "STANLEY",
+                "value": "303636240719732",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "stanley-fatmax-tools",
+                "virtual_attribute_value": "507418923775697",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "tools"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "anvils",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Anvils",
+        "virtual_category": {
+          "name": "Anvils",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "488770712017508"
+        },
+        "id": "2664993320222843",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Bosch",
+                "value": "789508511504362",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "366843124370433",
+                "contextual_filters": "{\"brand\":[366843124370433]}"
+              },
+              {
+                "display_name": "Lincoln",
+                "value": "337471074240655",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "665077517483345",
+                "contextual_filters": "{\"brand\":[665077517483345]}"
+              },
+              {
+                "display_name": "Makita",
+                "value": "617404445810165",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "1130126504056899",
+                "contextual_filters": "{\"brand\":[1130126504056899]}"
+              },
+              {
+                "display_name": "Miller",
+                "value": "633368987541382",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "3419327211494963",
+                "contextual_filters": "{\"brand\":[3419327211494963]}"
+              },
+              {
+                "display_name": "STANLEY",
+                "value": "303636240719732",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "stanley-fatmax-tools",
+                "virtual_attribute_value": "507418923775697",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "tools"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "concrete-mixers",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Concrete Mixers",
+        "virtual_category": {
+          "name": "Cement Mixers",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "420859299084345"
+        },
+        "id": "3573304079400504",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Bosch",
+                "value": "789508511504362",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "366843124370433",
+                "contextual_filters": "{\"brand\":[366843124370433]}"
+              },
+              {
+                "display_name": "Lincoln",
+                "value": "337471074240655",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "665077517483345",
+                "contextual_filters": "{\"brand\":[665077517483345]}"
+              },
+              {
+                "display_name": "Makita",
+                "value": "617404445810165",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "1130126504056899",
+                "contextual_filters": "{\"brand\":[1130126504056899]}"
+              },
+              {
+                "display_name": "Miller",
+                "value": "633368987541382",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "3419327211494963",
+                "contextual_filters": "{\"brand\":[3419327211494963]}"
+              },
+              {
+                "display_name": "STANLEY",
+                "value": "303636240719732",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "stanley-fatmax-tools",
+                "virtual_attribute_value": "507418923775697",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "tools"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "hand-tools",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Hand Tools",
+        "virtual_category": {
+          "name": "Hand Tools",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "1497119080452797"
+        },
+        "id": "2700731410021392",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Bosch",
+                "value": "789508511504362",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "366843124370433",
+                "contextual_filters": "{\"brand\":[366843124370433]}"
+              },
+              {
+                "display_name": "Lincoln",
+                "value": "337471074240655",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "665077517483345",
+                "contextual_filters": "{\"brand\":[665077517483345]}"
+              },
+              {
+                "display_name": "Makita",
+                "value": "617404445810165",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "1130126504056899",
+                "contextual_filters": "{\"brand\":[1130126504056899]}"
+              },
+              {
+                "display_name": "Miller",
+                "value": "633368987541382",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "3419327211494963",
+                "contextual_filters": "{\"brand\":[3419327211494963]}"
+              },
+              {
+                "display_name": "STANLEY",
+                "value": "303636240719732",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "stanley-fatmax-tools",
+                "virtual_attribute_value": "507418923775697",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "tools"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "ladders",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Ladders",
+        "virtual_category": {
+          "name": "Ladders",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "536429630556196"
+        },
+        "id": "2387684278025595",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Bosch",
+                "value": "789508511504362",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "366843124370433",
+                "contextual_filters": "{\"brand\":[366843124370433]}"
+              },
+              {
+                "display_name": "Lincoln",
+                "value": "337471074240655",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "665077517483345",
+                "contextual_filters": "{\"brand\":[665077517483345]}"
+              },
+              {
+                "display_name": "Makita",
+                "value": "617404445810165",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "1130126504056899",
+                "contextual_filters": "{\"brand\":[1130126504056899]}"
+              },
+              {
+                "display_name": "Miller",
+                "value": "633368987541382",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "3419327211494963",
+                "contextual_filters": "{\"brand\":[3419327211494963]}"
+              },
+              {
+                "display_name": "STANLEY",
+                "value": "303636240719732",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "stanley-fatmax-tools",
+                "virtual_attribute_value": "507418923775697",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "tools"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "measuring-tools",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Measuring Tools & Sensors",
+        "virtual_category": {
+          "name": "Measuring Tools & Sensors",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "487902622100409"
+        },
+        "id": "2992818034075463",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Bosch",
+                "value": "789508511504362",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "366843124370433",
+                "contextual_filters": "{\"brand\":[366843124370433]}"
+              },
+              {
+                "display_name": "Lincoln",
+                "value": "337471074240655",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "665077517483345",
+                "contextual_filters": "{\"brand\":[665077517483345]}"
+              },
+              {
+                "display_name": "Makita",
+                "value": "617404445810165",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "1130126504056899",
+                "contextual_filters": "{\"brand\":[1130126504056899]}"
+              },
+              {
+                "display_name": "Miller",
+                "value": "633368987541382",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "3419327211494963",
+                "contextual_filters": "{\"brand\":[3419327211494963]}"
+              },
+              {
+                "display_name": "STANLEY",
+                "value": "303636240719732",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "stanley-fatmax-tools",
+                "virtual_attribute_value": "507418923775697",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "tools"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "power-tools",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Power Tools",
+        "virtual_category": {
+          "name": "Power Tools",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "802040303594156"
+        },
+        "id": "2888378297891557",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Bosch",
+                "value": "789508511504362",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "366843124370433",
+                "contextual_filters": "{\"brand\":[366843124370433]}"
+              },
+              {
+                "display_name": "Lincoln",
+                "value": "337471074240655",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "665077517483345",
+                "contextual_filters": "{\"brand\":[665077517483345]}"
+              },
+              {
+                "display_name": "Makita",
+                "value": "617404445810165",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "1130126504056899",
+                "contextual_filters": "{\"brand\":[1130126504056899]}"
+              },
+              {
+                "display_name": "Miller",
+                "value": "633368987541382",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "3419327211494963",
+                "contextual_filters": "{\"brand\":[3419327211494963]}"
+              },
+              {
+                "display_name": "STANLEY",
+                "value": "303636240719732",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "stanley-fatmax-tools",
+                "virtual_attribute_value": "507418923775697",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "tools"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "shop-vacuums",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Shop Vacuums",
+        "virtual_category": {
+          "name": "Shop Vacuums",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "199802887804345"
+        },
+        "id": "3420280154710480",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Bosch",
+                "value": "789508511504362",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "366843124370433",
+                "contextual_filters": "{\"brand\":[366843124370433]}"
+              },
+              {
+                "display_name": "Lincoln",
+                "value": "337471074240655",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "665077517483345",
+                "contextual_filters": "{\"brand\":[665077517483345]}"
+              },
+              {
+                "display_name": "Makita",
+                "value": "617404445810165",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "1130126504056899",
+                "contextual_filters": "{\"brand\":[1130126504056899]}"
+              },
+              {
+                "display_name": "Miller",
+                "value": "633368987541382",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "3419327211494963",
+                "contextual_filters": "{\"brand\":[3419327211494963]}"
+              },
+              {
+                "display_name": "STANLEY",
+                "value": "303636240719732",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "stanley-fatmax-tools",
+                "virtual_attribute_value": "507418923775697",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "tools"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "step-stools",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Step Stools",
+        "virtual_category": {
+          "name": "Step Stools",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "517098698910589"
+        },
+        "id": "3474297489312046",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Bosch",
+                "value": "789508511504362",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "366843124370433",
+                "contextual_filters": "{\"brand\":[366843124370433]}"
+              },
+              {
+                "display_name": "Lincoln",
+                "value": "337471074240655",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "665077517483345",
+                "contextual_filters": "{\"brand\":[665077517483345]}"
+              },
+              {
+                "display_name": "Makita",
+                "value": "617404445810165",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "1130126504056899",
+                "contextual_filters": "{\"brand\":[1130126504056899]}"
+              },
+              {
+                "display_name": "Miller",
+                "value": "633368987541382",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "3419327211494963",
+                "contextual_filters": "{\"brand\":[3419327211494963]}"
+              },
+              {
+                "display_name": "STANLEY",
+                "value": "303636240719732",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "stanley-fatmax-tools",
+                "virtual_attribute_value": "507418923775697",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "tools"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "work-benches",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Work Benches",
+        "virtual_category": {
+          "name": "Work Benches",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "606674020124221"
+        },
+        "id": "2731603663598746",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Bosch",
+                "value": "789508511504362",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "366843124370433",
+                "contextual_filters": "{\"brand\":[366843124370433]}"
+              },
+              {
+                "display_name": "Lincoln",
+                "value": "337471074240655",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "665077517483345",
+                "contextual_filters": "{\"brand\":[665077517483345]}"
+              },
+              {
+                "display_name": "Makita",
+                "value": "617404445810165",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "1130126504056899",
+                "contextual_filters": "{\"brand\":[1130126504056899]}"
+              },
+              {
+                "display_name": "Miller",
+                "value": "633368987541382",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "tools",
+                "virtual_attribute_value": "3419327211494963",
+                "contextual_filters": "{\"brand\":[3419327211494963]}"
+              },
+              {
+                "display_name": "STANLEY",
+                "value": "303636240719732",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "stanley-fatmax-tools",
+                "virtual_attribute_value": "507418923775697",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "tools"
+            },
+            "range": null
+          }
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "brand",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Brand",
+        "choices": [
+          {
+            "display_name": "Bosch",
+            "value": "789508511504362",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "tools",
+            "virtual_attribute_value": "366843124370433",
+            "contextual_filters": "{\"brand\":[366843124370433]}"
+          },
+          {
+            "display_name": "Lincoln",
+            "value": "337471074240655",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "tools",
+            "virtual_attribute_value": "665077517483345",
+            "contextual_filters": "{\"brand\":[665077517483345]}"
+          },
+          {
+            "display_name": "Makita",
+            "value": "617404445810165",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "tools",
+            "virtual_attribute_value": "1130126504056899",
+            "contextual_filters": "{\"brand\":[1130126504056899]}"
+          },
+          {
+            "display_name": "Miller",
+            "value": "633368987541382",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "tools",
+            "virtual_attribute_value": "3419327211494963",
+            "contextual_filters": "{\"brand\":[3419327211494963]}"
+          },
+          {
+            "display_name": "STANLEY",
+            "value": "303636240719732",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "stanley-fatmax-tools",
+            "virtual_attribute_value": "507418923775697",
+            "contextual_filters": null
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "tools"
+        },
+        "range": null
+      }
+    ]
+  },
+  "vinyl-flooring": {
+    "sub_categories": [],
+    "fields": []
+  }
+}

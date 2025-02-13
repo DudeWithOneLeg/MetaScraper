@@ -1,0 +1,1410 @@
+{
+  "antiques": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "antique-coins",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Antique Coins",
+        "virtual_category": {
+          "name": "Antique Coins",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "3478808205478873"
+        },
+        "id": "3178992108786123",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "character",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Character",
+            "choices": [
+              {
+                "display_name": "Elvira",
+                "value": "794755798123099",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "antiques",
+                "virtual_attribute_value": "785472969044048",
+                "contextual_filters": "{\"character\":[785472969044048]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "antiques"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "antique-electronics",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Antique Electronics",
+        "virtual_category": {
+          "name": "Antique Electronics",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "2630006670603522"
+        },
+        "id": "2479848852116260",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "character",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Character",
+            "choices": [
+              {
+                "display_name": "Elvira",
+                "value": "794755798123099",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "antiques",
+                "virtual_attribute_value": "785472969044048",
+                "contextual_filters": "{\"character\":[785472969044048]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "antiques"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "antique-furniture",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Antique Furniture",
+        "virtual_category": {
+          "name": "Antique Furniture",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "1089257904783307"
+        },
+        "id": "2973118002753798",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "character",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Character",
+            "choices": [
+              {
+                "display_name": "Elvira",
+                "value": "794755798123099",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "antiques",
+                "virtual_attribute_value": "785472969044048",
+                "contextual_filters": "{\"character\":[785472969044048]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "antiques"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "collectible-stamps",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Collectible Stamps",
+        "virtual_category": {
+          "name": "Collectible Stamps",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "167690057931680"
+        },
+        "id": "2893801247407922",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "character",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Character",
+            "choices": [
+              {
+                "display_name": "Elvira",
+                "value": "794755798123099",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "antiques",
+                "virtual_attribute_value": "785472969044048",
+                "contextual_filters": "{\"character\":[785472969044048]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "antiques"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "sports-trading-cards",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Sports Trading Cards",
+        "virtual_category": {
+          "name": "Sports Trading Cards",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "533738714184192"
+        },
+        "id": "3088356384576434",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "character",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Character",
+            "choices": [
+              {
+                "display_name": "Elvira",
+                "value": "794755798123099",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "antiques",
+                "virtual_attribute_value": "785472969044048",
+                "contextual_filters": "{\"character\":[785472969044048]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "antiques"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "typewriters",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Typewriters",
+        "virtual_category": {
+          "name": "Typewriters",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "875009303009245"
+        },
+        "id": "2948760825183532",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "character",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Character",
+            "choices": [
+              {
+                "display_name": "Elvira",
+                "value": "794755798123099",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "antiques",
+                "virtual_attribute_value": "785472969044048",
+                "contextual_filters": "{\"character\":[785472969044048]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "antiques"
+            },
+            "range": null
+          }
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "character",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Character",
+        "choices": [
+          {
+            "display_name": "Elvira",
+            "value": "794755798123099",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "antiques",
+            "virtual_attribute_value": "785472969044048",
+            "contextual_filters": "{\"character\":[785472969044048]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "antiques"
+        },
+        "range": null
+      }
+    ]
+  },
+  "arts": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "drawing-supplies",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Drawing Supplies",
+        "virtual_category": {
+          "name": "Drawing Supplies",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "167217337989858"
+        },
+        "id": "3761458900563117",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Sizzix",
+                "value": "184297513063186",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "arts",
+                "virtual_attribute_value": "146062104036204",
+                "contextual_filters": "{\"brand\":[146062104036204]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "arts"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "painting-supplies",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Painting Supplies",
+        "virtual_category": {
+          "name": "Painting Supplies",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "233959827927454"
+        },
+        "id": "3155233354540295",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Sizzix",
+                "value": "184297513063186",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "arts",
+                "virtual_attribute_value": "146062104036204",
+                "contextual_filters": "{\"brand\":[146062104036204]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "arts"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "scrapbooking-supplies",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Scrapbooking Supplies",
+        "virtual_category": {
+          "name": "Scrapbooking Supplies",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "912861209185749"
+        },
+        "id": "2765348290254494",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Sizzix",
+                "value": "184297513063186",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "arts",
+                "virtual_attribute_value": "146062104036204",
+                "contextual_filters": "{\"brand\":[146062104036204]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "arts"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "sewing",
+        "seo_page_is_geo_agnostic": true,
+        "seo_localized_page_title": "Sewing",
+        "virtual_category": {
+          "name": "Sewing Machines & Supplies",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "178875676541791"
+        },
+        "id": "3122004727836711",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Sizzix",
+                "value": "184297513063186",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "arts",
+                "virtual_attribute_value": "146062104036204",
+                "contextual_filters": "{\"brand\":[146062104036204]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "arts"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "yarn",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Yarn",
+        "virtual_category": {
+          "name": "Yarn & Needlecrafts",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "232952397990231"
+        },
+        "id": "3602032506480429",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "Sizzix",
+                "value": "184297513063186",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "arts",
+                "virtual_attribute_value": "146062104036204",
+                "contextual_filters": "{\"brand\":[146062104036204]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "arts"
+            },
+            "range": null
+          }
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "brand",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Brand",
+        "choices": [
+          {
+            "display_name": "Sizzix",
+            "value": "184297513063186",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "arts",
+            "virtual_attribute_value": "146062104036204",
+            "contextual_filters": "{\"brand\":[146062104036204]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "arts"
+        },
+        "range": null
+      }
+    ]
+  },
+  "autoparts": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "car-engines",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Car Engines & Parts",
+        "virtual_category": {
+          "name": "Car Engines & Parts",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "899867530463408"
+        },
+        "id": "2924756457593480",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "make",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Make",
+            "choices": [
+              {
+                "display_name": "Mercedes-Benz",
+                "value": "391196981458827",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "autoparts",
+                "virtual_attribute_value": "2720476284906287",
+                "contextual_filters": "{\"make\":[2720476284906287]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "autoparts"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "car-exhausts",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Car Exhausts & Parts",
+        "virtual_category": {
+          "name": "Car Exhausts & Parts",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "3116067151792957"
+        },
+        "id": "2876661619108553",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "make",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Make",
+            "choices": [
+              {
+                "display_name": "Mercedes-Benz",
+                "value": "391196981458827",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "autoparts",
+                "virtual_attribute_value": "2720476284906287",
+                "contextual_filters": "{\"make\":[2720476284906287]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "autoparts"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "car-exterior-parts",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Car Exterior Parts",
+        "virtual_category": {
+          "name": "Car Exterior Parts",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "542005296507095"
+        },
+        "id": "2600031350096967",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "make",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Make",
+            "choices": [
+              {
+                "display_name": "Mercedes-Benz",
+                "value": "391196981458827",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "autoparts",
+                "virtual_attribute_value": "2720476284906287",
+                "contextual_filters": "{\"make\":[2720476284906287]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "autoparts"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "car-suspension-steering",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Car Suspension & Steering",
+        "virtual_category": {
+          "name": "Car Suspension & Steering",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "550555685875020"
+        },
+        "id": "2774558049340515",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "make",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Make",
+            "choices": [
+              {
+                "display_name": "Mercedes-Benz",
+                "value": "391196981458827",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "autoparts",
+                "virtual_attribute_value": "2720476284906287",
+                "contextual_filters": "{\"make\":[2720476284906287]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "autoparts"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "car-transmission-parts",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Car Transmissions",
+        "virtual_category": {
+          "name": "Car Transmissions",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "856879678433129"
+        },
+        "id": "3588640774546513",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "make",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Make",
+            "choices": [
+              {
+                "display_name": "Mercedes-Benz",
+                "value": "391196981458827",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "autoparts",
+                "virtual_attribute_value": "2720476284906287",
+                "contextual_filters": "{\"make\":[2720476284906287]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "autoparts"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "motorcycle-parts",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Motorcycle Parts",
+        "virtual_category": {
+          "name": "Motorcycle Parts",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "572207753418064"
+        },
+        "id": "2764662186963877",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "make",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Make",
+            "choices": [
+              {
+                "display_name": "Mercedes-Benz",
+                "value": "391196981458827",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "autoparts",
+                "virtual_attribute_value": "2720476284906287",
+                "contextual_filters": "{\"make\":[2720476284906287]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "autoparts"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "car-tires-wheels",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Tires & Wheels",
+        "virtual_category": {
+          "name": "Tires & Wheels",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "2860897897291080"
+        },
+        "id": "2912400442180650",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "make",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Make",
+            "choices": [
+              {
+                "display_name": "Mercedes-Benz",
+                "value": "391196981458827",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "autoparts",
+                "virtual_attribute_value": "2720476284906287",
+                "contextual_filters": "{\"make\":[2720476284906287]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "autoparts"
+            },
+            "range": null
+          }
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "make",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Make",
+        "choices": [
+          {
+            "display_name": "Mercedes-Benz",
+            "value": "391196981458827",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "autoparts",
+            "virtual_attribute_value": "2720476284906287",
+            "contextual_filters": "{\"make\":[2720476284906287]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "autoparts"
+        },
+        "range": null
+      }
+    ]
+  },
+  "bicycles": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "bicycle-accessories",
+        "seo_page_is_geo_agnostic": true,
+        "seo_localized_page_title": "Bicycle Accessories",
+        "virtual_category": {
+          "name": "Bicycle Accessories",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "242053956906691"
+        },
+        "id": "2917100794992689",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "bicycleType",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Bicycle Type",
+            "choices": [
+              {
+                "display_name": "BMX Bike",
+                "value": "678054099583228",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "780883909233693",
+                "contextual_filters": "{\"bicycleType\":[780883909233693]}"
+              },
+              {
+                "display_name": "Cruiser Bike",
+                "value": "586064042063439",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "177875480478052",
+                "contextual_filters": "{\"bicycleType\":[177875480478052]}"
+              },
+              {
+                "display_name": "Electric Bike",
+                "value": "301369054427430",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "672762143392128",
+                "contextual_filters": "{\"bicycleType\":[672762143392128]}"
+              },
+              {
+                "display_name": "Fat Bike",
+                "value": "832978527238762",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "249723249903937",
+                "contextual_filters": "{\"bicycleType\":[249723249903937]}"
+              },
+              {
+                "display_name": "Folding Bike",
+                "value": "1143822686003119",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "2842313769429692",
+                "contextual_filters": "{\"bicycleType\":[2842313769429692]}"
+              },
+              {
+                "display_name": "Mountain Bike",
+                "value": "923243431497430",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "397502244855240",
+                "contextual_filters": "{\"bicycleType\":[397502244855240]}"
+              },
+              {
+                "display_name": "Road Bike",
+                "value": "230494385005904",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "392507049143882",
+                "contextual_filters": "{\"bicycleType\":[392507049143882]}"
+              },
+              {
+                "display_name": "Tandem Bike",
+                "value": "305001304125967",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "2503606939946389",
+                "contextual_filters": "{\"bicycleType\":[2503606939946389]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "bicycles"
+            },
+            "range": null
+          },
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "GT Bicycles",
+                "value": "209916326938218",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "gt-bikes",
+                "virtual_attribute_value": "499297764776304",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "Huffy",
+                "value": "279839219785393",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "217662056673199",
+                "contextual_filters": "{\"brand\":[217662056673199]}"
+              },
+              {
+                "display_name": "Santa Cruz Bicycles",
+                "value": "748286679314951",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "2548839652043427",
+                "contextual_filters": "{\"brand\":[2548839652043427]}"
+              },
+              {
+                "display_name": "Schwinn",
+                "value": "2556845177925822",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "928908307620345",
+                "contextual_filters": "{\"brand\":[928908307620345]}"
+              },
+              {
+                "display_name": "Specialized",
+                "value": "2214734455326692",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "specialized-allez-bikes",
+                "virtual_attribute_value": "133172418409361",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "Trek",
+                "value": "676939446193796",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "trek-womens-mountain-bikes",
+                "virtual_attribute_value": "411056060178273",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "bicycles"
+            },
+            "range": null
+          },
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "make",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Make",
+            "choices": [
+              {
+                "display_name": "Motobecane",
+                "value": "869926063383715",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "2735961186639037",
+                "contextual_filters": "{\"make\":[2735961186639037]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "bicycles"
+            },
+            "range": null
+          }
+        ]
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "bicycle-parts",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Bicycle Parts",
+        "virtual_category": {
+          "name": "Bicycle Parts",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "567017907273350"
+        },
+        "id": "2715163205279128",
+        "fields": [
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "bicycleType",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Bicycle Type",
+            "choices": [
+              {
+                "display_name": "BMX Bike",
+                "value": "678054099583228",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "780883909233693",
+                "contextual_filters": "{\"bicycleType\":[780883909233693]}"
+              },
+              {
+                "display_name": "Cruiser Bike",
+                "value": "586064042063439",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "177875480478052",
+                "contextual_filters": "{\"bicycleType\":[177875480478052]}"
+              },
+              {
+                "display_name": "Electric Bike",
+                "value": "301369054427430",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "672762143392128",
+                "contextual_filters": "{\"bicycleType\":[672762143392128]}"
+              },
+              {
+                "display_name": "Fat Bike",
+                "value": "832978527238762",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "249723249903937",
+                "contextual_filters": "{\"bicycleType\":[249723249903937]}"
+              },
+              {
+                "display_name": "Folding Bike",
+                "value": "1143822686003119",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "2842313769429692",
+                "contextual_filters": "{\"bicycleType\":[2842313769429692]}"
+              },
+              {
+                "display_name": "Mountain Bike",
+                "value": "923243431497430",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "397502244855240",
+                "contextual_filters": "{\"bicycleType\":[397502244855240]}"
+              },
+              {
+                "display_name": "Road Bike",
+                "value": "230494385005904",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "392507049143882",
+                "contextual_filters": "{\"bicycleType\":[392507049143882]}"
+              },
+              {
+                "display_name": "Tandem Bike",
+                "value": "305001304125967",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "2503606939946389",
+                "contextual_filters": "{\"bicycleType\":[2503606939946389]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "bicycles"
+            },
+            "range": null
+          },
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "brand",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Brand",
+            "choices": [
+              {
+                "display_name": "GT Bicycles",
+                "value": "209916326938218",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "gt-bikes",
+                "virtual_attribute_value": "499297764776304",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "Huffy",
+                "value": "279839219785393",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "217662056673199",
+                "contextual_filters": "{\"brand\":[217662056673199]}"
+              },
+              {
+                "display_name": "Santa Cruz Bicycles",
+                "value": "748286679314951",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "2548839652043427",
+                "contextual_filters": "{\"brand\":[2548839652043427]}"
+              },
+              {
+                "display_name": "Schwinn",
+                "value": "2556845177925822",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "928908307620345",
+                "contextual_filters": "{\"brand\":[928908307620345]}"
+              },
+              {
+                "display_name": "Specialized",
+                "value": "2214734455326692",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "specialized-allez-bikes",
+                "virtual_attribute_value": "133172418409361",
+                "contextual_filters": null
+              },
+              {
+                "display_name": "Trek",
+                "value": "676939446193796",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "trek-womens-mountain-bikes",
+                "virtual_attribute_value": "411056060178273",
+                "contextual_filters": null
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "bicycles"
+            },
+            "range": null
+          },
+          {
+            "__typename": "MarketplaceFilterField",
+            "filter_type": "SINGLE_SELECT",
+            "filter_key": "make",
+            "should_render_as_sub_filter": false,
+            "__isMarketplaceStructuredField": "MarketplaceFilterField",
+            "display_name": "Make",
+            "choices": [
+              {
+                "display_name": "Motobecane",
+                "value": "869926063383715",
+                "active": null,
+                "seo_navigable_filters": null,
+                "slug": "bicycles",
+                "virtual_attribute_value": "2735961186639037",
+                "contextual_filters": "{\"make\":[2735961186639037]}"
+              }
+            ],
+            "field_key": "SERVER_DRIVEN_FILTER",
+            "child_filters": [],
+            "clear_fields": {
+              "contextual_filters": null,
+              "slug": "bicycles"
+            },
+            "range": null
+          }
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "bicycleType",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Bicycle Type",
+        "choices": [
+          {
+            "display_name": "BMX Bike",
+            "value": "678054099583228",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "bicycles",
+            "virtual_attribute_value": "780883909233693",
+            "contextual_filters": "{\"bicycleType\":[780883909233693]}"
+          },
+          {
+            "display_name": "Cruiser Bike",
+            "value": "586064042063439",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "bicycles",
+            "virtual_attribute_value": "177875480478052",
+            "contextual_filters": "{\"bicycleType\":[177875480478052]}"
+          },
+          {
+            "display_name": "Electric Bike",
+            "value": "301369054427430",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "bicycles",
+            "virtual_attribute_value": "672762143392128",
+            "contextual_filters": "{\"bicycleType\":[672762143392128]}"
+          },
+          {
+            "display_name": "Fat Bike",
+            "value": "832978527238762",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "bicycles",
+            "virtual_attribute_value": "249723249903937",
+            "contextual_filters": "{\"bicycleType\":[249723249903937]}"
+          },
+          {
+            "display_name": "Folding Bike",
+            "value": "1143822686003119",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "bicycles",
+            "virtual_attribute_value": "2842313769429692",
+            "contextual_filters": "{\"bicycleType\":[2842313769429692]}"
+          },
+          {
+            "display_name": "Mountain Bike",
+            "value": "923243431497430",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "bicycles",
+            "virtual_attribute_value": "397502244855240",
+            "contextual_filters": "{\"bicycleType\":[397502244855240]}"
+          },
+          {
+            "display_name": "Road Bike",
+            "value": "230494385005904",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "bicycles",
+            "virtual_attribute_value": "392507049143882",
+            "contextual_filters": "{\"bicycleType\":[392507049143882]}"
+          },
+          {
+            "display_name": "Tandem Bike",
+            "value": "305001304125967",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "bicycles",
+            "virtual_attribute_value": "2503606939946389",
+            "contextual_filters": "{\"bicycleType\":[2503606939946389]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "bicycles"
+        },
+        "range": null
+      },
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "brand",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Brand",
+        "choices": [
+          {
+            "display_name": "GT Bicycles",
+            "value": "209916326938218",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "gt-bikes",
+            "virtual_attribute_value": "499297764776304",
+            "contextual_filters": null
+          },
+          {
+            "display_name": "Huffy",
+            "value": "279839219785393",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "bicycles",
+            "virtual_attribute_value": "217662056673199",
+            "contextual_filters": "{\"brand\":[217662056673199]}"
+          },
+          {
+            "display_name": "Santa Cruz Bicycles",
+            "value": "748286679314951",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "bicycles",
+            "virtual_attribute_value": "2548839652043427",
+            "contextual_filters": "{\"brand\":[2548839652043427]}"
+          },
+          {
+            "display_name": "Schwinn",
+            "value": "2556845177925822",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "bicycles",
+            "virtual_attribute_value": "928908307620345",
+            "contextual_filters": "{\"brand\":[928908307620345]}"
+          },
+          {
+            "display_name": "Specialized",
+            "value": "2214734455326692",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "specialized-allez-bikes",
+            "virtual_attribute_value": "133172418409361",
+            "contextual_filters": null
+          },
+          {
+            "display_name": "Trek",
+            "value": "676939446193796",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "trek-womens-mountain-bikes",
+            "virtual_attribute_value": "411056060178273",
+            "contextual_filters": null
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "bicycles"
+        },
+        "range": null
+      },
+      {
+        "__typename": "MarketplaceFilterField",
+        "filter_type": "SINGLE_SELECT",
+        "filter_key": "make",
+        "should_render_as_sub_filter": false,
+        "__isMarketplaceStructuredField": "MarketplaceFilterField",
+        "display_name": "Make",
+        "choices": [
+          {
+            "display_name": "Motobecane",
+            "value": "869926063383715",
+            "active": null,
+            "seo_navigable_filters": null,
+            "slug": "bicycles",
+            "virtual_attribute_value": "2735961186639037",
+            "contextual_filters": "{\"make\":[2735961186639037]}"
+          }
+        ],
+        "field_key": "SERVER_DRIVEN_FILTER",
+        "child_filters": [],
+        "clear_fields": {
+          "contextual_filters": null,
+          "slug": "bicycles"
+        },
+        "range": null
+      }
+    ]
+  }
+}

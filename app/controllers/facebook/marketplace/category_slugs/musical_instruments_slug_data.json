@@ -1,0 +1,252 @@
+{
+  "audio-equipment": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "audio-interfaces",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Audio Interfaces",
+        "virtual_category": {
+          "name": "Audio Interfaces",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "382629029460186"
+        },
+        "id": "2887364921366255",
+        "fields": []
+      }
+    ],
+    "fields": []
+  },
+  "brass-instruments": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "french-horns",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "French Horns",
+        "virtual_category": {
+          "name": "French Horns",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "123756492956089"
+        },
+        "id": "5093754340667228",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "trumpets",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Trumpets",
+        "virtual_category": {
+          "name": "Trumpets",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "648929552544407"
+        },
+        "id": "2141427165960697",
+        "fields": []
+      }
+    ],
+    "fields": []
+  },
+  "drums": {
+    "sub_categories": [],
+    "fields": []
+  },
+  "guitars-basses": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "acoustic-guitars",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Acoustic Guitars",
+        "virtual_category": {
+          "name": "Acoustic Guitars",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "178514350161042"
+        },
+        "id": "3233493593332525",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "bass-guitars",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Bass Guitars",
+        "virtual_category": {
+          "name": "Bass Guitars",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "861527770966608"
+        },
+        "id": "2954242657977661",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "electric-guitars",
+        "seo_page_is_geo_agnostic": true,
+        "seo_localized_page_title": "Electric Guitars",
+        "virtual_category": {
+          "name": "Electric Guitars",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "809775012860154"
+        },
+        "id": "3028793863805797",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "guitar-amps",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Guitar Amps",
+        "virtual_category": {
+          "name": "Guitar Amps",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "187642172475963"
+        },
+        "id": "3000636503281347",
+        "fields": []
+      }
+    ],
+    "fields": []
+  },
+  "music-accessories": {
+    "sub_categories": [],
+    "fields": []
+  },
+  "percussion-instruments": {
+    "sub_categories": [],
+    "fields": []
+  },
+  "pianos-keyboards": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "electronic-keyboards",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Electronic Keyboards",
+        "virtual_category": {
+          "name": "Electronic Keyboards",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "171659954113637"
+        },
+        "id": "2509695535801780",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "pianos",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Pianos",
+        "virtual_category": {
+          "name": "Pianos",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "489993955022284"
+        },
+        "id": "2709520045752073",
+        "fields": []
+      }
+    ],
+    "fields": []
+  },
+  "string-instruments": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "cellos",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Cellos",
+        "virtual_category": {
+          "name": "Cellos",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "599779530583512"
+        },
+        "id": "2762649107149286",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "folk-instruments",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Folk & World Stringed Instruments",
+        "virtual_category": {
+          "name": "Folk & World Stringed Instruments",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "1436478783208111"
+        },
+        "id": "3591270167571460",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "violas",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Violas",
+        "virtual_category": {
+          "name": "Violas",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "924961661271543"
+        },
+        "id": "2282737041825830",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "violins",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Violins",
+        "virtual_category": {
+          "name": "Violins",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "204411964066626"
+        },
+        "id": "2813562652044667",
+        "fields": []
+      }
+    ],
+    "fields": []
+  },
+  "wind-instruments": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "clarinets",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Clarinets",
+        "virtual_category": {
+          "name": "Clarinets",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "167780151304156"
+        },
+        "id": "3050247638332231",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "flutes",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Flutes",
+        "virtual_category": {
+          "name": "Flutes",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "1361063157398624"
+        },
+        "id": "2511789455616952",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "saxophones",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Saxophones",
+        "virtual_category": {
+          "name": "Saxophones",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "737458966781847"
+        },
+        "id": "2828772897182896",
+        "fields": []
+      }
+    ],
+    "fields": []
+  }
+}

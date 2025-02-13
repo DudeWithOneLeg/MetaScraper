@@ -1,0 +1,128 @@
+[
+    {
+        "display_name": "AMD",
+        "value": "357801235498624",
+        "active": true,
+        "seo_navigable_filters": null,
+        "slug": "electronics",
+        "virtual_attribute_value": "874490466442333",
+        "contextual_filters": "{\"brand\":[2806224329413131,177366900264876]}"
+    },
+    {
+        "display_name": "ASUS",
+        "value": "374351523161038",
+        "active": true,
+        "seo_navigable_filters": null,
+        "slug": "electronics",
+        "virtual_attribute_value": "2806224329413131",
+        "contextual_filters": "{\"brand\":[177366900264876,874490466442333]}"
+    },
+    {
+        "display_name": "Apple",
+        "value": "645664702524673",
+        "active": true,
+        "seo_navigable_filters": null,
+        "slug": "electronics",
+        "virtual_attribute_value": "177366900264876",
+        "contextual_filters": "{\"brand\":[2806224329413131,874490466442333]}"
+    },
+    {
+        "display_name": "Beats by Dr. Dre",
+        "value": "1143573572432927",
+        "active": null,
+        "seo_navigable_filters": null,
+        "slug": "electronics",
+        "virtual_attribute_value": "198430931580104",
+        "contextual_filters": "{\"brand\":[2806224329413131,177366900264876,874490466442333,198430931580104]}"
+    },
+    {
+        "display_name": "Bose",
+        "value": "592485801254566",
+        "active": null,
+        "seo_navigable_filters": null,
+        "slug": "electronics",
+        "virtual_attribute_value": "3294094674148107",
+        "contextual_filters": "{\"brand\":[2806224329413131,177366900264876,874490466442333,3294094674148107]}"
+    },
+    {
+        "display_name": "Canon",
+        "value": "426727354748419",
+        "active": null,
+        "seo_navigable_filters": null,
+        "slug": "electronics",
+        "virtual_attribute_value": "2565877940322146",
+        "contextual_filters": "{\"brand\":[2806224329413131,177366900264876,874490466442333,2565877940322146]}"
+    },
+    {
+        "display_name": "Dell",
+        "value": "2104209686353930",
+        "active": null,
+        "seo_navigable_filters": null,
+        "slug": "electronics",
+        "virtual_attribute_value": "508407939787911",
+        "contextual_filters": "{\"brand\":[2806224329413131,177366900264876,874490466442333,508407939787911]}"
+    },
+    {
+        "display_name": "Google",
+        "value": "470248020387148",
+        "active": null,
+        "seo_navigable_filters": null,
+        "slug": "electronics",
+        "virtual_attribute_value": "2444794618966021",
+        "contextual_filters": "{\"brand\":[2806224329413131,177366900264876,874490466442333,2444794618966021]}"
+    },
+    {
+        "display_name": "HP",
+        "value": "348709729323457",
+        "active": null,
+        "seo_navigable_filters": null,
+        "slug": "electronics",
+        "virtual_attribute_value": "494258704581218",
+        "contextual_filters": "{\"brand\":[2806224329413131,177366900264876,874490466442333,494258704581218]}"
+    },
+    {
+        "display_name": "Intel",
+        "value": "652081438745767",
+        "active": null,
+        "seo_navigable_filters": null,
+        "slug": "electronics",
+        "virtual_attribute_value": "193214212244799",
+        "contextual_filters": "{\"brand\":[2806224329413131,177366900264876,874490466442333,193214212244799]}"
+    },
+    {
+        "display_name": "Nintendo",
+        "value": "673482146421328",
+        "active": null,
+        "seo_navigable_filters": null,
+        "slug": "electronics",
+        "virtual_attribute_value": "365440017874455",
+        "contextual_filters": "{\"brand\":[2806224329413131,177366900264876,874490466442333,365440017874455]}"
+    },
+    {
+        "display_name": "OtterBox",
+        "value": "302524054015407",
+        "active": null,
+        "seo_navigable_filters": null,
+        "slug": "electronics",
+        "virtual_attribute_value": "175149841088021",
+        "contextual_filters": "{\"brand\":[2806224329413131,177366900264876,874490466442333,175149841088021]}"
+    },
+    {
+        "display_name": "Panasonic",
+        "value": "331883607367099",
+        "active": null,
+        "seo_navigable_filters": null,
+        "slug": "electronics",
+        "virtual_attribute_value": "200020264439100",
+        "contextual_filters": "{\"brand\":[2806224329413131,177366900264876,874490466442333,200020264439100]}"
+    },
+    {
+        "display_name": "VIZIO",
+        "value": "322743738424484",
+        "active": null,
+        "seo_navigable_filters": null,
+        "slug": "electronics",
+        "virtual_attribute_value": "312948339662051",
+        "contextual_filters": "{\"brand\":[2806224329413131,177366900264876,874490466442333,312948339662051]}"
+    }
+]

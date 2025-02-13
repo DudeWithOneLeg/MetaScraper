@@ -1,0 +1,33 @@
+{
+  "media": {
+    "sub_categories": [
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "books",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Books",
+        "virtual_category": {
+          "name": "Books",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "775732879500929"
+        },
+        "id": "2316705775099020",
+        "fields": []
+      },
+      {
+        "__typename": "ProductTaxonomySEOInfo",
+        "seo_url": "movies-tv",
+        "seo_page_is_geo_agnostic": false,
+        "seo_localized_page_title": "Movies & TV Shows",
+        "virtual_category": {
+          "name": "Movies & TV Shows",
+          "virtual_taxonomy_publish_state": "PUBLISHED",
+          "id": "3810954795644238"
+        },
+        "id": "3265325416845248",
+        "fields": []
+      }
+    ],
+    "fields": []
+  }
+}

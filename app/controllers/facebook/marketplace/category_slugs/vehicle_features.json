@@ -1,0 +1,497 @@
+[
+    {
+      "display_name": "ABS",
+      "value": "abs_brakes",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Adaptive Cruise Control",
+      "value": "adaptive_cruise_control",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Air Conditioning",
+      "value": "air_conditioning",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Airbags",
+      "value": "airbags",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Alarm",
+      "value": "alarm",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Alloy Wheels",
+      "value": "alloy_wheels",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Armored",
+      "value": "armored",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Aux Audio Input",
+      "value": "aux_audio_input",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Backup Camera",
+      "value": "backup_camera",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Blind Spot Alert",
+      "value": "blind_spot_alert",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Bluetooth",
+      "value": "bluetooth",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Collision Avoidance",
+      "value": "collision_avoidance",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Cruise Control",
+      "value": "cruise_control",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Daytime Running Lights",
+      "value": "daytime_running_lights",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "DVD Player",
+      "value": "dvd_player",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Fog Lights",
+      "value": "fog_lights",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Front Camera",
+      "value": "front_camera",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "HD Radio",
+      "value": "hd_radio",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Heated Seats",
+      "value": "heated_seats",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Heated Steering Wheel",
+      "value": "heated_steering_wheel",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "HID Headlights",
+      "value": "hid_headlights",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Hill Start Assist",
+      "value": "hill_start_assist",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Keyless Entry",
+      "value": "keyless_entry",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Keyless Start",
+      "value": "keyless_start",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Lane Keep Assist",
+      "value": "lane_keep_assist",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Leather Seats",
+      "value": "leather",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "LED Headlights",
+      "value": "led_headlights",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Moon Roof",
+      "value": "moon_roof",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "MP3",
+      "value": "mp3",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Navigation",
+      "value": "navigation",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Night View",
+      "value": "night_view",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Panorama Roof",
+      "value": "panorama_roof",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Park Assist",
+      "value": "park_assist",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Power Door Locks",
+      "value": "power_door_locks",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Power Liftgate",
+      "value": "power_liftgate",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Power Seats",
+      "value": "power_seats",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Power Steering",
+      "value": "power_steering",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Power Windows",
+      "value": "power_windows",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Privacy Glass",
+      "value": "privacy_glass",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Rear Spoiler",
+      "value": "rear_spoiler",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Remote Start",
+      "value": "remote_start",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Roof Rack",
+      "value": "roof_rack",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Running Boards",
+      "value": "running_boards",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Satellite Radio",
+      "value": "satellite_radio",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Stability Control",
+      "value": "stability_control",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Sun Roof",
+      "value": "sunroof",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Surround View Camera",
+      "value": "surround_view_camera",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Telematics",
+      "value": "telematics",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Third Row Seat",
+      "value": "third_row_seat",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Tilt Steering Wheel",
+      "value": "tilt_steering_wheel",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Tinted Windows",
+      "value": "tinted_windows",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Tire Pressure Monitor",
+      "value": "tire_pressure_monitor",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Tow Package",
+      "value": "tow_package",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Traction Control",
+      "value": "traction_control",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    },
+    {
+      "display_name": "Ventilated Seats",
+      "value": "ventilated_seats",
+      "active": null,
+      "seo_navigable_filters": null,
+      "slug": null,
+      "virtual_attribute_value": null,
+      "contextual_filters": null
+    }
+  ]
