@@ -1,0 +1,107 @@
+[
+    {
+        "node_id": "10155868802195727",
+        "node_name": "Animals & Pets",
+        "node_icon": "paw"
+    },
+    {
+        "node_id": "192061321672562",
+        "node_name": "Books & Literature",
+        "node_icon": "book"
+    },
+    {
+        "node_id": "947721895250412",
+        "node_name": "Business, Finance, & Economics",
+        "node_icon": "building-bank"
+    },
+    {
+        "node_id": "1532468687067440",
+        "node_name": "Children & Parenting",
+        "node_icon": "kids"
+    },
+    {
+        "node_id": "544804365682598",
+        "node_name": "Education & Learning",
+        "node_icon": "mortar-board"
+    },
+    {
+        "node_id": "10156104410190727",
+        "node_name": "Fashion & Style",
+        "node_icon": "t-shirt"
+    },
+    {
+        "node_id": "1051372811541370",
+        "node_name": "Fitness & Workouts",
+        "node_icon": "running"
+    },
+    {
+        "node_id": "10155868809125727",
+        "node_name": "Food & Drink",
+        "node_icon": "fork-knife"
+    },
+    {
+        "node_id": "10156104417160727",
+        "node_name": "Games, Puzzles, & Play",
+        "node_icon": "games"
+    },
+    {
+        "node_id": "2869832916375680",
+        "node_name": "History & Philosophy",
+        "node_icon": "book"
+    },
+    {
+        "node_id": "336003933867859",
+        "node_name": "Holidays & Celebrations",
+        "node_icon": "cake"
+    },
+    {
+        "node_id": "815763875218192",
+        "node_name": "Home & Garden",
+        "node_icon": "news-feed-home"
+    },
+    {
+        "node_id": "10155994924430727",
+        "node_name": "Music & Audio",
+        "node_icon": "music"
+    },
+    {
+        "node_id": "698606903872325",
+        "node_name": "Performing Arts",
+        "node_icon": "arts"
+    },
+    {
+        "node_id": "437204196475028",
+        "node_name": "Relationships, Friends, & Family",
+        "node_icon": "relationship"
+    },
+    {
+        "node_id": "947722281917040",
+        "node_name": "Science & Tech",
+        "node_icon": "beaker"
+    },
+    {
+        "node_id": "10155868806390727",
+        "node_name": "Sports",
+        "node_icon": "soccer"
+    },
+    {
+        "node_id": "10155994923880727",
+        "node_name": "TV & Movies",
+        "node_icon": "film-reel"
+    },
+    {
+        "node_id": "1050937474918237",
+        "node_name": "Travel & Leisure Activities",
+        "node_icon": "passport"
+    },
+    {
+        "node_id": "1065187776906111",
+        "node_name": "Vehicles & Transportation",
+        "node_icon": "bus"
+    },
+    {
+        "node_id": "319386782176339",
+        "node_name": "Visual Arts, Architecture & Crafts",
+        "node_icon": "crafts"
+    }
+]
