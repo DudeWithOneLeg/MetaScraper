@@ -254,7 +254,7 @@ module Facebook
     body = res.body
     render json: JSON.parse(body)
     end
-    
+
     def facebook_video_search
       query = request.query_parameters["query"]
       cursor = request.query_parameters["cursor"]
