@@ -109,6 +109,7 @@ GEM
     erubi (1.13.1)
     et-orbi (1.2.11)
       tzinfo
+    execjs (2.10.0)
     fugit (1.11.1)
       et-orbi (~> 1, >= 1.2.11)
       raabro (~> 1.4)
@@ -145,7 +146,7 @@ GEM
       thor (~> 1.3)
       zeitwerk (>= 2.6.18, < 3.0)
     language_server-protocol (3.17.0.4)
-    logger (1.6.5)
+    logger (1.6.6)
     loofah (2.24.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -295,9 +296,7 @@ GEM
     rubyzip (2.4.1)
     rufo (0.18.0)
     securerandom (0.4.1)
-    selenium-webdriver (4.28.0)
-      base64 (~> 0.2)
-      logger (~> 1.4)
+    selenium-webdriver (4.10.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
@@ -332,6 +331,7 @@ GEM
       ostruct
     stimulus-rails (1.3.4)
       railties (>= 6.0.0)
+    stitch-rb (0.0.8)
     stringio (3.1.2)
     thor (1.3.2)
     thruster (0.1.10)
@@ -354,6 +354,10 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
+    webdrivers (5.3.1)
+      nokogiri (~> 1.6)
+      rubyzip (>= 1.3.0)
+      selenium-webdriver (~> 4.0, < 4.11)
     websocket (1.2.11)
     websocket-driver (0.7.7)
       base64
@@ -379,6 +383,7 @@ DEPENDENCIES
   brakeman
   capybara
   debug
+  execjs
   httparty
   importmap-rails
   jbuilder
@@ -390,16 +395,18 @@ DEPENDENCIES
   rails (~> 8.0.1)
   rubocop-rails-omakase
   rufo
-  selenium-webdriver (~> 4.28)
+  selenium-webdriver (~> 4.10)
   solid_cable
   solid_cache
   solid_queue
   sqlite3 (>= 2.1)
   stimulus-rails
+  stitch-rb
   thruster
   turbo-rails
   tzinfo-data
   web-console
+  webdrivers (~> 5.3)
 
 BUNDLED WITH
    2.6.3

@@ -1,3 +1,7 @@
+# require "stitch"
+# require "execjs"
+require "selenium-webdriver"
+
 module Facebook
   module Watch
     class WatchController < ApplicationController
@@ -51,8 +55,102 @@ module Facebook
         doc_id = "9506048516125027"
 
         response = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
+        body = JSON.parse(response.body)
 
-        render json: JSON.parse(response.body)
+        response_results = body.dig("data", "serpResponse", "results", "edges")
+        results = []
+
+        response_results.each_with_index do |result, index|
+          info = result.dig("rendering_strategy", "view_model")
+          id = info.dig("video_metadata_model", "video", "id")
+          title = info.dig("video_metadata_model", "title")
+          description = info.dig("video_metadata_model", "save_description")
+          relative_time_string = info.dig("video_metadata_model", "relative_time_string").split(" · ")
+          upload_date = relative_time_string[0]
+          views = relative_time_string[1]
+          author_profile = info.dig("video_metadata_model", "video_owner_profile")
+          author = author_profile["name"]
+          author_id = author_profile["id"]
+          thumbnail_url = info.dig("video_thumbnail_model", "thumbnail_image", "uri")
+          duration = info.dig("video_thumbnail_model", "video_duration_text")
+          results.push({
+            title: title,
+            description: description,
+            upload_date: upload_date,
+            views: views,
+            author: {
+              id: id,
+              name: author,
+            },
+            thumbnail_url: thumbnail_url,
+            duration: duration,
+          })
+        end
+
+        render json: body
+      end
+
+      def watch_video
+        # variables = { scale: 2, videoId: "1864880327319690" }
+        # variables = variables.to_json
+        # variables = URI.encode_www_form_component(variables)
+
+        # doc_id = "9280890455288670"
+        # js_code = File.read(File.expand_path("../web_driver.js", __FILE__))
+
+        # Compile and execute
+        # puts ExecJS.runtime.name
+
+        # context = ExecJS.compile(js_code)
+        # puts context.call("interceptRequests", "https://www.facebook.com/watch?v=1864880327319690")
+        # options = Selenium::WebDriver::Options.chrome
+        # options.web_socket_url = true
+        options = Selenium::WebDriver::Chrome::Options.new
+        # options.add_argument("--headless") # Optional
+        service = Selenium::WebDriver::Chrome::Service.new
+
+        driver = Selenium::WebDriver.for :chrome, options: options, service: service
+        devtools = driver.devtools
+
+        # Connect to Chrome DevTools Protocol
+        devtools.connect!
+
+        # Enable necessary domains
+        devtools.execute_cdp("Network.enable")
+        driver.execute_cdp("Network.setRequestInterception", patterns: [{
+                                                               urlPattern: "*",
+                                                               resourceType: "XHR",
+                                                               interceptionStage: "Request",
+                                                             }])
+        devtools.on_cdp_event("Network.responseReceived") do |params|
+          response = params["response"]
+          puts "\nIncoming Response:"
+          puts "URL: #{response["url"]}"
+          puts "Status: #{response["status"]}"
+          puts "Headers: #{response["headers"]}"
+
+          # Get response body if needed
+          if response["status"] != 304 # Skip 304 Not Modified
+            begin
+              body = devtools.execute_cdp("Network.getResponseBody", requestId: params["requestId"])
+              puts "Body: #{body["body"][0..200]}..." # Show first 200 chars
+            rescue => e
+              puts "Couldn't get response body: #{e.message}"
+            end
+          end
+        end
+        driver.get("https://www.facebook.com/watch?v=1864880327319690")
+        # devtools.on
+        # requests.on(:before_request) do |event|
+        #     puts "Intercepted request: #{event['url']}"
+        #     # You can modify the request here if necessary
+        #   end
+
+        # response = HTTParty.get("https://m.facebook.com/1864880327319690")
+        # body = JSON.parse(response.body)
+        # File.write(File.expand_path("../test.html", __FILE__), response.body)
+
+        render json: {}
       end
 
       #fetches each category and grabs sub categories

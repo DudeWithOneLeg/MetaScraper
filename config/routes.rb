@@ -58,6 +58,7 @@ Rails.application.routes.draw do
 
     scope module: 'watch' do
       get "/facebook_watch_search", to: "watch#watch_search"
+      get "/facebook_watch_video", to: "watch#watch_video"
       get "facebook_watch_categories", to: "watch#watch_categories"
     end
     
