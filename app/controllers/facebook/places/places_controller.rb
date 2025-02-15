@@ -8,10 +8,10 @@ require "selenium-webdriver"
 module Facebook
   module Places
     class PlacesController < ApplicationController
-      @@proxy_url = "192.168.49.1"
-      @@proxy_port = "8000"
-    #   @@proxy_url = nil
-    #   @@proxy_port = nil
+    #   @@proxy_url = "192.168.49.1"
+    #   @@proxy_port = "8000"
+      @@proxy_url = nil
+      @@proxy_port = nil
 
       def places_search
         variables = {
@@ -71,8 +71,28 @@ module Facebook
         doc_id = "9506048516125027"
 
         response = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
+        body = JSON.parse(response.body)
+        response_results = body.dig("data", "serpResponse", "results", "edges")
+        results = []
 
-        render json: JSON.parse(response.body)
+        response_results.each do |result|
+            info = result.dig("rendering_strategy", "view_model", "profile")
+            id = info.dig("id")
+            name = info.dig("name")
+            url = info.dig("url")
+            profile_url = info.dig("profile_url")
+            profile_picture = info.dig("profile_picture")
+
+            results.push({
+                id: id,
+                name: name,
+                url: url,
+                profile_url: profile_url,
+                profile_picture: profile_picture
+            })
+        end
+
+        render json: results
       end
     end
   end
