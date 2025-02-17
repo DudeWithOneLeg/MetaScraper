@@ -37,6 +37,7 @@ Rails.application.routes.draw do
       get "/facebook_pet_supplies_search", to: "marketplace#marketplace_pet_supplies_search"
       get "/facebook_sporting_goods_search", to: "marketplace#marketplace_sporting_goods_search"
       get "/facebook_toys_games_search", to: "marketplace#marketplace_toys_games_search"
+      get "/facebook_marketplace_search", to: "marketplace#marketplace_search"
 
     end
 
@@ -62,7 +63,6 @@ Rails.application.routes.draw do
       get "facebook_watch_categories", to: "watch#watch_categories"
     end
     
-    get "/marketplace_search", to: "facebook#marketplace_search"
     get "/marketplace_listing", to: "facebook#marketplace_listing"
     get "/facebook_user_search", to: "facebook#facebook_user_search"
     get "/facebook_photo_search", to: "facebook#facebook_photo_search"

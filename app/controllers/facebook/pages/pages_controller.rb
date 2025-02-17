@@ -4,10 +4,15 @@ require "json"
 require "open-uri"
 require "nokogiri"
 require "selenium-webdriver"
+require_relative "../facebook_controller"
 
 module Facebook
   module Pages
     class PagesController < ApplicationController
+        def listing_restruct(response, type)
+            Facebook.listing_restruct(response, type)
+        end
+
       def pages_search
         variables = { 
             allow_streaming: false, 
@@ -103,25 +108,8 @@ module Facebook
 
         response = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
         body = JSON.parse(response.body)
-        response_results = body.dig("data", "serpResponse", "results", "edges")
-        results = []
-
-        response_results.each do |result|
-            info = result.dig("rendering_strategy", "view_model", "profile")
-            id = info.dig("id")
-            name = info.dig("name")
-            url = info.dig("url")
-            profile_url = info.dig("profile_url")
-            profile_picture = info.dig("profile_picture")
-
-            results.push({
-                id: id,
-                name: name,
-                url: url,
-                profile_url: profile_url,
-                profile_picture: profile_picture
-            })
-        end
+        
+        results = listing_restruct(body, 4)
 
         render json: results
       end

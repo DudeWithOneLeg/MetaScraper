@@ -1,10 +1,15 @@
 # require "stitch"
 # require "execjs"
 require "selenium-webdriver"
+require_relative "../facebook_controller"
 
 module Facebook
   module Watch
     class WatchController < ApplicationController
+      def listing_restruct(response, type)
+        Facebook.listing_restruct(response, type)
+      end
+
       def watch_search
         variables = {
           allow_streaming: false,
@@ -57,37 +62,9 @@ module Facebook
         response = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
         body = JSON.parse(response.body)
 
-        response_results = body.dig("data", "serpResponse", "results", "edges")
-        results = []
+        results = listing_restruct(body, 3)
 
-        response_results.each_with_index do |result, index|
-          info = result.dig("rendering_strategy", "view_model")
-          id = info.dig("video_metadata_model", "video", "id")
-          title = info.dig("video_metadata_model", "title")
-          description = info.dig("video_metadata_model", "save_description")
-          relative_time_string = info.dig("video_metadata_model", "relative_time_string").split(" · ")
-          upload_date = relative_time_string[0]
-          views = relative_time_string[1]
-          author_profile = info.dig("video_metadata_model", "video_owner_profile")
-          author = author_profile["name"]
-          author_id = author_profile["id"]
-          thumbnail_url = info.dig("video_thumbnail_model", "thumbnail_image", "uri")
-          duration = info.dig("video_thumbnail_model", "video_duration_text")
-          results.push({
-            title: title,
-            description: description,
-            upload_date: upload_date,
-            views: views,
-            author: {
-              id: id,
-              name: author,
-            },
-            thumbnail_url: thumbnail_url,
-            duration: duration,
-          })
-        end
-
-        render json: body
+        render json: results
       end
 
       def watch_video

@@ -4,14 +4,19 @@ require "json"
 require "open-uri"
 require "nokogiri"
 require "selenium-webdriver"
+require_relative "../facebook_controller"
 
 module Facebook
   module Places
     class PlacesController < ApplicationController
-    #   @@proxy_url = "192.168.49.1"
-    #   @@proxy_port = "8000"
+      #   @@proxy_url = "192.168.49.1"
+      #   @@proxy_port = "8000"
       @@proxy_url = nil
       @@proxy_port = nil
+
+      def listing_restruct(response, type)
+        Facebook.listing_restruct(response, type)
+      end
 
       def places_search
         variables = {
@@ -42,14 +47,14 @@ module Facebook
             # takeout => ["{\"name\":\"place_takeout\",\"args\":\"takeout\"}"]
             # location => "{\"name\":\"place_location\",\"args\":\"114148045261892\"}"
             # STATUS
-                # new hours => "{\"name\":\"place_status\",\"args\":\"differently_open\"}"
-                # temporarily closed => temporarily_closed
-                # normal hours => operating_as_usual
+            # new hours => "{\"name\":\"place_status\",\"args\":\"differently_open\"}"
+            # temporarily closed => temporarily_closed
+            # normal hours => operating_as_usual
             # PRICE
-                # $ => "{\"name\":\"place_price\",\"args\":\"1\"}"
-                # $$ => "{\"name\":\"place_price\",\"args\":\"2\"}"
-                # $$$ => "{\"name\":\"place_price\",\"args\":\"3\"}"
-                # $$$$ => "{\"name\":\"place_price\",\"args\":\"4\"}"
+            # $ => "{\"name\":\"place_price\",\"args\":\"1\"}"
+            # $$ => "{\"name\":\"place_price\",\"args\":\"2\"}"
+            # $$$ => "{\"name\":\"place_price\",\"args\":\"3\"}"
+            # $$$$ => "{\"name\":\"place_price\",\"args\":\"4\"}"
             filters: [],
             text: "gary",
           },
@@ -72,25 +77,7 @@ module Facebook
 
         response = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
         body = JSON.parse(response.body)
-        response_results = body.dig("data", "serpResponse", "results", "edges")
-        results = []
-
-        response_results.each do |result|
-            info = result.dig("rendering_strategy", "view_model", "profile")
-            id = info.dig("id")
-            name = info.dig("name")
-            url = info.dig("url")
-            profile_url = info.dig("profile_url")
-            profile_picture = info.dig("profile_picture")
-
-            results.push({
-                id: id,
-                name: name,
-                url: url,
-                profile_url: profile_url,
-                profile_picture: profile_picture
-            })
-        end
+        results = listing_restruct(body, 4)
 
         render json: results
       end

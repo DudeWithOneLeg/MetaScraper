@@ -4,10 +4,15 @@ require "json"
 require "open-uri"
 require "nokogiri"
 require "selenium-webdriver"
+require_relative "../facebook_controller"
 
 module Facebook
   module Events
     class EventsController < ApplicationController
+      def listing_restruct(response, type)
+        Facebook.listing_restruct(response, type)
+      end
+
       def events_search
         variables = {
           allow_streaming: false,
@@ -45,18 +50,6 @@ module Facebook
           scale: 2,
           stream_initial_count: 0,
           useDefaultActor: false,
-        # __relay_internal__pv__GHLShouldChangeAdIdFieldNamerelayprovider: false,
-        # __relay_internal__pv__GHLShouldChangeSponsoredDataFieldNamerelayprovider: true,
-        # __relay_internal__pv__IsWorkUserrelayprovider: false,
-        # __relay_internal__pv__CometFeedStoryDynamicResolutionPhotoAttachmentRenderer_experimentWidthrelayprovider: 600,
-        # __relay_internal__pv__CometImmersivePhotoCanUserDisable3DMotionrelayprovider: false,
-        # __relay_internal__pv__WorkCometIsEmployeeGKProviderrelayprovider: false,
-        # __relay_internal__pv__IsMergQAPollsrelayprovider: false,
-        # __relay_internal__pv__FBReelsMediaFooter_comet_enable_reels_ads_gkrelayprovider: false,
-        # __relay_internal__pv__CometUFIReactionsEnableShortNamerelayprovider: false,
-        # __relay_internal__pv__CometUFIShareActionMigrationrelayprovider: true,
-        # __relay_internal__pv__StoriesArmadilloReplyEnabledrelayprovider: true,
-        # __relay_internal__pv__EventCometCardImage_prefetchEventImagerelayprovider: false
         }
 
         variables = variables.to_json
@@ -66,25 +59,8 @@ module Facebook
 
         response = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}")
         body = JSON.parse(response.body)
-        response_results = body.dig("data", "serpResponse", "results", "edges")
-        results = []
-
-        response_results.each do |result|
-            info = result.dig("rendering_strategy", "view_model", "profile")
-            id = info.dig("id")
-            name = info.dig("name")
-            url = info.dig("url")
-            profile_url = info.dig("profile_url")
-            profile_picture = info.dig("profile_picture")
-
-            results.push({
-                id: id,
-                name: name,
-                url: url,
-                profile_url: profile_url,
-                profile_picture: profile_picture
-            })
-        end
+        
+        results = listing_restruct(body, 4)
 
         render json: results
       end
