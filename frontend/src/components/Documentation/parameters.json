@@ -1,0 +1,51 @@
+{
+    "marketplace": {
+        "sections": [
+            {
+                "name": "Search Query",
+                "params": [
+                    {
+                        "name": "query",
+                        "required": true,
+                        "description": "Parameter defines the query you want to search." 
+                    }
+                ]
+            },
+            {
+                "name": "Geographic Location",
+                "params": [
+                    {
+                        "name": "latitude",
+                        "required": false,
+                        "description": "Specifies the latitude for location-based filtering."
+                    },
+                    {
+                        "name": "longitude",
+                        "required": false,
+                        "description": "Specifies the longitude for location-based filtering."
+                    },
+                    {
+                        "name": "radius_km",
+                        "required": false,
+                        "description": "Defines the search radius in kilometers for location-based results."
+                    }
+                ]
+            },
+            {
+                "name": "Price",
+                "params": [
+                    {
+                        "name": "max_price",
+                        "required": false,
+                        "description": "Filters results to those with a price less than or equal to this value."
+                    },
+                    {
+                        "name": "min_price",
+                        "required": false,
+                        "description": "Filters results to those with a price greater than or equal to this value."
+                    }
+                ]
+            }
+        ]
+    }
+}

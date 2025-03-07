@@ -4,7 +4,7 @@ import { Outlet, useNavigate, useParams } from 'react-router'
 export default function Navigation() {
     return (
         <div className="flex flex-row h-screen w-screen">
-            <div className='w-[300px] bg-slate-800 h-screen space-y-6 p-2'>
+            <div className='min-w-[300px] bg-slate-800 h-screen space-y-6 p-2'>
                 <div className='p-4'>
                     <h1 className='font-bold text-2xl text-white'>Meta Scraper</h1>
                 </div>
@@ -16,7 +16,10 @@ export default function Navigation() {
                 </div>
 
             </div>
-            <Outlet />
+            <div className='w-full flex justify-center'>
+
+                <Outlet /> 
+            </div>
         </div>
     )
 }
@@ -66,7 +69,7 @@ function Features() {
 
 const features = [
     {
-        name: 'Marketplace',
+        name: 'Marketplace API',
         route: '/marketplace',
         subFeatures: [
             {
