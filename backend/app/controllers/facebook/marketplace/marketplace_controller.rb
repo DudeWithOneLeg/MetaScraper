@@ -20,7 +20,7 @@ module Facebook
       end
 
       def marketplace_search
-        query = request.query_parameters["query"]
+        query = request.query_parameters["q"]
         limit = request.query_parameters["limit"]
         latitude = request.query_parameters["latitude"]
         longitude = request.query_parameters["longitude"]
@@ -32,11 +32,12 @@ module Facebook
           pg: page,
           c2c: {
             br: "AbrvkJqYcXPwR-JW82eTCB8PMU3mqW7sTa92L5bQ0F8gKoO-UVP6u305mnJTh1dwhQvozgjwXWAUolCxoUIw-RZSqkFDx40E0ysNl8SnoqMn1Cud1xjNDb2pZHFE1dbTUnQqQ-n3H-5KNKj7Fa7gxFvmH2_w8IvySHyH0_puIHx2SEGsFfFaBLOYrB2rGBE5ccEnTy52uVpU0xhSk5avpKienrkGs6h3Be2wTMfRxO_Vzput9KoitqgrAwxDV56W8iPvKNB_Qdea17-5LS2hqjp2cnYElgTQhtHNr1VreJQcQjFKl_HCAvAz2BNBVoBIBb4xmgaaZLP0XipFougXr1aTDylvFJTMFDa7XLPEQLNSOboYaVZQMsvurT55GaAmiqkIaUraxkZ20EO6rqgvPCllopIz-l1S4kIm-b51lrMZ8J3Aqh8gTA4bH3oQoFOP2AJ_1kFYWNRKXTQxG2CGkVH77iL2MTULwSgh89cmK6NYOHGU3jqO483X3fOv-ALm4HTVlPBkptTUrP-R3tSY1WgckjzRZSdqBmuijfzNY9MRPwrf1W5KwQLF3zUENE8_Aw8",
+            # br:""
           },
         }
-        puts cursor.to_json
+        puts query
         variable_json = {
-          count: limit,
+          count: 24,
           cursor: cursor.to_json,
           params: {
             bqf: {
@@ -74,7 +75,7 @@ module Facebook
               # location longitude
               filter_location_longitude: longitude,
               # distance-radius
-              filter_radius_km: radius_km,
+              filter_radius_km: 64,
 
               # sort by
               # sort by
@@ -85,9 +86,9 @@ module Facebook
               commerce_search_sort_by: "DISTANCE_ASCEND",
 
               # min-price ex. $1200 = 120000
-              filter_price_lower_bound: min_price,
+              filter_price_lower_bound: min_price ? "#{min_price}00" : nil,
               # max-price
-              filter_price_upper_bound: max_price,
+              filter_price_upper_bound: max_price ? "#{max_price}00" : 214748364700,
 
             },
             custom_request_params: {
@@ -101,8 +102,9 @@ module Facebook
           offset: 24,
         }
         variable_json = variable_json.to_json
+        puts variable_json
         variables = URI.encode_www_form_component(variable_json)
-        doc_id = "8558510667564038"
+        doc_id = "9423540494371697"
         # puts variable_json
         response = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
         body = JSON.parse(response.body)

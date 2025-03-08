@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import configureStore from './store';
 import {BrowserRouter} from 'react-router'
+import PlaygroundProvider from './context/playground';
 // import { restoreCSRF, csrfFetch } from './store/csrf';
 
 const store = configureStore();
@@ -20,9 +21,11 @@ if (process.env.NODE_ENV !== 'production') {
 function Root() {
   return (
     <Provider store={store}>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <PlaygroundProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </PlaygroundProvider>
     </Provider>
   );
 }

@@ -42,7 +42,9 @@ module Facebook
       page_info = response.dig("data", "marketplace_search", "feed_units", "page_info")
       listings.each do |listing|
         info = listing.dig("node", "listing")
-        results.push(info)
+        if info != nil
+          results.push(info)
+        end
       end
     end
 
@@ -175,10 +177,10 @@ module Facebook
 
   class FacebookController < ApplicationController
 
-    @@proxy_url = "192.168.49.1"
-    @@proxy_port = "8000"
-    # @@proxy_url = nil
-    # @@proxy_port = nil
+    # @@proxy_url = "192.168.49.1"
+    # @@proxy_port = "8000"
+    @@proxy_url = nil
+    @@proxy_port = nil
 
     # userId is in user[logging_model][tapped_result_id]
     def facebook_user_search

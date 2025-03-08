@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchPropertyResults } from './store/marketplace';
 
 export default function PropertySearch() {
-    const propertyResults = useSelector(state => state.marketplace.propertyResults)
+    const propertyResults = useSelector(state => state.marketplace.results)
     const dispatch = useDispatch()
 
     useEffect(() => {

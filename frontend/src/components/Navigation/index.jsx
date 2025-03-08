@@ -16,10 +16,17 @@ export default function Navigation() {
                 </div>
 
             </div>
-            <div className='w-full flex justify-center'>
+            <div className='h-screen w-full flex flex-col'>
+                <div className='w-full h-14 bg-blue-50 border-b'/>
 
-                <Outlet /> 
+                <div className='w-full h-full flex flex-col overflow-y-scroll'>
+                    {/* <div className='h-[60px] w-full border-b bg-blue-50' /> */}
+
+                    <Outlet /> 
+                </div>
+                
             </div>
+
         </div>
     )
 }
@@ -49,11 +56,12 @@ function Features() {
                         <div className='h-fit w-full pl-2 text-white'>
                             {subFeatures?.map(subFeature => {
                                 const { name, route } = subFeature
-                                const onClick = () => navigate(`/marketplace/${route}`)
+                                const navToFeaturePage = () => navigate(`/marketplace/${route}`)
+
                                 return (
                                     <div
                                         className={`rounded-full p-1 ${(subfeatureRoute === route.replace('/', '')) ? 'bg-orange-400 font-bold' : 'hover:bg-slate-700'} text-white px-4 w-fit cursor-pointer`}
-                                        onClick={onClick}
+                                        onClick={navToFeaturePage}
                                     >
                                         <p>{name}</p>
                                     </div>

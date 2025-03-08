@@ -8,7 +8,7 @@ export default function Documentation() {
     console.log(featureRoute)
 
     return (
-        <div className="w-full space-y-4">
+        <div className="w-full space-y-4 flex flex-col overflow-x-auto">
             <div className="font-bold">
                 <p>API Parameters</p>
             </div>
@@ -25,8 +25,8 @@ const Section = ({ section }) => {
     const { name, params } = section
 
     return (
-        <div className="rounded-lg border max-w-[818px] shrink">
-            <div className="border-b bg-blue-100 p-2">
+        <div className="rounded-lg border max-w-[818px] shrink flex flex-col">
+            <div className="border-b bg-blue-50 p-2">
                 <p>{name}</p>
             </div>
             <div className="flex flex-col space-y-2">
