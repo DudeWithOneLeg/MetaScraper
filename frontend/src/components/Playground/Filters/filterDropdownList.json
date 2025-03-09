@@ -1,0 +1,109 @@
+[
+    {
+        "title": "Sort By",
+        "type": "radio",
+        "defaultValue":"suggested",
+        "options": [
+            {
+                "title": "Suggested",
+                "value": "suggested"
+            },
+            {
+                "title": "Distance: Nearest first",
+                "value": "nearest"
+            },
+            {
+                "title": "Date listed: Newest first",
+                "value": "newest"
+            },
+            {
+                "title": "Price: Lowest first",
+                "value": "high"
+            },
+            {
+                "title": "Price: Highest first",
+                "value": "low"
+            }
+        ]
+    },
+    {
+        "title": "Delivery method",
+        "type": "radio",
+        "defaultValue": "all",
+        "options": [
+            {
+                "title": "All",
+                "value": "all"
+            },
+            {
+                "title": "Local pickup",
+                "value": "local"
+            },
+            {
+                "title": "Shipping",
+                "value": "shipping"
+            }
+        ]
+    },
+    {
+        "title": "Condition",
+        "type": "select",
+        "defaultValue": [],
+        "options": [
+            {
+                "title": "New",
+                "value": "new"
+            },
+            {
+                "title": "Used - Like new",
+                "value": "used_like_new"
+            },
+            {
+                "title": "Used - Good",
+                "value": "used_good"
+            },
+            {
+                "title": "Used - Fair",
+                "value": "used_fair"
+            }
+        ]
+    },
+    {
+        "title": "Date listed",
+        "type": "radio",
+        "defaultValue": "all",
+        "options": [
+            {
+                "title": "All",
+                "value": "all"
+            },
+            {
+                "title": "Last 24 hours",
+                "value": "day"
+            },
+            {
+                "title": "Last 7 days",
+                "value": "week"
+            },
+            {
+                "title": "Last 30 days",
+                "value": "month"
+            }
+        ]
+    },
+    {
+        "title": "Availability",
+        "type": "radio",
+        "defaultValue": "available",
+        "options": [
+            {
+                "title": "Available",
+                "value": "available"
+            },
+            {
+                "title": "Sold",
+                "value": "sold"
+            }
+        ]
+    }
+]
