@@ -1,14 +1,16 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { useSelector, useDispatch } from "react-redux"
 import { useParams } from "react-router-dom"
 import { fetchPropertyResults } from '../../store/marketplace';
-import Filters from "./Filters";
+import Filters, {MapDialog} from "./Filters";
+
 
 export default function Playground() {
     const { featureRoute, subfeatureRoute } = useParams()
     const resultInfo = useSelector(state => state.marketplace.results)
     const [searchParams, setSearchParams] = useState({ latitude: 33.046289, longitude: -96.994123 })
     const [results, setResults] = useState(null)
+    const [showMap, setShowMap] = useState(false)
     const [pageInfo, setPageInfo] = useState(null)
     console.log(resultInfo)
     // const {results} = resultInfo
@@ -27,12 +29,14 @@ export default function Playground() {
     }, [resultInfo])
 
     return (
-        <div className="flex flex-row w-full h-full">
+        <div className="flex flex-row w-full h-full relative">
+            {showMap ? <MapDialog setShowMap={setShowMap}/> : <></>}
             <Filters
                 setSearchParams={setSearchParams}
                 searchParams={searchParams}
+                setShowMap={setShowMap}
             />
-            <div className="flex flex-wrap w-full h-full overflow-y-scroll bg-zinc-900 justify-center">
+            <div className="flex flex-wrap w-full h-full overflow-y-scroll bg-zinc-900 justify-center relative">
 
                 {results?.map(result => {
                     return <Result result={result} />

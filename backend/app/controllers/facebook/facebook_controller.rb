@@ -468,15 +468,16 @@ module Facebook
     end
 
     def facebook_location_id_search
+      query = request.query_parameters["query"]
       variables = {
         params: {
           caller: "MARKETPLACE",
           country_filter: nil,
           integration_strategy: "STRING_MATCH",
           page_category: ["CITY", "SUBCITY", "NEIGHBORHOOD", "POSTAL_CODE"],
-          query: "Lewisville, Texas",
+          query: query,
           search_type: "PLACE_TYPEAHEAD",
-          viewer_coordinates: { latitude: 33.046289, longitude: -96.994123 },
+          # viewer_coordinates: { latitude: 33.046289, longitude: -96.994123 },
         },
       }
       variables = variables.to_json
@@ -484,6 +485,9 @@ module Facebook
       doc_id = "7321914954515895"
       # puts variable_json
       res = HTTParty.post("https://www.facebook.com/api/graphql?variables=#{variables}&doc_id=#{doc_id}", http_proxyaddr: @@proxy_url, http_proxyport: @@proxy_port)
+      body = JSON.parse(res.body)
+
+      results = body.dig('data', 'city_street_search', 'street_results', 'edges')
       # results = JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]["edges"]
       # puts JSON.parse(res.body)["data"]["marketplace_search"]["feed_units"]
       # results.each do |result|
@@ -491,7 +495,7 @@ module Facebook
       # end
       # render json: {results: results, search_info: {count: results.size}}
       # puts [].methods
-      render json: JSON.parse(res.body)
+      render json: results
     end
 
     # UNAUTHORIZED

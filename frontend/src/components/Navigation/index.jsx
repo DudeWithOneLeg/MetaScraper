@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Outlet, useNavigate, useParams } from 'react-router'
+import { Outlet, useNavigate, useParams } from 'react-router-dom'
 
 export default function Navigation() {
     return (

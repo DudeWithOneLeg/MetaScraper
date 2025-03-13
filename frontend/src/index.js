@@ -5,8 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import configureStore from './store';
-import {BrowserRouter} from 'react-router'
+import {BrowserRouter} from 'react-router-dom'
 import PlaygroundProvider from './context/playground';
+import 'leaflet/dist/leaflet.css'
 // import { restoreCSRF, csrfFetch } from './store/csrf';
 
 const store = configureStore();

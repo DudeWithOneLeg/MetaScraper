@@ -10,10 +10,10 @@ module Facebook
   module Marketplace
     class MarketplaceController < ApplicationController
     #   include Facebook
-      # @@proxy_url = "192.168.49.1"
-      # @@proxy_port = "8000"
-      @@proxy_url = nil
-      @@proxy_port = nil
+      @@proxy_url = "192.168.49.1"
+      @@proxy_port = "8000"
+      # @@proxy_url = nil
+      # @@proxy_port = nil
 
       def listing_restruct(response, type)
         Facebook.listing_restruct(response, type)

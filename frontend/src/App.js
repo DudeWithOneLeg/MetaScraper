@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router'
+import { Routes, Route } from 'react-router-dom'
 import Navigation from './components/Navigation';
 import RenderPage from './components/RenderPage';
 import logo from './logo.svg';

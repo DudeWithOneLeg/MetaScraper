@@ -36648,3 +36648,2465 @@ NoMethodError (undefined method 'each' for nil):
 app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
 app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
 app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/ws" for ::1 at 2025-03-10 01:16:45 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MetaScraper'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:16:53 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 384ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.6ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:16:54 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 224ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:16:59 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 260ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.8ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:17:00 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 218ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/ws" for ::1 at 2025-03-10 01:17:02 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2025-03-10 01:17:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2025-03-10 01:18:40 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2025-03-10 01:20:49 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2025-03-10 01:25:06 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:29:08 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 412ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:29:09 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 219ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:29:58 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 246ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:29:59 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 299ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 8.8ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:31:52 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 253ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:31:53 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 201ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:32:31 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 309ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.4ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:32:32 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 188ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:32:50 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 258ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:32:51 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 164ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:33:06 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 276ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.5ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:33:06 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 315ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.2ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/ws" for ::1 at 2025-03-10 01:33:39 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:34:27 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 221ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.2ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:34:28 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 195ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:36:01 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 247ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:36:02 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 248ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.2ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:36:56 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 272ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:36:57 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 279ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:44:16 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 329ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:44:16 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 232ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:46:08 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 233ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:46:09 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 140ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:50:51 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 195ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:50:52 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 147ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:51:40 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 266ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 01:51:40 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 236ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 23:19:12 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 241ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 13.8ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 23:19:13 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 178ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 23:20:28 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 170ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 23:20:29 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 23:22:10 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 176ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.4ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 23:22:11 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 147ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 23:22:17 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 282ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 23:22:18 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 152ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 23:23:10 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 181ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-10 23:23:11 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 258ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 00:01:27 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 00:07:30 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 00:07:31 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.7ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 00:09:41 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 165ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.7ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 00:09:41 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 234ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 00:09:47 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 157ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 00:09:48 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 00:17:17 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.1ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 00:17:17 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 153ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 00:18:30 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 163ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.9ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 00:18:30 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&q=test&" for 127.0.0.1 at 2025-03-11 00:18:34 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123", "q" => "test"}
+Completed 200 OK in 923ms (Views: 2.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 01:06:46 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 189ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 01:06:46 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 152ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 01:06:56 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 01:06:57 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 143ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 01:07:05 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 209ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 01:07:05 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 191ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 01:07:25 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 189ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 01:07:25 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 153ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 01:24:10 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 299ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.3ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 01:24:11 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 160ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 01:25:54 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 193ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.9ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 01:25:55 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 164ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 01:26:07 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 172ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 01:26:08 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 174ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 01:26:23 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 173ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 01:26:24 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 169ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 01:26:31 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 164ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.8ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 01:26:32 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 157ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 01:30:40 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 169ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 01:30:41 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 139ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 01:34:21 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 174ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 01:34:22 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 146ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&q=electronics&" for 127.0.0.1 at 2025-03-11 01:35:10 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123", "q" => "electronics"}
+Completed 200 OK in 1059ms (Views: 1.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisville" for 127.0.0.1 at 2025-03-11 02:01:06 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisville"}
+Completed 200 OK in 359ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=75057" for 127.0.0.1 at 2025-03-11 02:01:25 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "75057"}
+Completed 200 OK in 320ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 13:32:25 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 190ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+Socket::ResolutionError (Failed to open TCP connection to www.facebook.com:443 (getaddrinfo(3): nodename nor servname provided, or not known))
+Caused by: Socket::ResolutionError (getaddrinfo(3): nodename nor servname provided, or not known)
+
+Information for: Socket::ResolutionError (Failed to open TCP connection to www.facebook.com:443 (getaddrinfo(3): nodename nor servname provided, or not known)):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:109:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+
+Information for cause: Socket::ResolutionError (getaddrinfo(3): nodename nor servname provided, or not known):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:109:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 13:32:27 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+Socket::ResolutionError (Failed to open TCP connection to www.facebook.com:443 (getaddrinfo(3): nodename nor servname provided, or not known))
+Caused by: Socket::ResolutionError (getaddrinfo(3): nodename nor servname provided, or not known)
+
+Information for: Socket::ResolutionError (Failed to open TCP connection to www.facebook.com:443 (getaddrinfo(3): nodename nor servname provided, or not known)):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:109:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+
+Information for cause: Socket::ResolutionError (getaddrinfo(3): nodename nor servname provided, or not known):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:109:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&q=shoes&" for 127.0.0.1 at 2025-03-11 13:32:33 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123", "q" => "shoes"}
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+Socket::ResolutionError (Failed to open TCP connection to www.facebook.com:443 (getaddrinfo(3): nodename nor servname provided, or not known))
+Caused by: Socket::ResolutionError (getaddrinfo(3): nodename nor servname provided, or not known)
+
+Information for: Socket::ResolutionError (Failed to open TCP connection to www.facebook.com:443 (getaddrinfo(3): nodename nor servname provided, or not known)):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:109:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+
+Information for cause: Socket::ResolutionError (getaddrinfo(3): nodename nor servname provided, or not known):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:109:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 13:33:10 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 140ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+Socket::ResolutionError (Failed to open TCP connection to www.facebook.com:443 (getaddrinfo(3): nodename nor servname provided, or not known))
+Caused by: Socket::ResolutionError (getaddrinfo(3): nodename nor servname provided, or not known)
+
+Information for: Socket::ResolutionError (Failed to open TCP connection to www.facebook.com:443 (getaddrinfo(3): nodename nor servname provided, or not known)):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:109:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+
+Information for cause: Socket::ResolutionError (getaddrinfo(3): nodename nor servname provided, or not known):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:109:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 13:33:12 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+Socket::ResolutionError (Failed to open TCP connection to www.facebook.com:443 (getaddrinfo(3): nodename nor servname provided, or not known))
+Caused by: Socket::ResolutionError (getaddrinfo(3): nodename nor servname provided, or not known)
+
+Information for: Socket::ResolutionError (Failed to open TCP connection to www.facebook.com:443 (getaddrinfo(3): nodename nor servname provided, or not known)):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:109:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+
+Information for cause: Socket::ResolutionError (getaddrinfo(3): nodename nor servname provided, or not known):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:109:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&q=shoes&" for 127.0.0.1 at 2025-03-11 13:33:14 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123", "q" => "shoes"}
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+Socket::ResolutionError (Failed to open TCP connection to www.facebook.com:443 (getaddrinfo(3): nodename nor servname provided, or not known))
+Caused by: Socket::ResolutionError (getaddrinfo(3): nodename nor servname provided, or not known)
+
+Information for: Socket::ResolutionError (Failed to open TCP connection to www.facebook.com:443 (getaddrinfo(3): nodename nor servname provided, or not known)):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:109:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+
+Information for cause: Socket::ResolutionError (getaddrinfo(3): nodename nor servname provided, or not known):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:109:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_location_id_search?query=75057" for 127.0.0.1 at 2025-03-11 13:33:51 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "75057"}
+Completed 500 Internal Server Error in 210ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+Socket::ResolutionError (Failed to open TCP connection to www.facebook.com:443 (getaddrinfo(3): nodename nor servname provided, or not known))
+Caused by: Socket::ResolutionError (getaddrinfo(3): nodename nor servname provided, or not known)
+
+Information for: Socket::ResolutionError (Failed to open TCP connection to www.facebook.com:443 (getaddrinfo(3): nodename nor servname provided, or not known)):
+  
+app/controllers/facebook/facebook_controller.rb:486:in 'Facebook::FacebookController#facebook_location_id_search'
+
+Information for cause: Socket::ResolutionError (getaddrinfo(3): nodename nor servname provided, or not known):
+  
+app/controllers/facebook/facebook_controller.rb:486:in 'Facebook::FacebookController#facebook_location_id_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 13:34:25 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 431ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-11 13:34:26 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 300ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&q=shoes&" for 127.0.0.1 at 2025-03-11 13:34:31 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123", "q" => "shoes"}
+Completed 200 OK in 3111ms (Views: 1.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.0ms)
+
+
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&q=&" for 127.0.0.1 at 2025-03-11 13:34:40 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123", "q" => ""}
+Completed 200 OK in 1431ms (Views: 2.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=75057" for 127.0.0.1 at 2025-03-11 13:51:25 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "75057"}
+Completed 500 Internal Server Error in 202ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+Socket::ResolutionError (Failed to open TCP connection to www.facebook.com:443 (getaddrinfo(3): nodename nor servname provided, or not known))
+Caused by: Socket::ResolutionError (getaddrinfo(3): nodename nor servname provided, or not known)
+
+Information for: Socket::ResolutionError (Failed to open TCP connection to www.facebook.com:443 (getaddrinfo(3): nodename nor servname provided, or not known)):
+  
+app/controllers/facebook/facebook_controller.rb:486:in 'Facebook::FacebookController#facebook_location_id_search'
+
+Information for cause: Socket::ResolutionError (getaddrinfo(3): nodename nor servname provided, or not known):
+  
+app/controllers/facebook/facebook_controller.rb:486:in 'Facebook::FacebookController#facebook_location_id_search'
+Started GET "/facebook_location_id_search?query=75057" for 127.0.0.1 at 2025-03-11 13:54:13 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "75057"}
+Completed 200 OK in 754ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-12 22:07:48 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Started GET "/facebook_location_id_search?query=t" for 127.0.0.1 at 2025-03-12 22:07:58 -0500
+Completed 500 Internal Server Error in 60081ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.1ms)
+
+
+  
+Net::OpenTimeout (Failed to open TCP connection to 192.168.49.1:8000 (execution expired)):
+  
+app/controllers/facebook/facebook_controller.rb:487:in 'Facebook::FacebookController#facebook_location_id_search'
+Started GET "/facebook_location_id_search?query=te" for 127.0.0.1 at 2025-03-12 22:08:49 -0500
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-12 22:08:49 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "t"}
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "te"}
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 500 Internal Server Error in 60319ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+Net::OpenTimeout (Failed to open TCP connection to 192.168.49.1:8000 (execution expired)):
+  
+app/controllers/facebook/facebook_controller.rb:487:in 'Facebook::FacebookController#facebook_location_id_search'
+Completed 500 Internal Server Error in 60564ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 48.5ms)
+
+
+Completed 500 Internal Server Error in 60564ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 48.5ms)
+
+
+  
+Net::OpenTimeout (Failed to open TCP connection to 192.168.49.1:8000 (execution expired)):
+  
+app/controllers/facebook/facebook_controller.rb:487:in 'Facebook::FacebookController#facebook_location_id_search'
+  
+Net::OpenTimeout (Failed to open TCP connection to 192.168.49.1:8000 (execution expired)):
+  
+app/controllers/facebook/facebook_controller.rb:487:in 'Facebook::FacebookController#facebook_location_id_search'
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-12 22:09:51 -0500
+Started GET "/facebook_location_id_search?query=tes" for 127.0.0.1 at 2025-03-12 22:09:51 -0500
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-12 22:09:51 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "tes"}
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 500 Internal Server Error in 60324ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 500 Internal Server Error in 60323ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 500 Internal Server Error in 60324ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+Net::OpenTimeout (Failed to open TCP connection to 192.168.49.1:8000 (execution expired)):
+  
+app/controllers/facebook/facebook_controller.rb:487:in 'Facebook::FacebookController#facebook_location_id_search'
+  
+Net::OpenTimeout (Failed to open TCP connection to 192.168.49.1:8000 (execution expired)):
+  
+app/controllers/facebook/facebook_controller.rb:487:in 'Facebook::FacebookController#facebook_location_id_search'
+  
+Net::OpenTimeout (Failed to open TCP connection to 192.168.49.1:8000 (execution expired)):
+  
+app/controllers/facebook/facebook_controller.rb:487:in 'Facebook::FacebookController#facebook_location_id_search'
+Started GET "/facebook_location_id_search?query=te" for 127.0.0.1 at 2025-03-12 22:10:53 -0500
+Started GET "/facebook_location_id_search?query=t" for 127.0.0.1 at 2025-03-12 22:10:53 -0500
+Started GET "/facebook_location_id_search?query=l" for 127.0.0.1 at 2025-03-12 22:10:53 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "te"}
+  Parameters: {"query" => "l"}
+  Parameters: {"query" => "t"}
+Completed 200 OK in 619ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.4ms)
+
+
+Started GET "/facebook_location_id_search?query=le" for 127.0.0.1 at 2025-03-12 22:10:54 -0500
+Completed 200 OK in 644ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.4ms)
+
+
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "le"}
+Started GET "/facebook_location_id_search?query=lew" for 127.0.0.1 at 2025-03-12 22:10:54 -0500
+Completed 200 OK in 688ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 5.1ms)
+
+
+Started GET "/facebook_location_id_search?query=lews" for 127.0.0.1 at 2025-03-12 22:10:54 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lew"}
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lews"}
+Completed 200 OK in 603ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 7.2ms)
+
+
+Started GET "/facebook_location_id_search?query=lewi" for 127.0.0.1 at 2025-03-12 22:10:55 -0500
+Completed 200 OK in 560ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.6ms)
+
+
+Started GET "/facebook_location_id_search?query=lewis" for 127.0.0.1 at 2025-03-12 22:10:55 -0500
+Completed 200 OK in 555ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.8ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisv" for 127.0.0.1 at 2025-03-12 22:10:55 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewi"}
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewis"}
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisv"}
+Completed 200 OK in 567ms (Views: 0.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.5ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvi" for 127.0.0.1 at 2025-03-12 22:10:55 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvi"}
+Completed 200 OK in 595ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.5ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvil" for 127.0.0.1 at 2025-03-12 22:10:55 -0500
+Completed 200 OK in 579ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.9ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:10:55 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvil"}
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 496ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.4ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisville" for 127.0.0.1 at 2025-03-12 22:10:56 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisville"}
+Completed 200 OK in 525ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lew" for 127.0.0.1 at 2025-03-12 22:10:56 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lew"}
+Completed 200 OK in 587ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:10:56 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 339ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:10:56 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 366ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 336ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=tes" for 127.0.0.1 at 2025-03-12 22:10:57 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "tes"}
+Started GET "/facebook_location_id_search?query=test" for 127.0.0.1 at 2025-03-12 22:10:57 -0500
+Completed 200 OK in 365ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:10:57 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "test"}
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 577ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 523ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:10:57 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 619ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-12 22:10:57 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 392ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:10:58 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 273ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 393ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:10:58 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 299ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:10:58 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 319ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:10:59 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 375ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:10:59 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 371ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:10:59 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 340ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:00 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 371ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:00 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 380ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:01 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 326ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:01 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 244ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.7ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:01 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 295ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:02 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 414ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:02 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 323ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:02 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 319ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:03 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 450ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:03 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 389ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:04 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 297ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:04 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 281ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:04 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 271ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:04 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 333ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.5ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:05 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 308ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:05 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 302ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:05 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 390ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:06 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 280ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.7ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:06 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 382ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:07 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 310ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:07 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 319ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:07 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 297ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:08 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 870ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:08 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 470ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:09 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 392ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:09 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 445ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:10 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 527ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:10 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 416ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:11 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 1287ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:12 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 407ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:13 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 399ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:13 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 438ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:14 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 760ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.1ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:14 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 414ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:11:15 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 370ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvil" for 127.0.0.1 at 2025-03-12 22:12:20 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MetaScraper'*/[0m
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvil"}
+Completed 200 OK in 445ms (Views: 0.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisv" for 127.0.0.1 at 2025-03-12 22:18:54 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisv"}
+Completed 200 OK in 406ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvi" for 127.0.0.1 at 2025-03-12 22:19:00 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvi"}
+Completed 200 OK in 297ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvii" for 127.0.0.1 at 2025-03-12 22:19:03 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvii"}
+Completed 200 OK in 322ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvi" for 127.0.0.1 at 2025-03-12 22:19:06 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvi"}
+Completed 200 OK in 366ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=le" for 127.0.0.1 at 2025-03-12 22:19:10 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "le"}
+Completed 200 OK in 384ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lew" for 127.0.0.1 at 2025-03-12 22:48:52 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lew"}
+Completed 200 OK in 506ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewi" for 127.0.0.1 at 2025-03-12 22:48:57 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewi"}
+Completed 200 OK in 425ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisville" for 127.0.0.1 at 2025-03-12 22:49:16 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisville"}
+Completed 200 OK in 326ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:49:29 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 389ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvil" for 127.0.0.1 at 2025-03-12 22:49:32 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvil"}
+Completed 200 OK in 296ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvi" for 127.0.0.1 at 2025-03-12 22:49:33 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvi"}
+Completed 200 OK in 322ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvil" for 127.0.0.1 at 2025-03-12 22:49:43 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvil"}
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:49:43 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 388ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisville" for 127.0.0.1 at 2025-03-12 22:49:43 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisville"}
+Completed 200 OK in 452ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 340ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvill" for 127.0.0.1 at 2025-03-12 22:49:46 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvill"}
+Completed 200 OK in 575ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvil" for 127.0.0.1 at 2025-03-12 22:49:48 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvil"}
+Completed 200 OK in 326ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisville" for 127.0.0.1 at 2025-03-12 22:49:54 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisville"}
+Completed 200 OK in 393ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisv" for 127.0.0.1 at 2025-03-12 22:49:57 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisv"}
+Completed 200 OK in 499ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-12 23:09:37 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 178ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=le" for 127.0.0.1 at 2025-03-12 23:12:52 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "le"}
+Started GET "/facebook_location_id_search?query=lew" for 127.0.0.1 at 2025-03-12 23:12:53 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lew"}
+Completed 200 OK in 447ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lews" for 127.0.0.1 at 2025-03-12 23:12:53 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lews"}
+Completed 200 OK in 380ms (Views: 0.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewsiv" for 127.0.0.1 at 2025-03-12 23:12:53 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewsiv"}
+Completed 200 OK in 535ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 260ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewsivi" for 127.0.0.1 at 2025-03-12 23:12:54 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewsivi"}
+Completed 200 OK in 235ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewsiville" for 127.0.0.1 at 2025-03-12 23:12:55 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewsiville"}
+Completed 200 OK in 219ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewsville" for 127.0.0.1 at 2025-03-12 23:13:08 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewsville"}
+Completed 200 OK in 212ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisville" for 127.0.0.1 at 2025-03-12 23:13:10 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisville"}
+Completed 200 OK in 340ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-12 23:15:11 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 252ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=l" for 127.0.0.1 at 2025-03-12 23:15:13 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "l"}
+Started GET "/facebook_location_id_search?query=le" for 127.0.0.1 at 2025-03-12 23:15:14 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "le"}
+Completed 200 OK in 285ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lew" for 127.0.0.1 at 2025-03-12 23:15:14 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lew"}
+Completed 200 OK in 382ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 350ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewi" for 127.0.0.1 at 2025-03-12 23:15:15 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewi"}
+Completed 200 OK in 300ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-12 23:15:42 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 406ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-12 23:16:36 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 314ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=l" for 127.0.0.1 at 2025-03-12 23:16:39 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "l"}
+Started GET "/facebook_location_id_search?query=le" for 127.0.0.1 at 2025-03-12 23:16:39 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "le"}
+Completed 200 OK in 342ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lew" for 127.0.0.1 at 2025-03-12 23:16:40 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lew"}
+Completed 200 OK in 377ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewi" for 127.0.0.1 at 2025-03-12 23:16:40 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewi"}
+Completed 200 OK in 344ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 362ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lew" for 127.0.0.1 at 2025-03-12 23:16:43 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lew"}
+Completed 200 OK in 306ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=l" for 127.0.0.1 at 2025-03-12 23:16:45 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "l"}
+Completed 200 OK in 368ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewi" for 127.0.0.1 at 2025-03-12 23:16:48 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewi"}
+Completed 200 OK in 365ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 49.4ms)
+
+
+Started GET "/facebook_location_id_search?query=lew" for 127.0.0.1 at 2025-03-12 23:16:48 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lew"}
+Completed 200 OK in 308ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewis" for 127.0.0.1 at 2025-03-12 23:16:50 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewis"}
+Completed 200 OK in 333ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-12 23:22:02 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 229ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-12 23:23:34 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 759ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-12 23:25:15 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 302ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.2ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-12 23:25:54 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 401ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=le" for 127.0.0.1 at 2025-03-12 23:31:36 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "le"}
+Started GET "/facebook_location_id_search?query=lew" for 127.0.0.1 at 2025-03-12 23:31:36 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lew"}
+Completed 200 OK in 366ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.2ms)
+
+
+Started GET "/facebook_location_id_search?query=lews" for 127.0.0.1 at 2025-03-12 23:31:36 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lews"}
+Completed 200 OK in 432ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 235ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.4ms)
+
+
+Started GET "/facebook_location_id_search?query=lewsi" for 127.0.0.1 at 2025-03-12 23:31:37 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewsi"}
+Completed 200 OK in 256ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewsivi" for 127.0.0.1 at 2025-03-12 23:31:37 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewsivi"}
+Completed 200 OK in 193ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.7ms)
+
+
+Started GET "/facebook_location_id_search?query=lewsiville" for 127.0.0.1 at 2025-03-12 23:31:38 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewsiville"}
+Completed 200 OK in 252ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewsivil" for 127.0.0.1 at 2025-03-12 23:31:39 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewsivil"}
+Completed 200 OK in 267ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.7ms)
+
+
+Started GET "/facebook_location_id_search?query=lewivil" for 127.0.0.1 at 2025-03-12 23:31:46 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewivil"}
+Completed 200 OK in 231ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lewisvil" for 127.0.0.1 at 2025-03-12 23:31:47 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lewisvil"}
+Completed 200 OK in 300ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-12 23:32:43 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 296ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-12 23:32:47 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 303ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=l" for 127.0.0.1 at 2025-03-12 23:32:49 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "l"}
+Started GET "/facebook_location_id_search?query=le" for 127.0.0.1 at 2025-03-12 23:32:50 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "le"}
+Completed 200 OK in 422ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/facebook_location_id_search?query=lew" for 127.0.0.1 at 2025-03-12 23:32:50 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lew"}
+Completed 200 OK in 331ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+Completed 200 OK in 310ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Jane%20Lew,%20West%20Virginia" for 127.0.0.1 at 2025-03-12 23:33:40 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Jane Lew, West Virginia"}
+Completed 200 OK in 233ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Jane%20Lew,%20West%20Virgi" for 127.0.0.1 at 2025-03-12 23:49:12 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Jane Lew, West Virgi"}
+Completed 200 OK in 461ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Jane%20Lew,%20West%20Vi" for 127.0.0.1 at 2025-03-12 23:49:13 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Jane Lew, West Vi"}
+Completed 200 OK in 503ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Jane%20Lew,%20W" for 127.0.0.1 at 2025-03-12 23:49:14 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Jane Lew, W"}
+Started GET "/facebook_location_id_search?query=Jane%20Lew," for 127.0.0.1 at 2025-03-12 23:49:14 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Jane Lew,"}
+Completed 200 OK in 352ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 291ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Jane%20Lew," for 127.0.0.1 at 2025-03-12 23:49:14 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Jane Lew,"}
+Completed 200 OK in 289ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.4ms)
+
+
+Started GET "/facebook_location_id_search?query=Jane%20Lew" for 127.0.0.1 at 2025-03-12 23:49:15 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Jane Lew"}
+Completed 200 OK in 311ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Jane%20Le" for 127.0.0.1 at 2025-03-12 23:49:18 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Jane Le"}
+Completed 200 OK in 414ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Jane" for 127.0.0.1 at 2025-03-12 23:49:18 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Jane"}
+Completed 200 OK in 449ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Jane,%20MO" for 127.0.0.1 at 2025-03-13 00:31:05 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Jane, MO"}
+Completed 200 OK in 449ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-13 00:32:57 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 368ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-13 00:32:59 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 271ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-13 00:33:21 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 794ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-13 00:38:14 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 350ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-13 00:38:17 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 266ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=le" for 127.0.0.1 at 2025-03-13 00:46:25 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "le"}
+Started GET "/facebook_location_id_search?query=lew" for 127.0.0.1 at 2025-03-13 00:46:25 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "lew"}
+Completed 200 OK in 381ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 373ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisboro,%20NY" for 127.0.0.1 at 2025-03-13 00:46:28 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisboro, NY"}
+Completed 200 OK in 248ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-13 00:50:46 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 287ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-13 01:13:17 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 254ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 7.3ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-13 01:20:47 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 260ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 5.2ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-13 02:15:00 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 276ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=un" for 127.0.0.1 at 2025-03-13 02:15:07 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "un"}
+Started GET "/facebook_location_id_search?query=unit" for 127.0.0.1 at 2025-03-13 02:15:07 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "unit"}
+Completed 200 OK in 414ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.7ms)
+
+
+Started GET "/facebook_location_id_search?query=unite" for 127.0.0.1 at 2025-03-13 02:15:07 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "unite"}
+Completed 200 OK in 445ms (Views: 5.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 5.3ms)
+
+
+Started GET "/facebook_location_id_search?query=united" for 127.0.0.1 at 2025-03-13 02:15:08 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "united"}
+Completed 200 OK in 431ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 5.3ms)
+
+
+Completed 200 OK in 474ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=London,%20United%20Kingdom" for 127.0.0.1 at 2025-03-13 02:15:11 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "London, United Kingdom"}
+Completed 200 OK in 347ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.7ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-13 02:16:48 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 327ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-13 02:18:32 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 265ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=unit" for 127.0.0.1 at 2025-03-13 02:18:37 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "unit"}
+Completed 200 OK in 405ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=London,%20United%20Kingdom" for 127.0.0.1 at 2025-03-13 02:18:39 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "London, United Kingdom"}
+Completed 200 OK in 393ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=London,%20United%20Kingdom" for 127.0.0.1 at 2025-03-13 02:18:43 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "London, United Kingdom"}
+Completed 200 OK in 327ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 02:34:34 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 293ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville%20Valley" for 127.0.0.1 at 2025-03-13 02:34:39 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville Valley"}
+Completed 200 OK in 273ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.3ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville%20Valle" for 127.0.0.1 at 2025-03-13 02:39:25 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville Valle"}
+Completed 200 OK in 273ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville%20Vall" for 127.0.0.1 at 2025-03-13 02:39:28 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville Vall"}
+Completed 200 OK in 267ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville" for 127.0.0.1 at 2025-03-13 02:39:29 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville"}
+Completed 200 OK in 307ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Arkansas" for 127.0.0.1 at 2025-03-13 02:39:31 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Arkansas"}
+Completed 200 OK in 292ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 02:43:25 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 280ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville%20Valley" for 127.0.0.1 at 2025-03-13 02:43:28 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville Valley"}
+Completed 200 OK in 262ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 02:47:39 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 295ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville%20Valley" for 127.0.0.1 at 2025-03-13 02:47:44 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville Valley"}
+Completed 200 OK in 282ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville%20Val" for 127.0.0.1 at 2025-03-13 02:47:49 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville Val"}
+Started GET "/facebook_location_id_search?query=Lewisville%20Va" for 127.0.0.1 at 2025-03-13 02:47:49 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville Va"}
+Completed 200 OK in 290ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 626ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisvill" for 127.0.0.1 at 2025-03-13 02:47:50 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisvill"}
+Started GET "/facebook_location_id_search?query=Lewisvil" for 127.0.0.1 at 2025-03-13 02:47:50 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisvil"}
+Completed 200 OK in 405ms (Views: 6.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 317ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20North%20Carolina" for 127.0.0.1 at 2025-03-13 02:47:53 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, North Carolina"}
+Completed 200 OK in 369ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=ho" for 127.0.0.1 at 2025-03-13 02:50:14 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "ho"}
+Started GET "/facebook_location_id_search?query=hous" for 127.0.0.1 at 2025-03-13 02:50:15 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "hous"}
+Completed 200 OK in 380ms (Views: 0.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 393ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=housto" for 127.0.0.1 at 2025-03-13 02:50:21 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "housto"}
+Started GET "/facebook_location_id_search?query=houston" for 127.0.0.1 at 2025-03-13 02:50:21 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "houston"}
+Completed 200 OK in 363ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 335ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 02:50:34 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 327ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 02:51:37 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 279ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 02:51:59 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 222ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 02:54:39 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 298ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 02:55:13 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 303ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 02:56:01 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 269ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 02:56:28 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 280ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.7ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 03:00:59 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 324ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 03:03:01 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 295ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.9ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 03:03:18 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 272ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 03:05:25 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 229ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.3ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texa" for 127.0.0.1 at 2025-03-13 03:05:30 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texa"}
+Completed 200 OK in 300ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-13 03:05:32 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 244ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.6ms)
+
+
+Started GET "/facebook_location_id_search?query=unit" for 127.0.0.1 at 2025-03-13 03:05:34 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "unit"}
+Started GET "/facebook_location_id_search?query=united" for 127.0.0.1 at 2025-03-13 03:05:34 -0500
+Completed 200 OK in 378ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "united"}
+Completed 200 OK in 512ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.1ms)
+
+
+Started GET "/facebook_location_id_search?query=London,%20United%20Kingdom" for 127.0.0.1 at 2025-03-13 03:05:36 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "London, United Kingdom"}
+Completed 200 OK in 292ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 03:06:09 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 289ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville" for 127.0.0.1 at 2025-03-13 03:06:27 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville"}
+Completed 200 OK in 349ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Arkansas" for 127.0.0.1 at 2025-03-13 03:06:29 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Arkansas"}
+Completed 200 OK in 301ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 03:06:34 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 469ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisvill" for 127.0.0.1 at 2025-03-13 03:06:37 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisvill"}
+Completed 200 OK in 378ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20North%20Carolina" for 127.0.0.1 at 2025-03-13 03:06:39 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, North Carolina"}
+Completed 200 OK in 297ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 03:07:22 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 302ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisvill" for 127.0.0.1 at 2025-03-13 03:07:26 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisvill"}
+Completed 200 OK in 310ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20North%20Carolina" for 127.0.0.1 at 2025-03-13 03:07:27 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, North Carolina"}
+Completed 200 OK in 313ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 03:08:03 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 270ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 03:08:05 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 1998ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 03:08:30 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 331ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 03:09:25 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 271ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 03:10:36 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 325ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 03:10:54 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 452ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 03:12:19 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 221ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisvill" for 127.0.0.1 at 2025-03-13 03:12:24 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisvill"}
+Completed 200 OK in 431ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 19.1ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20North%20Carolina" for 127.0.0.1 at 2025-03-13 03:12:25 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, North Carolina"}
+Completed 200 OK in 319ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.9ms)
+
+
+Started GET "/facebook_location_id_search?query=uni" for 127.0.0.1 at 2025-03-13 03:12:34 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "uni"}
+Completed 200 OK in 417ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 5.8ms)
+
+
+Started GET "/facebook_location_id_search?query=united" for 127.0.0.1 at 2025-03-13 03:12:35 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "united"}
+Completed 200 OK in 463ms (Views: 3.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 9.3ms)
+
+
+Started GET "/facebook_location_id_search?query=London,%20United%20Kingdom" for 127.0.0.1 at 2025-03-13 03:12:37 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "London, United Kingdom"}
+Completed 200 OK in 448ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.1ms)
+
+
+Started GET "/facebook_location_id_search?query=London,%20United%20Kingdom" for 127.0.0.1 at 2025-03-13 03:13:32 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "London, United Kingdom"}
+Completed 200 OK in 349ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.3ms)
+
+
+Started GET "/facebook_location_id_search?query=London,%20United%20Kingdom" for 127.0.0.1 at 2025-03-13 03:15:16 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "London, United Kingdom"}
+Completed 200 OK in 394ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.8ms)
+
+
