@@ -9,23 +9,25 @@ import { fetchLocationResults } from "../../../store/marketplace";
 import { PlaygroundContext } from "../../../context/playground";
 
 export default function Filters({
-    setSearchParams,
-    searchParams,
     setShowMap
 }) {
 
     const { featureRoute, subfeatureRoute } = useParams()
     const {
-        location,
+        searchParams,
+        setSearchParams
     } = useContext(PlaygroundContext)
+    const [searchQueryInput, setSearchQueryInput] = useState(searchParams.q)
     const dispatch = useDispatch()
 
     const submitSearch = (e) => {
         const { key } = e
 
         if (key === 'Enter') {
-
-            dispatch(fetchPropertyResults(searchParams))
+            setSearchParams(prev => {
+                return { ...prev, q: searchQueryInput }
+            })
+            // dispatch(fetchPropertyResults({ ...searchParams, q: searchQueryInput }))
         }
 
     }
@@ -39,10 +41,9 @@ export default function Filters({
 
                 <input
                     className="rounded-full w-full h-8 bg-zinc-700 focus:outline-none px-2 text-white"
-                    onChange={(e) => setSearchParams((prev) => {
-                        return { ...prev, q: e.target.value }
-                    })}
+                    onChange={(e) => setSearchQueryInput(e.target.value)}
                     onKeyDown={submitSearch}
+                    value={searchQueryInput}
                 />
                 {/* <Map /> */}
             </div>
@@ -51,14 +52,17 @@ export default function Filters({
                 <div>
                     <p>Filters</p>
                 </div>
-                <div onClick={() => setShowMap(true)}>
+                <div
+                    onClick={() => setShowMap(true)}
+                    className="py-2"
+                >
                     <div>
                         <p>Location</p>
                     </div>
                     <div
-                        className="text-sm text-blue-600 rounded hover:bg-zinc-700"
+                        className="text-sm text-blue-600 rounded hover:bg-zinc-700 px-1 cursor-pointer"
                     >
-                        <p>{location.name} - Within {location.radius} mi</p>
+                        <p>{searchParams.locationName} - Within {searchParams.radius_mi} mi</p>
                     </div>
                 </div>
             </div>
@@ -66,14 +70,15 @@ export default function Filters({
                 return <SortFilter filter={filter} />
             })}
 
-            <PriceInput 
-                setSearchParams={setSearchParams}
-            />
+            <PriceInput />
         </div>
     )
 }
 
-const PriceInput = ({ setSearchParams }) => {
+const PriceInput = () => {
+    const {
+        setSearchParams
+    } = useContext(PlaygroundContext)
     return (
         <div
             className="w-full h-fit space-y-1 flex flex-col text-white"
@@ -113,17 +118,19 @@ export const MapDialog = ({ setShowMap }) => {
     const {
         setLocation,
         location,
+        searchParams,
+        setSearchParams
     } = useContext(PlaygroundContext)
     const locationResults = useSelector(state => state.marketplace.locationResults)
-    const [locationInput, setLocationInput] = useState(location.name)
-    const [selectedRadius, setSelectedRadius] = useState(location.radius)
+    const [locationInput, setLocationInput] = useState(searchParams.locationName)
+    const [selectedRadius, setSelectedRadius] = useState(searchParams.radius_mi)
     const [selectedCoordinates, setSelectedCoordinates] = useState([
         location.latitude,
         location.longitude
     ])
     const [showLocationResults, setShowLocationResults] = useState(false)
     const [showRadiusList, setShowRadiusList] = useState(false)
-    const mileToKm = (miles) => (miles * 1.60934).toFixed(1)
+    const mileToKm = (miles) => (miles * 1.60934).toFixed()
     const updateLocationInput = (e) => {
         const { value } = e.target
         setLocationInput(value)
@@ -146,11 +153,16 @@ export const MapDialog = ({ setShowMap }) => {
 
     const applyLocationSelection = () => {
         const [latitude, longitude] = selectedCoordinates
-        setLocation({
-            name: locationInput,
-            radius: selectedRadius,
-            longitude,
-            latitude
+        const radius_km = mileToKm(selectedRadius)
+        setSearchParams(prev => {
+            return {
+                ...prev,
+                locationName: locationInput,
+                radius_km,
+                radius_mi: selectedRadius,
+                longitude,
+                latitude
+            }
         })
         setShowMap(false)
     }
@@ -166,8 +178,12 @@ export const MapDialog = ({ setShowMap }) => {
         // onClick={() => setShowMap(false)}
         >
             <div className="w-[500px] h-fit bg-zinc-800 rounded-lg divide-y divide-zinc-700">
-                <div className="p-2 flex items-center ">
+                <div className="p-2 flex items-center justify-center relative">
                     <p>Change Location</p>
+                    <button 
+                    className="absolute right-2 rounded-full h-8 w-8 bg-zinc-700 hover:bg-zinc-600"
+                    onClick={() => setShowMap(false)}
+                    >X</button>
                 </div>
                 <div className="p-2 space-y-2 h-fit">
                     <p className="text-xs text-zinc-400">Search by city, neighborhood or ZIP code.</p>

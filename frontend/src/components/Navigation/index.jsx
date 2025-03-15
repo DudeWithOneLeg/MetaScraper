@@ -86,7 +86,7 @@ const features = [
             },
             {
                 name: 'Property Rentals',
-                route: 'propertyRentals'
+                route: 'propertyrentals'
             },
             {
                 name: 'Apparel',
@@ -110,11 +110,11 @@ const features = [
             },
             {
                 name: 'Free Stuff',
-                route: 'freeStuff'
+                route: 'free'
             },
             {
                 name: 'Garden & Outdoor',
-                route: 'gardenOutdoor'
+                route: 'garden'
             },
             {
                 name: 'Hobbies',
@@ -122,11 +122,11 @@ const features = [
             },
             {
                 name: 'Home Goods',
-                route: 'homeGoods'
+                route: 'home'
             },
             {
                 name: 'Home Improvement Supplies',
-                route: 'homeImprovementSupplies'
+                route: 'home-improvements'
             },
             {
                 name: 'Home Sales',

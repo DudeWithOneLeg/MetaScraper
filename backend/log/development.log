@@ -39110,3 +39110,1240 @@ Processing by Facebook::FacebookController#facebook_location_id_search as */*
 Completed 200 OK in 394ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.8ms)
 
 
+Started GET "/facebook_location_id_search?query=London,%20United%20Kingdom" for 127.0.0.1 at 2025-03-13 03:29:37 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "London, United Kingdom"}
+Completed 200 OK in 317ms (Views: 1.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 5.4ms)
+
+
+Started GET "/facebook_location_id_search?query=London,%20United" for 127.0.0.1 at 2025-03-13 03:29:41 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "London, United"}
+Completed 200 OK in 275ms (Views: 0.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.4ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-13 03:29:43 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 243ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.6ms)
+
+
+Started GET "/facebook_location_id_search?query=h" for 127.0.0.1 at 2025-03-13 03:29:44 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "h"}
+Started GET "/facebook_location_id_search?query=ho" for 127.0.0.1 at 2025-03-13 03:29:44 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "ho"}
+Completed 200 OK in 366ms (Views: 0.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 7.6ms)
+
+
+Completed 200 OK in 448ms (Views: 0.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 7.0ms)
+
+
+Started GET "/facebook_location_id_search?query=hou" for 127.0.0.1 at 2025-03-13 03:29:46 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "hou"}
+Started GET "/facebook_location_id_search?query=hous" for 127.0.0.1 at 2025-03-13 03:29:46 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "hous"}
+Completed 200 OK in 357ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.8ms)
+
+
+Completed 200 OK in 273ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Houston,%20Texas" for 127.0.0.1 at 2025-03-13 03:29:51 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Houston, Texas"}
+Completed 200 OK in 332ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-13 03:35:58 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 240ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.3ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-13 03:35:59 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 500 Internal Server Error in 152ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:111:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&q=shoes&" for 127.0.0.1 at 2025-03-13 03:36:07 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123", "q" => "shoes"}
+Completed 200 OK in 960ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.5ms)
+
+
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&q=electronics&" for 127.0.0.1 at 2025-03-13 03:36:27 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123", "q" => "electronics"}
+Completed 200 OK in 1000ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.2ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 03:37:21 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 303ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-13 03:38:13 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 316ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.7ms)
+
+
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&q=shoes&" for 127.0.0.1 at 2025-03-14 00:14:34 -0500
+  
+SyntaxError (/Users/dudewithoneleg/projects/MetaScraper/backend/app/controllers/facebook/marketplace/marketplace_controller.rb:23: syntax errors found
+  [2m21 | [m
+  [2m22 | [m      def marketplace_search
+[1;31m> [m[2m23 | [m... = request.query_parameters["q"]
+  [2m   | [m    [1;31m^[m unexpected '='; target cannot be written
+  [2m   | [m      [1;31m^~~~~~~[m unexpected local variable or method, expecting end-of-input
+  [2m24 | [m        # limit = request.query_parameters["limit"]
+  [2m25 | [m        # latitude = request.query_parameters["latitude"]
+):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:23: syntax errors found
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&q=shoes&" for 127.0.0.1 at 2025-03-14 00:14:57 -0500
+  
+SyntaxError (/Users/dudewithoneleg/projects/MetaScraper/backend/app/controllers/facebook/marketplace/marketplace_controller.rb:23: syntax errors found
+  [2m21 | [m
+  [2m22 | [m      def marketplace_search
+[1;31m> [m[2m23 | [m... = request.query_parameters
+  [2m   | [m    [1;31m^[m unexpected '='; target cannot be written
+  [2m   | [m      [1;31m^~~~~~~[m unexpected local variable or method, expecting end-of-input
+  [2m24 | [m        # limit = request.query_parameters["limit"]
+  [2m25 | [m        # latitude = request.query_parameters["latitude"]
+):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:23: syntax errors found
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&q=shoes&" for 127.0.0.1 at 2025-03-14 00:17:58 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123", "q" => "shoes"}
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NameError (undefined local variable or method 'query' for an instance of Facebook::Marketplace::MarketplaceController):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:38:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&q=shoes&" for 127.0.0.1 at 2025-03-14 00:20:20 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123", "q" => "shoes"}
+Completed 200 OK in 1037ms (Views: 2.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&q=shoes&" for 127.0.0.1 at 2025-03-14 00:22:56 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123", "q" => "shoes"}
+Completed 200 OK in 902ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&q=rapsberry%20pi%203&" for 127.0.0.1 at 2025-03-14 00:23:06 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123", "q" => "rapsberry pi 3"}
+Completed 200 OK in 1085ms (Views: 1.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&q=raspberry%20pi%203&" for 127.0.0.1 at 2025-03-14 00:23:24 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123", "q" => "raspberry pi 3"}
+Completed 200 OK in 1016ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.5ms)
+
+
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&q=raspberry%20pi%203&" for 127.0.0.1 at 2025-03-14 00:25:13 -0500
+  
+SyntaxError (/Users/dudewithoneleg/projects/MetaScraper/backend/app/controllers/facebook/marketplace/marketplace_controller.rb:45: syntax errors found
+  [2m43 | [m            bqf: {
+  [2m44 | [m              callsite: "COMMERCE_MKTPLACE_WWW",
+[1;31m> [m[2m45 | [m              query
+  [2m   | [m                   [1;31m^[m unexpected newline; expected a value in the hash literal
+  [2m   | [m                   [1;31m^[m expected a `=>` between the hash key and value
+  [2m46 | [m            },
+  [2m47 | [m            browse_request_params: {
+):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:45: syntax errors found
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&q=raspberry%20pi%203&" for 127.0.0.1 at 2025-03-14 00:25:16 -0500
+  
+SyntaxError (/Users/dudewithoneleg/projects/MetaScraper/backend/app/controllers/facebook/marketplace/marketplace_controller.rb:45: syntax errors found
+  [2m43 | [m            bqf: {
+  [2m44 | [m              callsite: "COMMERCE_MKTPLACE_WWW",
+[1;31m> [m[2m45 | [m              query
+  [2m   | [m                   [1;31m^[m unexpected newline; expected a value in the hash literal
+  [2m   | [m                   [1;31m^[m expected a `=>` between the hash key and value
+  [2m46 | [m            },
+  [2m47 | [m            browse_request_params: {
+):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:45: syntax errors found
+Started GET "/facebook_marketplace_search?latitude=33.046289&longitude=-96.994123&q=raspberry%20pi%204&" for 127.0.0.1 at 2025-03-14 00:26:12 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"latitude" => "33.046289", "longitude" => "-96.994123", "q" => "raspberry pi 4"}
+Completed 200 OK in 1439ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.9ms)
+
+
+Started GET "/facebook_marketplace_search?q=&name=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 01:49:05 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "name" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 1013ms (Views: 6.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.4ms)
+
+
+Started GET "/facebook_marketplace_search?q=&name=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 01:49:06 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "name" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 1372ms (Views: 4.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.6ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 01:49:40 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 719ms (Views: 7.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 5.6ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 01:49:41 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 1045ms (Views: 4.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-14 01:49:47 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 284ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-14 02:00:15 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 264ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:11:14 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 867ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:11:15 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 1231ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&sort_by=newest&delivery_type=all&condition=&date_listed=all&availability=available&" for 127.0.0.1 at 2025-03-14 02:13:12 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "sort_by" => "newest", "delivery_type" => "all", "condition" => "", "date_listed" => "all", "availability" => "available"}
+Completed 200 OK in 739ms (Views: 3.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:14:35 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 876ms (Views: 1.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:14:36 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 721ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:14:43 -0500
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&sort_by=suggested&delivery_type=all&condition=&date_listed=all&availability=available&" for 127.0.0.1 at 2025-03-14 02:14:43 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "sort_by" => "suggested", "delivery_type" => "all", "condition" => "", "date_listed" => "all", "availability" => "available"}
+Completed 200 OK in 1029ms (Views: 3.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:14:44 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 1163ms (Views: 3.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 660ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&sort_by=suggested&delivery_type=all&condition=&date_listed=all&availability=available&" for 127.0.0.1 at 2025-03-14 02:15:15 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "sort_by" => "suggested", "delivery_type" => "all", "condition" => "", "date_listed" => "all", "availability" => "available"}
+Completed 200 OK in 691ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 29.1ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&sort_by=suggested&delivery_type=all&condition=&date_listed=all&availability=available&" for 127.0.0.1 at 2025-03-14 02:15:35 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "sort_by" => "suggested", "delivery_type" => "all", "condition" => "", "date_listed" => "all", "availability" => "available"}
+Completed 200 OK in 754ms (Views: 5.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:15:42 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 675ms (Views: 2.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:15:42 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 721ms (Views: 3.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.8ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:17:19 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 758ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.6ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:17:19 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 696ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.7ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:17:53 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 828ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:17:54 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 725ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:17:59 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 606ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:17:59 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 705ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:18:14 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 763ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.2ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:18:15 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 723ms (Views: 1.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.8ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:18:39 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 822ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:18:40 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 676ms (Views: 1.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&sort_by=suggested&delivery_type=all&condition=&date_listed=all&availability=available&" for 127.0.0.1 at 2025-03-14 02:19:02 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "sort_by" => "suggested", "delivery_type" => "all", "condition" => "", "date_listed" => "all", "availability" => "available"}
+Completed 200 OK in 956ms (Views: 2.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 25.1ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&sort_by=suggested&delivery_type=all&condition=&date_listed=all&availability=available&" for 127.0.0.1 at 2025-03-14 02:19:25 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "sort_by" => "suggested", "delivery_type" => "all", "condition" => "", "date_listed" => "all", "availability" => "available"}
+Completed 200 OK in 848ms (Views: 2.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 8.1ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:20:03 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 752ms (Views: 4.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 14.9ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:20:04 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 712ms (Views: 1.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 9.2ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:21:20 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 799ms (Views: 2.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 8.5ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:21:20 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 642ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 6.1ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:22:15 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 758ms (Views: 2.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 5.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:22:16 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 661ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:23:22 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 772ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:23:23 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 595ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.3ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&sort_by=suggested&delivery_type=all&condition=&date_listed=all&availability=available&" for 127.0.0.1 at 2025-03-14 02:23:51 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "sort_by" => "suggested", "delivery_type" => "all", "condition" => "", "date_listed" => "all", "availability" => "available"}
+Completed 200 OK in 1195ms (Views: 2.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&sort_by=suggested&delivery_type=all&condition=new&date_listed=all&availability=available&" for 127.0.0.1 at 2025-03-14 02:24:00 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "sort_by" => "suggested", "delivery_type" => "all", "condition" => "new", "date_listed" => "all", "availability" => "available"}
+Completed 200 OK in 815ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&sort_by=suggested&delivery_type=all&condition=new,used_like_new&date_listed=all&availability=available&" for 127.0.0.1 at 2025-03-14 02:24:05 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "sort_by" => "suggested", "delivery_type" => "all", "condition" => "new,used_like_new", "date_listed" => "all", "availability" => "available"}
+Completed 200 OK in 1582ms (Views: 3.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&sort_by=suggested&delivery_type=local&condition=new,used_like_new&date_listed=all&availability=available&" for 127.0.0.1 at 2025-03-14 02:44:30 -0500
+  
+SyntaxError (/Users/dudewithoneleg/projects/MetaScraper/backend/app/controllers/facebook/marketplace/marketplace_controller.rb:55: syntax error found
+  [2m53 | [m
+  [2m54 | [m              # local
+[1;31m> [m[2m55 | [m... : ,
+  [2m   | [m    [1;31m^[m expected an expression after `:` in the ternary operator
+  [2m56 | [m              # shipping
+  [2m57 | [m              commerce_enable_shipping: false,
+):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:55: syntax error found
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&sort_by=suggested&delivery_type=shipping&condition=new,used_like_new&date_listed=all&availability=available&" for 127.0.0.1 at 2025-03-14 02:44:42 -0500
+  
+SyntaxError (/Users/dudewithoneleg/projects/MetaScraper/backend/app/controllers/facebook/marketplace/marketplace_controller.rb:55: syntax error found
+  [2m53 | [m
+  [2m54 | [m              # local
+[1;31m> [m[2m55 | [m... : ,
+  [2m   | [m    [1;31m^[m expected an expression after `:` in the ternary operator
+  [2m56 | [m              # shipping
+  [2m57 | [m              commerce_enable_shipping: false,
+):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:55: syntax error found
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:52:04 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 537ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:52:05 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 357ms (Views: 2.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.3ms)
+
+
+Started GET "/facebook_marketplace_search?searchParams=[object%20Object]&" for 127.0.0.1 at 2025-03-14 02:52:09 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"searchParams" => "[object Object]"}
+Completed 500 Internal Server Error in 246ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:116:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?searchParams=[object%20Object]&" for 127.0.0.1 at 2025-03-14 02:52:10 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"searchParams" => "[object Object]"}
+Completed 500 Internal Server Error in 319ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:116:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:52:12 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 451ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&" for 127.0.0.1 at 2025-03-14 02:52:13 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123"}
+Completed 200 OK in 264ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=[object%20Object]&sort_by=suggested&availability=true&" for 127.0.0.1 at 2025-03-14 02:56:11 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "[object Object]", "sort_by" => "suggested", "availability" => "true"}
+Completed 500 Internal Server Error in 209ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.2ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:116:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=[object%20Object]&sort_by=suggested&availability=true&" for 127.0.0.1 at 2025-03-14 02:56:12 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "[object Object]", "sort_by" => "suggested", "availability" => "true"}
+Completed 500 Internal Server Error in 374ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:116:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=suggested&availability=true&" for 127.0.0.1 at 2025-03-14 02:56:16 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "suggested", "availability" => "true"}
+Completed 500 Internal Server Error in 256ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:116:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=suggested&availability=true&" for 127.0.0.1 at 2025-03-14 02:56:18 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "suggested", "availability" => "true"}
+Completed 500 Internal Server Error in 296ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:116:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=suggested&availability=true&" for 127.0.0.1 at 2025-03-14 02:56:19 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "suggested", "availability" => "true"}
+Completed 500 Internal Server Error in 181ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:116:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=suggested&availability=true&" for 127.0.0.1 at 2025-03-14 02:56:20 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "suggested", "availability" => "true"}
+Completed 500 Internal Server Error in 239ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:116:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=suggested&availability=available&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 02:57:08 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "suggested", "availability" => "available", "delivery_type" => "all", "date_listed" => "all"}
+Completed 500 Internal Server Error in 177ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:116:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=suggested&availability=true&" for 127.0.0.1 at 2025-03-14 02:58:27 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "suggested", "availability" => "true"}
+Completed 500 Internal Server Error in 301ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:116:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=suggested&availability=true&" for 127.0.0.1 at 2025-03-14 02:58:28 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "suggested", "availability" => "true"}
+Completed 500 Internal Server Error in 159ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:116:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=suggested&availability=available&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 02:59:18 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "suggested", "availability" => "available", "delivery_type" => "all", "date_listed" => "all"}
+Completed 500 Internal Server Error in 174ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:116:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=suggested&availability=available&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:01:06 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "suggested", "availability" => "available", "delivery_type" => "all", "date_listed" => "all"}
+Completed 500 Internal Server Error in 116ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'empty' for an instance of String):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:70:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=new&sort_by=suggested&availability=available&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:01:22 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "new", "sort_by" => "suggested", "availability" => "available", "delivery_type" => "all", "date_listed" => "all"}
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'empty' for an instance of String):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:70:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=new,used_like_new&sort_by=suggested&availability=available&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:01:33 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "new,used_like_new", "sort_by" => "suggested", "availability" => "available", "delivery_type" => "all", "date_listed" => "all"}
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'empty' for an instance of String):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:70:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=new,used_like_new&sort_by=suggested&availability=available&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:01:38 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "new,used_like_new", "sort_by" => "suggested", "availability" => "available", "delivery_type" => "all", "date_listed" => "all"}
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.8ms)
+
+
+  
+NoMethodError (undefined method 'empty' for an instance of String):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:70:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=used_like_new&sort_by=suggested&availability=available&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:04:11 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "used_like_new", "sort_by" => "suggested", "availability" => "available", "delivery_type" => "all", "date_listed" => "all"}
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'empty' for an instance of String):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:70:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=suggested&availability=available&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:04:14 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "suggested", "availability" => "available", "delivery_type" => "all", "date_listed" => "all"}
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'empty' for an instance of String):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:70:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=suggested&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:04:27 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "suggested", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'empty' for an instance of String):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:70:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:05:40 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.2ms)
+
+
+  
+NoMethodError (undefined method 'empty' for an instance of String):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:70:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:08:09 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.7ms)
+
+
+  
+NoMethodError (undefined method 'empty' for an instance of String):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:70:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:08:41 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'empty' for an instance of String):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:70:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:09:23 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'empty' for an instance of String):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:91:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:09:39 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 500 Internal Server Error in 218ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 6.8ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:116:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=suggested&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:10:08 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "suggested", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 500 Internal Server Error in 273ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:116:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:10:33 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 500 Internal Server Error in 138ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'each' for nil):
+  
+app/controllers/facebook/facebook_controller.rb:43:in 'Facebook.listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:19:in 'Facebook::Marketplace::MarketplaceController#listing_restruct'
+app/controllers/facebook/marketplace/marketplace_controller.rb:116:in 'Facebook::Marketplace::MarketplaceController#marketplace_search'
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:11:46 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 542ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-14 03:12:16 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 351ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=80&radius_km=129&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:12:26 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "80", "radius_km" => "129", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 418ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=80&radius_km=129&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:13:15 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "80", "radius_km" => "129", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 240ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.7ms)
+
+
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=80&radius_km=129&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:15:33 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "80", "radius_km" => "129", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 223ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=80&radius_km=129&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:16:06 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "80", "radius_km" => "129", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 244ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=80&radius_km=129&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:16:22 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "80", "radius_km" => "129", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 262ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=80&radius_km=129&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:16:59 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "80", "radius_km" => "129", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 248ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=80&radius_km=129&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:17:13 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "80", "radius_km" => "129", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 203ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=80&radius_km=129&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:18:16 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "80", "radius_km" => "129", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 372ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=80&radius_km=129&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:19:20 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "80", "radius_km" => "129", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 217ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=80&radius_km=129&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:19:43 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "80", "radius_km" => "129", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 372ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=electronics&locationName=Lewisville,%20Texas&radius_mi=80&radius_km=129&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:19:54 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "electronics", "locationName" => "Lewisville, Texas", "radius_mi" => "80", "radius_km" => "129", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 471ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=electronics&locationName=Lewisville,%20Texas&radius_mi=80&radius_km=129&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:20:43 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "electronics", "locationName" => "Lewisville, Texas", "radius_mi" => "80", "radius_km" => "129", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 472ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=electronics&locationName=Lewisville,%20Texas&radius_mi=80&radius_km=129&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:21:12 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "electronics", "locationName" => "Lewisville, Texas", "radius_mi" => "80", "radius_km" => "129", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 359ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=electronics&locationName=Lewisville,%20Texas&radius_mi=80&radius_km=129&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:21:29 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "electronics", "locationName" => "Lewisville, Texas", "radius_mi" => "80", "radius_km" => "129", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 526ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=electronics&locationName=Lewisville,%20Texas&radius_mi=80&radius_km=129&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:21:47 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "electronics", "locationName" => "Lewisville, Texas", "radius_mi" => "80", "radius_km" => "129", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 470ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.3ms)
+
+
+Started GET "/facebook_marketplace_search?q=electronics&locationName=Lewisville,%20Texas&radius_mi=80&radius_km=129&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:22:46 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "electronics", "locationName" => "Lewisville, Texas", "radius_mi" => "80", "radius_km" => "129", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 1008ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/facebook_marketplace_search?q=electronics&locationName=Lewisville,%20Texas&radius_mi=80&radius_km=129&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:23:52 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "electronics", "locationName" => "Lewisville, Texas", "radius_mi" => "80", "radius_km" => "129", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 1185ms (Views: 1.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=electronics&locationName=Lewisville,%20Texas&radius_mi=80&radius_km=129&latitude=33.046289&longitude=-96.994123&condition=&sort_by=null&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:24:54 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "electronics", "locationName" => "Lewisville, Texas", "radius_mi" => "80", "radius_km" => "129", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "null", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 844ms (Views: 1.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=BEST_MATCH&availability=true&" for 127.0.0.1 at 2025-03-14 03:27:02 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "BEST_MATCH", "availability" => "true"}
+Completed 200 OK in 595ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=BEST_MATCH&availability=true&" for 127.0.0.1 at 2025-03-14 03:27:03 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "BEST_MATCH", "availability" => "true"}
+Completed 200 OK in 442ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=BEST_MATCH&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:27:04 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "BEST_MATCH", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 1113ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=DISTANCE_ASCEND&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:27:22 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "DISTANCE_ASCEND", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 1550ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=DISTANCE_ASCEND&availability=true&delivery_type=all&date_listed=all&min_price=2&" for 127.0.0.1 at 2025-03-14 03:27:32 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "DISTANCE_ASCEND", "availability" => "true", "delivery_type" => "all", "date_listed" => "all", "min_price" => "2"}
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=DISTANCE_ASCEND&availability=true&delivery_type=all&date_listed=all&min_price=20&" for 127.0.0.1 at 2025-03-14 03:27:32 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "DISTANCE_ASCEND", "availability" => "true", "delivery_type" => "all", "date_listed" => "all", "min_price" => "20"}
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=DISTANCE_ASCEND&availability=true&delivery_type=all&date_listed=all&min_price=200&" for 127.0.0.1 at 2025-03-14 03:27:32 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "DISTANCE_ASCEND", "availability" => "true", "delivery_type" => "all", "date_listed" => "all", "min_price" => "200"}
+Completed 200 OK in 810ms (Views: 1.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 871ms (Views: 3.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 871ms (Views: 3.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=DISTANCE_ASCEND&availability=true&delivery_type=all&date_listed=all&min_price=200&max_price=3&" for 127.0.0.1 at 2025-03-14 03:27:52 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "DISTANCE_ASCEND", "availability" => "true", "delivery_type" => "all", "date_listed" => "all", "min_price" => "200", "max_price" => "3"}
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=DISTANCE_ASCEND&availability=true&delivery_type=all&date_listed=all&min_price=200&max_price=30&" for 127.0.0.1 at 2025-03-14 03:27:53 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "DISTANCE_ASCEND", "availability" => "true", "delivery_type" => "all", "date_listed" => "all", "min_price" => "200", "max_price" => "30"}
+Completed 200 OK in 269ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=DISTANCE_ASCEND&availability=true&delivery_type=all&date_listed=all&min_price=200&max_price=300&" for 127.0.0.1 at 2025-03-14 03:27:53 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "DISTANCE_ASCEND", "availability" => "true", "delivery_type" => "all", "date_listed" => "all", "min_price" => "200", "max_price" => "300"}
+Completed 200 OK in 302ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 1032ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=DISTANCE_ASCEND&availability=true&delivery_type=local&date_listed=all&min_price=200&max_price=300&" for 127.0.0.1 at 2025-03-14 03:28:07 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "DISTANCE_ASCEND", "availability" => "true", "delivery_type" => "local", "date_listed" => "all", "min_price" => "200", "max_price" => "300"}
+Completed 200 OK in 549ms (Views: 2.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=DISTANCE_ASCEND&availability=true&delivery_type=shipping&date_listed=all&min_price=200&max_price=300&" for 127.0.0.1 at 2025-03-14 03:28:17 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "DISTANCE_ASCEND", "availability" => "true", "delivery_type" => "shipping", "date_listed" => "all", "min_price" => "200", "max_price" => "300"}
+Completed 200 OK in 380ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=DISTANCE_ASCEND&availability=true&delivery_type=local&date_listed=all&min_price=200&max_price=300&" for 127.0.0.1 at 2025-03-14 03:28:20 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "DISTANCE_ASCEND", "availability" => "true", "delivery_type" => "local", "date_listed" => "all", "min_price" => "200", "max_price" => "300"}
+Completed 200 OK in 655ms (Views: 1.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=BEST_MATCH&availability=true&delivery_type=all&" for 127.0.0.1 at 2025-03-14 03:29:51 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "BEST_MATCH", "availability" => "true", "delivery_type" => "all"}
+Completed 200 OK in 981ms (Views: 2.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=BEST_MATCH&availability=true&delivery_type=all&" for 127.0.0.1 at 2025-03-14 03:29:52 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "BEST_MATCH", "availability" => "true", "delivery_type" => "all"}
+Completed 200 OK in 871ms (Views: 1.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=BEST_MATCH&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:30:25 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "BEST_MATCH", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 1184ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.1ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=BEST_MATCH&availability=true&delivery_type=shipping&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:30:31 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "BEST_MATCH", "availability" => "true", "delivery_type" => "shipping", "date_listed" => "all"}
+Completed 200 OK in 298ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.1ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-14 03:30:35 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 440ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=100&radius_km=161&latitude=33.046289&longitude=-96.994123&condition=&sort_by=BEST_MATCH&availability=true&delivery_type=shipping&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:30:42 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "100", "radius_km" => "161", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "BEST_MATCH", "availability" => "true", "delivery_type" => "shipping", "date_listed" => "all"}
+Completed 200 OK in 294ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=100&radius_km=161&latitude=33.046289&longitude=-96.994123&condition=&sort_by=BEST_MATCH&availability=true&delivery_type=local&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:32:07 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "100", "radius_km" => "161", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "BEST_MATCH", "availability" => "true", "delivery_type" => "local", "date_listed" => "all"}
+Completed 200 OK in 776ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=100&radius_km=161&latitude=33.046289&longitude=-96.994123&condition=&sort_by=BEST_MATCH&availability=true&delivery_type=shipping&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:32:21 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "100", "radius_km" => "161", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "BEST_MATCH", "availability" => "true", "delivery_type" => "shipping", "date_listed" => "all"}
+Completed 200 OK in 321ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=100&radius_km=161&latitude=33.046289&longitude=-96.994123&condition=&sort_by=BEST_MATCH&availability=true&delivery_type=shipping&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:32:25 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "100", "radius_km" => "161", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "BEST_MATCH", "availability" => "true", "delivery_type" => "shipping", "date_listed" => "all"}
+Completed 200 OK in 1035ms (Views: 9.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=BEST_MATCH&availability=true&delivery_type=all&" for 127.0.0.1 at 2025-03-14 03:35:22 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "BEST_MATCH", "availability" => "true", "delivery_type" => "all"}
+Completed 200 OK in 803ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=BEST_MATCH&availability=true&delivery_type=all&" for 127.0.0.1 at 2025-03-14 03:35:23 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "BEST_MATCH", "availability" => "true", "delivery_type" => "all"}
+Completed 200 OK in 1012ms (Views: 1.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=BEST_MATCH&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:36:01 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "BEST_MATCH", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 1858ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=BEST_MATCH&availability=true&delivery_type=shipping&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:36:13 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "BEST_MATCH", "availability" => "true", "delivery_type" => "shipping", "date_listed" => "all"}
+Completed 200 OK in 181ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=BEST_MATCH&availability=true&delivery_type=shipping&date_listed=all&" for 127.0.0.1 at 2025-03-14 03:36:17 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "BEST_MATCH", "availability" => "true", "delivery_type" => "shipping", "date_listed" => "all"}
+Completed 200 OK in 905ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=BEST_MATCH&availability=true&delivery_type=all&" for 127.0.0.1 at 2025-03-14 23:40:27 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "BEST_MATCH", "availability" => "true", "delivery_type" => "all"}
+Completed 200 OK in 600ms (Views: 2.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=BEST_MATCH&availability=true&delivery_type=all&" for 127.0.0.1 at 2025-03-14 23:40:28 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "BEST_MATCH", "availability" => "true", "delivery_type" => "all"}
+Completed 200 OK in 337ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=BEST_MATCH&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 23:40:34 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "BEST_MATCH", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 438ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=BEST_MATCH&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-14 23:40:46 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "", "locationName" => "Lewisville, Texas", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.046289", "longitude" => "-96.994123", "condition" => "", "sort_by" => "BEST_MATCH", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 472ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-15 00:54:47 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 302ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=a" for 127.0.0.1 at 2025-03-15 00:54:50 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "a"}
+Started GET "/facebook_location_id_search?query=ar" for 127.0.0.1 at 2025-03-15 00:54:51 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "ar"}
+Completed 200 OK in 420ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=ari" for 127.0.0.1 at 2025-03-15 00:54:51 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "ari"}
+Completed 200 OK in 370ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 12.9ms)
+
+
+Completed 200 OK in 404ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 12.9ms)
+
+
+Started GET "/facebook_location_id_search?query=arizona" for 127.0.0.1 at 2025-03-15 00:54:51 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "arizona"}
+Completed 200 OK in 346ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.6ms)
+
+
+Started GET "/facebook_location_id_search?query=arizo" for 127.0.0.1 at 2025-03-15 00:55:20 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "arizo"}
+Completed 200 OK in 299ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Lewisville,%20Texas&radius_mi=40&radius_km=64&latitude=33.046289&longitude=-96.994123&condition=&sort_by=BEST_MATCH&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-15 00:55:34 -0500
+  
+SyntaxError (/Users/dudewithoneleg/projects/MetaScraper/backend/app/controllers/facebook/marketplace/marketplace_controller.rb:691: syntax errors found
+  [2m689 | [m            bqf: {
+  [2m690 | [m              callsite: "COMMERCE_MKTPLACE_SEO",
+[1;31m> [m[2m691 | [m              query,
+  [2m    | [m                   [1;31m^[m unexpected ','; expected a value in the hash literal
+  [2m    | [m                   [1;31m^[m expected a `=>` between the hash key and value
+  [2m692 | [m            },
+  [2m693 | [m            browse_request_params: {
+):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:691: syntax errors found
+Started GET "/facebook_location_id_search?query=Lewisville,%20Texas" for 127.0.0.1 at 2025-03-15 00:55:36 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Lewisville, Texas"}
+Completed 200 OK in 296ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=" for 127.0.0.1 at 2025-03-15 00:55:39 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => ""}
+Completed 200 OK in 238ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.1ms)
+
+
+Started GET "/facebook_location_id_search?query=a" for 127.0.0.1 at 2025-03-15 00:55:42 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "a"}
+Started GET "/facebook_location_id_search?query=ar" for 127.0.0.1 at 2025-03-15 00:55:42 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "ar"}
+Completed 200 OK in 447ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.4ms)
+
+
+Completed 200 OK in 288ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.4ms)
+
+
+Started GET "/facebook_location_id_search?query=ari" for 127.0.0.1 at 2025-03-15 00:55:43 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "ari"}
+Completed 200 OK in 343ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.3ms)
+
+
+Started GET "/facebook_location_id_search?query=arizona" for 127.0.0.1 at 2025-03-15 00:55:43 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "arizona"}
+Completed 200 OK in 343ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_location_id_search?query=Phoenix,%20Arizona" for 127.0.0.1 at 2025-03-15 00:57:10 -0500
+Processing by Facebook::FacebookController#facebook_location_id_search as */*
+  Parameters: {"query" => "Phoenix, Arizona"}
+Completed 200 OK in 315ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.9ms)
+
+
+Started GET "/facebook_marketplace_search?q=&locationName=Phoenix,%20Arizona&radius_mi=40&radius_km=64&latitude=33.4482&longitude=-112.0777&condition=&sort_by=BEST_MATCH&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-15 00:57:12 -0500
+  
+SyntaxError (/Users/dudewithoneleg/projects/MetaScraper/backend/app/controllers/facebook/marketplace/marketplace_controller.rb:691: syntax errors found
+  [2m689 | [m            bqf: {
+  [2m690 | [m              callsite: "COMMERCE_MKTPLACE_SEO",
+[1;31m> [m[2m691 | [m              query,
+  [2m    | [m                   [1;31m^[m unexpected ','; expected a value in the hash literal
+  [2m    | [m                   [1;31m^[m expected a `=>` between the hash key and value
+  [2m692 | [m            },
+  [2m693 | [m            browse_request_params: {
+):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:691: syntax errors found
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Phoenix,%20Arizona&radius_mi=40&radius_km=64&latitude=33.4482&longitude=-112.0777&condition=&sort_by=BEST_MATCH&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-15 00:57:17 -0500
+  
+SyntaxError (/Users/dudewithoneleg/projects/MetaScraper/backend/app/controllers/facebook/marketplace/marketplace_controller.rb:691: syntax errors found
+  [2m689 | [m            bqf: {
+  [2m690 | [m              callsite: "COMMERCE_MKTPLACE_SEO",
+[1;31m> [m[2m691 | [m              query,
+  [2m    | [m                   [1;31m^[m unexpected ','; expected a value in the hash literal
+  [2m    | [m                   [1;31m^[m expected a `=>` between the hash key and value
+  [2m692 | [m            },
+  [2m693 | [m            browse_request_params: {
+):
+  
+app/controllers/facebook/marketplace/marketplace_controller.rb:691: syntax errors found
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Phoenix,%20Arizona&radius_mi=40&radius_km=64&latitude=33.4482&longitude=-112.0777&condition=&sort_by=BEST_MATCH&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-15 00:58:36 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Phoenix, Arizona", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.4482", "longitude" => "-112.0777", "condition" => "", "sort_by" => "BEST_MATCH", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 1229ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.4ms)
+
+
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Phoenix,%20Arizona&radius_mi=40&radius_km=64&latitude=33.4482&longitude=-112.0777&condition=&sort_by=PRICE_ASCEND&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-15 00:59:15 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Phoenix, Arizona", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.4482", "longitude" => "-112.0777", "condition" => "", "sort_by" => "PRICE_ASCEND", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 1014ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Phoenix,%20Arizona&radius_mi=40&radius_km=64&latitude=33.4482&longitude=-112.0777&condition=&sort_by=PRICE_ASCEND&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-15 02:29:03 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Phoenix, Arizona", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.4482", "longitude" => "-112.0777", "condition" => "", "sort_by" => "PRICE_ASCEND", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 940ms (Views: 2.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=RTX&locationName=Phoenix,%20Arizona&radius_mi=40&radius_km=64&latitude=33.4482&longitude=-112.0777&condition=&sort_by=PRICE_ASCEND&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-15 02:29:13 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "RTX", "locationName" => "Phoenix, Arizona", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.4482", "longitude" => "-112.0777", "condition" => "", "sort_by" => "PRICE_ASCEND", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 1192ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=RTX&locationName=Phoenix,%20Arizona&radius_mi=40&radius_km=64&latitude=33.4482&longitude=-112.0777&condition=&sort_by=PRICE_ASCEND&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-15 02:34:33 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "RTX", "locationName" => "Phoenix, Arizona", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.4482", "longitude" => "-112.0777", "condition" => "", "sort_by" => "PRICE_ASCEND", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 684ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.0ms)
+
+
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Phoenix,%20Arizona&radius_mi=40&radius_km=64&latitude=33.4482&longitude=-112.0777&condition=&sort_by=PRICE_ASCEND&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-15 02:34:38 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Phoenix, Arizona", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.4482", "longitude" => "-112.0777", "condition" => "", "sort_by" => "PRICE_ASCEND", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 730ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.6ms)
+
+
+Started GET "/facebook_marketplace_search?q=shoes&locationName=Phoenix,%20Arizona&radius_mi=40&radius_km=64&latitude=33.4482&longitude=-112.0777&condition=&sort_by=BEST_MATCH&availability=true&delivery_type=all&date_listed=all&" for 127.0.0.1 at 2025-03-15 02:34:44 -0500
+Processing by Facebook::Marketplace::MarketplaceController#marketplace_search as */*
+  Parameters: {"q" => "shoes", "locationName" => "Phoenix, Arizona", "radius_mi" => "40", "radius_km" => "64", "latitude" => "33.4482", "longitude" => "-112.0777", "condition" => "", "sort_by" => "BEST_MATCH", "availability" => "true", "delivery_type" => "all", "date_listed" => "all"}
+Completed 200 OK in 1084ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.8ms)
+
+

@@ -3,22 +3,26 @@ import { useSelector, useDispatch } from "react-redux"
 import { useParams } from "react-router-dom"
 import { fetchPropertyResults } from '../../store/marketplace';
 import Filters, {MapDialog} from "./Filters";
+import { PlaygroundContext } from "../../context/playground";
 
 
 export default function Playground() {
     const { featureRoute, subfeatureRoute } = useParams()
+    const {
+        searchParams,
+    } = useContext(PlaygroundContext)
     const resultInfo = useSelector(state => state.marketplace.results)
-    const [searchParams, setSearchParams] = useState({ latitude: 33.046289, longitude: -96.994123 })
-    const [results, setResults] = useState(null)
+    // const [searchParams, setSearchParams] = useState({ latitude: 33.046289, longitude: -96.994123 })
+    const [results, setResults] = useState(resultInfo?.results)
     const [showMap, setShowMap] = useState(false)
     const [pageInfo, setPageInfo] = useState(null)
     console.log(resultInfo)
     // const {results} = resultInfo
     const dispatch = useDispatch()
 
-    useEffect(() => {
-        dispatch(fetchPropertyResults(searchParams))
-    }, [dispatch])
+    // useEffect(() => {
+    //     dispatch(fetchPropertyResults(searchParams))
+    // }, [dispatch])
 
     useEffect(() => {
         if (resultInfo) {
@@ -32,8 +36,6 @@ export default function Playground() {
         <div className="flex flex-row w-full h-full relative">
             {showMap ? <MapDialog setShowMap={setShowMap}/> : <></>}
             <Filters
-                setSearchParams={setSearchParams}
-                searchParams={searchParams}
                 setShowMap={setShowMap}
             />
             <div className="flex flex-wrap w-full h-full overflow-y-scroll bg-zinc-900 justify-center relative">
@@ -57,15 +59,9 @@ const Result = ({ result }) => {
         listing_price: { formatted_amount },
         custom_title,
         custom_sub_titles_with_rendering_flags: custom_subtitles,
-        marketplace_listing_title,
-        location: { 
-            reverse_geocode: { 
-                city_page: { 
-                    display_name 
-                } 
-            } 
-        }
+        marketplace_listing_title
     } = result
+    const display_name = result?.location?.reverse_geocode?.city_page?.display_name
 
 
     return (

@@ -10,23 +10,30 @@ module Facebook
   module Marketplace
     class MarketplaceController < ApplicationController
     #   include Facebook
-      @@proxy_url = "192.168.49.1"
-      @@proxy_port = "8000"
-      # @@proxy_url = nil
-      # @@proxy_port = nil
+      # @@proxy_url = "192.168.49.1"
+      # @@proxy_port = "8000"
+      @@proxy_url = nil
+      @@proxy_port = nil
 
       def listing_restruct(response, type)
         Facebook.listing_restruct(response, type)
       end
 
       def marketplace_search
-        query = request.query_parameters["q"]
-        limit = request.query_parameters["limit"]
-        latitude = request.query_parameters["latitude"]
-        longitude = request.query_parameters["longitude"]
-        radius_km = request.query_parameters["radius_km"]
-        max_price = request.query_parameters["max_price"]
-        min_price = request.query_parameters["min_price"]
+        query = request.query_parameters[:q]
+        limit = request.query_parameters[:limit]
+        latitude = request.query_parameters[:latitude]
+        longitude = request.query_parameters[:longitude]
+        radius_km = request.query_parameters[:radius_km]
+        max_price = request.query_parameters[:max_price]
+        min_price = request.query_parameters[:min_price]
+        condition = request.query_parameters[:condition]
+        date_listed = request.query_parameters[:date_listed]
+        delivery_type = request.query_parameters[:delivery_type]
+        sort_by = request.query_parameters[:sort_by]
+        availability = request.query_parameters[:availability]
+        seo_url = request.query_parameters[:seo_url]
+        location_id = request.query_parameters[:location_id]
         page = request.query_parameters["page"]
         cursor = {
           pg: page,
@@ -42,27 +49,27 @@ module Facebook
           params: {
             bqf: {
               callsite: "COMMERCE_MKTPLACE_WWW",
-              query: query,
+              query:
             },
             browse_request_params: {
 
               # local
-              commerce_enable_local_pickup: true,
+              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
               # shipping
-              commerce_enable_shipping: false,
+              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
 
               # Availability
               # false => sold
               # true => available
-              commerce_search_and_rp_available: true,
+              commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [],
 
               # Condition: seperated by commas
               # new
-              # use_like_new
+              # used_like_new
               # used_good
               # used_fair
-              commerce_search_and_rp_condition: nil,
+              commerce_search_and_rp_condition: condition == "" ? nil : condition,
 
               # Date Listed
               # last 24 hours => 20117;20116
@@ -75,26 +82,31 @@ module Facebook
               # location longitude
               filter_location_longitude: longitude,
               # distance-radius
-              filter_radius_km: 64,
+              filter_radius_km: radius_km,
 
               # sort by
-              # sort by
+              # suggested => BEST_MATCH
               # nearest first => DISTANCE_ASCEND
               # newest frist => CREATION_TIME_DESCEND
               # lowest price => PRICE_ASCEND
               # highest price first => PRICE_DESCEND
-              commerce_search_sort_by: "DISTANCE_ASCEND",
+              commerce_search_sort_by: sort_by,
 
               # min-price ex. $1200 = 120000
-              filter_price_lower_bound: min_price ? "#{min_price}00" : nil,
+              filter_price_lower_bound: min_price ? "#{min_price}00" : 0,
               # max-price
               filter_price_upper_bound: max_price ? "#{max_price}00" : 214748364700,
 
             },
             custom_request_params: {
-              surface: "SEARCH",
+              seo_url:,
+              surface: "TOPIC_PAGE",
               virtual_contextual_filters: [],
             },
+            topicPageParams: {
+              location_id:"112639365418504",
+              url: seo_url == "" ? nil : seo_url
+            }
           },
 
           # image scale
@@ -114,13 +126,14 @@ module Facebook
       end
 
       def marketplace_vehicle_search
-        query = request.query_parameters["query"]
-        limit = request.query_parameters["limit"]
-        latitude = request.query_parameters["latitude"]
-        longitude = request.query_parameters["longitude"]
-        radius_km = request.query_parameters["radius_km"]
-        max_price = request.query_parameters["max_price"]
-        min_price = request.query_parameters["min_price"]
+        query = request.query_parameters[:q]
+        limit = request.query_parameters[:limit]
+        latitude = request.query_parameters[:latitude]
+        longitude = request.query_parameters[:longitude]
+        radius_km = request.query_parameters[:radius_km]
+        max_price = request.query_parameters[:max_price]
+        min_price = request.query_parameters[:min_price]
+        location_id = request.query_parameters[:location_id]
         page = request.query_parameters["page"]
         cursor = {
           pg: page,
@@ -131,7 +144,7 @@ module Facebook
         }
         puts cursor.to_json
         variable_json = {
-          buyLocation: { latitude: 33.046289, longitude: -96.994123 },
+          buyLocation: { latitude:, longitude: },
           categoryIDArray: [807311116002614],
 
           # MAKE && model && body type (seperate bodytype by comma, no space)
@@ -246,266 +259,266 @@ module Facebook
         render json: results
       end
 
-      def test_scrape
-        driver = Selenium::WebDriver.for :chrome
-        driver.navigate.to "https://www.facebook.com/marketplace"
+      # def test_scrape
+      #   driver = Selenium::WebDriver.for :chrome
+      #   driver.navigate.to "https://www.facebook.com/marketplace"
 
-        # Get the body of the response
-        # body = driver.execute_script("return document.body.innerHTML;")
-        actions = driver.action
-        actions.key_down(:shift).send_keys(:tab).key_up(:shift).send_keys(:enter).perform
-        search = driver.find_element(:xpath, "//*[@aria-label='Search Marketplace']").send_keys("test", :enter)
-        # search.click
-        card_class = ".x1lliihq.x1iyjqo2"
+      #   # Get the body of the response
+      #   # body = driver.execute_script("return document.body.innerHTML;")
+      #   actions = driver.action
+      #   actions.key_down(:shift).send_keys(:tab).key_up(:shift).send_keys(:enter).perform
+      #   search = driver.find_element(:xpath, "//*[@aria-label='Search Marketplace']").send_keys("test", :enter)
+      #   # search.click
+      #   card_class = ".x1lliihq.x1iyjqo2"
 
-        cards = driver.find_elements(:css, card_class)
-        cards.each { |card| puts card.text }
-        driver.quit
-        # actions
+      #   cards = driver.find_elements(:css, card_class)
+      #   cards.each { |card| puts card.text }
+      #   driver.quit
+      #   # actions
 
-        # el.click
+      #   # el.click
 
-        # puts element
+      #   # puts element
 
-        render html: body.html_safe
-      end
+      #   render html: body.html_safe
+      # end
 
-      def fetch_apparel_categories
-        # VEHICLE_DATA_FILE = 'vehicle_make_ids.json'
-        # OUTPUT_SLUG_FILE = 'slug_data.json'
-        # OUTPUT_VALUE_FILE = 'value_data.json'
-        # API_URL = 'https://www.facebook.com/api/graphql'
-        # DOC_ID = '6978471575593570'
-        begin
-          # Read the JSON file
-          # file_path = File.join(__dir__, 'vehicle_make_ids.json')
-          # file = File.read(file_path)
-          # vehicles = JSON.parse(file)
+      # def fetch_apparel_categories
+      #   # VEHICLE_DATA_FILE = 'vehicle_make_ids.json'
+      #   # OUTPUT_SLUG_FILE = 'slug_data.json'
+      #   # OUTPUT_VALUE_FILE = 'value_data.json'
+      #   # API_URL = 'https://www.facebook.com/api/graphql'
+      #   # DOC_ID = '6978471575593570'
+      #   begin
+      #     # Read the JSON file
+      #     # file_path = File.join(__dir__, 'vehicle_make_ids.json')
+      #     # file = File.read(file_path)
+      #     # vehicles = JSON.parse(file)
 
-          slug_map = {}
-          value_map = {}
-          categories = [
-            "action-figures",
-            "building-toys",
-            "dollhouses",
-            "dolls",
-            "educational-toys",
-            "math-toys",
-            "model-kits",
-            "outdoor-toys",
-            "pretend-play-toys",
-            "puzzles",
-            "remote-control-toys",
-            "robot-toys",
-            "stuffed-animals",
-            "toy-vehicles",
-          ]
+      #     slug_map = {}
+      #     value_map = {}
+      #     categories = [
+      #       "action-figures",
+      #       "building-toys",
+      #       "dollhouses",
+      #       "dolls",
+      #       "educational-toys",
+      #       "math-toys",
+      #       "model-kits",
+      #       "outdoor-toys",
+      #       "pretend-play-toys",
+      #       "puzzles",
+      #       "remote-control-toys",
+      #       "robot-toys",
+      #       "stuffed-animals",
+      #       "toy-vehicles",
+      #     ]
 
-          categories.each do |category|
-            # slug = vehicle['slug']
-            # value = vehicle['value']
-            # next if slug.nil? || value.nil?
+      #     categories.each do |category|
+      #       # slug = vehicle['slug']
+      #       # value = vehicle['value']
+      #       # next if slug.nil? || value.nil?
 
-            # Construct the variables object
-            variables = {
-              buyLocation: {
-                latitude: 33.046289,
-                longitude: -96.994123,
-              },
-              category_ids: [],
-              category_ranking_enabled: true,
-              contextual_data: [{ name: "seo_url", value: "\"#{category}\"" }],
-              hide_l2_cats: true,
-              params: nil,
-              savedSearchID: "",
-              savedSearchQuery: nil,
-              sellerID: nil,
-              shouldIncludePopularSearches: false,
-              surface: "CATEGORY_FEED",
-              topicPageParams: {
-                location_id: "category",
-                url: category,
-              },
-              virtual_category_ids: [],
-            }
+      #       # Construct the variables object
+      #       variables = {
+      #         buyLocation: {
+      #           latitude:,
+      #           longitude:,
+      #         },
+      #         category_ids: [],
+      #         category_ranking_enabled: true,
+      #         contextual_data: [{ name: "seo_url", value: "\"#{category}\"" }],
+      #         hide_l2_cats: true,
+      #         params: nil,
+      #         savedSearchID: "",
+      #         savedSearchQuery: nil,
+      #         sellerID: nil,
+      #         shouldIncludePopularSearches: false,
+      #         surface: "CATEGORY_FEED",
+      #         topicPageParams: {
+      #           location_id: "category",
+      #           url: category,
+      #         },
+      #         virtual_category_ids: [],
+      #       }
 
-            variables2 = {
-              buyLocation: {
-                latitude: 33.046289,
-                longitude: -96.994123,
-              },
-              contextual_data: nil,
-              count: 24,
-              cursor: nil,
-              params: {
-                bqf: {
-                  callsite: "COMMERCE_MKTPLACE_SEO",
-                  query: "",
-                },
-                browse_request_params: {
-                  commerce_enable_local_pickup: true,
-                  commerce_enable_shipping: true,
-                  commerce_search_and_rp_available: true,
-                  commerce_search_and_rp_category_id: [],
-                  commerce_search_and_rp_condition: nil,
-                  commerce_search_and_rp_ctime_days: nil,
-                  filter_location_latitude: 33.046289,
-                  filter_location_longitude: -96.994123,
-                  filter_price_lower_bound: 0,
-                  filter_price_upper_bound: 214748364700,
-                  filter_radius_km: 64,
-                },
-                custom_request_params: {
-                  browse_context: nil,
-                  contextual_filters: [],
-                  referral_code: nil,
-                  saved_search_strid: nil,
-                  search_vertical: nil,
-                  seo_url: category,
-                  surface: "TOPIC_PAGE",
-                  virtual_contextual_filters: [],
-                },
-              },
-              savedSearchID: nil,
-              savedSearchQuery: nil,
-              scale: 2,
-              shouldIncludePopularSearches: false,
-              topicPageParams: {
-                location_id: "category",
-                url: category,
-              },
-            }
+      #       variables2 = {
+      #         buyLocation: {
+      #           latitude:,
+      #           longitude:,
+      #         },
+      #         contextual_data: nil,
+      #         count: 24,
+      #         cursor: nil,
+      #         params: {
+      #           bqf: {
+      #             callsite: "COMMERCE_MKTPLACE_SEO",
+      #             query: "",
+      #           },
+      #           browse_request_params: {
+      #             commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
+      #             commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+      #             commerce_search_and_rp_available: availability,
+      #             commerce_search_and_rp_category_id: [],
+      #             commerce_search_and_rp_condition: condition == "" ? nil : condition,
+      #             commerce_search_and_rp_ctime_days: nil,
+      #             filter_location_latitude: latitude,
+      #             filter_location_longitude: longitude,
+      #             filter_price_lower_bound: min_price ? "#{min_price}00" : 0,
+      #             filter_price_upper_bound: max_price ? "#{max_price}00" : 214748364700,
+      #             filter_radius_km: radius_km,
+      #           },
+      #           custom_request_params: {
+      #             browse_context: nil,
+      #             contextual_filters: [],
+      #             referral_code: nil,
+      #             saved_search_strid: nil,
+      #             search_vertical: nil,
+      #             seo_url: category,
+      #             surface: "TOPIC_PAGE",
+      #             virtual_contextual_filters: [],
+      #           },
+      #         },
+      #         savedSearchID: nil,
+      #         savedSearchQuery: nil,
+      #         scale: 2,
+      #         shouldIncludePopularSearches: false,
+      #         topicPageParams: {
+      #           location_id: "category",
+      #           url: category,
+      #         },
+      #       }
 
-            # Encode the variables for the request
-            encoded_variables = URI.encode_www_form_component(variables.to_json)
-            encoded_variables2 = URI.encode_www_form_component(variables2.to_json)
+      #       # Encode the variables for the request
+      #       encoded_variables = URI.encode_www_form_component(variables.to_json)
+      #       encoded_variables2 = URI.encode_www_form_component(variables2.to_json)
 
-            # Make the request
-            response = HTTParty.post(
-              "https://www.facebook.com/api/graphql?variables=#{encoded_variables}&doc_id=6978471575593570",
-              headers: { "Content-Type" => "application/json" },
-            )
-            response2 = HTTParty.post(
-              "https://www.facebook.com/api/graphql?variables=#{encoded_variables2}&doc_id=8996372187041574",
-              headers: { "Content-Type" => "application/json" },
-            )
-            # Parse the response
-            result = JSON.parse(response.body) rescue {}
-            result2 = JSON.parse(response2.body) rescue {}
-            # puts result
-            sub_categories = result2.dig("data", "marketplace_seo_page", "seo_navigation")
-            sizes = result.dig("data", "viewer", "marketplace_structured_fields")
-            sizes = sizes.filter { |el| el["filter_key"] != "price" && el["filter_key"] != "deliveryMethodSERP" && el["filter_key"] != "itemCondition" }
+      #       # Make the request
+      #       response = HTTParty.post(
+      #         "https://www.facebook.com/api/graphql?variables=#{encoded_variables}&doc_id=6978471575593570",
+      #         headers: { "Content-Type" => "application/json" },
+      #       )
+      #       response2 = HTTParty.post(
+      #         "https://www.facebook.com/api/graphql?variables=#{encoded_variables2}&doc_id=8996372187041574",
+      #         headers: { "Content-Type" => "application/json" },
+      #       )
+      #       # Parse the response
+      #       result = JSON.parse(response.body) rescue {}
+      #       result2 = JSON.parse(response2.body) rescue {}
+      #       # puts result
+      #       sub_categories = result2.dig("data", "marketplace_seo_page", "seo_navigation")
+      #       sizes = result.dig("data", "viewer", "marketplace_structured_fields")
+      #       sizes = sizes.filter { |el| el["filter_key"] != "price" && el["filter_key"] != "deliveryMethodSERP" && el["filter_key"] != "itemCondition" }
 
-            if sub_categories != nil
-              sub_categories.each_index do |category_index|
-                puts sub_categories[category_index]["seo_url"]
-                variables = {
-                  buyLocation: {
-                    latitude: 33.046289,
-                    longitude: -96.994123,
-                  },
-                  category_ids: [],
-                  category_ranking_enabled: true,
-                  contextual_data: [{ name: "seo_url", value: "\"#{sub_categories[category_index]["seo_url"]}\"" }],
-                  hide_l2_cats: true,
-                  params: nil,
-                  savedSearchID: "",
-                  savedSearchQuery: nil,
-                  sellerID: nil,
-                  shouldIncludePopularSearches: false,
-                  surface: "CATEGORY_FEED",
-                  topicPageParams: {
-                    location_id: "category",
-                    url: sub_categories[category_index]["seo_url"],
-                  },
-                  virtual_category_ids: [],
-                }
+      #       if sub_categories != nil
+      #         sub_categories.each_index do |category_index|
+      #           puts sub_categories[category_index]["seo_url"]
+      #           variables = {
+      #             buyLocation: {
+      #               latitude:,
+      #               longitude:,
+      #             },
+      #             category_ids: [],
+      #             category_ranking_enabled: true,
+      #             contextual_data: [{ name: "seo_url", value: "\"#{sub_categories[category_index]["seo_url"]}\"" }],
+      #             hide_l2_cats: true,
+      #             params: nil,
+      #             savedSearchID: "",
+      #             savedSearchQuery: nil,
+      #             sellerID: nil,
+      #             shouldIncludePopularSearches: false,
+      #             surface: "CATEGORY_FEED",
+      #             topicPageParams: {
+      #               location_id: "category",
+      #               url: sub_categories[category_index]["seo_url"],
+      #             },
+      #             virtual_category_ids: [],
+      #           }
 
-                variables2 = {
-                  buyLocation: {
-                    latitude: 33.046289,
-                    longitude: -96.994123,
-                  },
-                  contextual_data: nil,
-                  count: 24,
-                  cursor: nil,
-                  params: {
-                    bqf: {
-                      callsite: "COMMERCE_MKTPLACE_SEO",
-                      query: "",
-                    },
-                    browse_request_params: {
-                      commerce_enable_local_pickup: true,
-                      commerce_enable_shipping: true,
-                      commerce_search_and_rp_available: true,
-                      commerce_search_and_rp_category_id: [],
-                      commerce_search_and_rp_condition: nil,
-                      commerce_search_and_rp_ctime_days: nil,
-                      filter_location_latitude: 33.046289,
-                      filter_location_longitude: -96.994123,
-                      filter_price_lower_bound: 0,
-                      filter_price_upper_bound: 214748364700,
-                      filter_radius_km: 64,
-                    },
-                    custom_request_params: {
-                      browse_context: nil,
-                      contextual_filters: [],
-                      referral_code: nil,
-                      saved_search_strid: nil,
-                      search_vertical: nil,
-                      seo_url: category,
-                      surface: "TOPIC_PAGE",
-                      virtual_contextual_filters: [],
-                    },
-                  },
-                  savedSearchID: nil,
-                  savedSearchQuery: nil,
-                  scale: 2,
-                  shouldIncludePopularSearches: false,
-                  topicPageParams: {
-                    location_id: "category",
-                    url: sub_categories[category_index]["seo_url"],
-                  },
-                }
+      #           variables2 = {
+      #             buyLocation: {
+      #               latitude:,
+      #               longitude:,
+      #             },
+      #             contextual_data: nil,
+      #             count: 24,
+      #             cursor: nil,
+      #             params: {
+      #               bqf: {
+      #                 callsite: "COMMERCE_MKTPLACE_SEO",
+      #                 query: "",
+      #               },
+      #               browse_request_params: {
+      #                 commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
+      #                 commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+      #                 commerce_search_and_rp_available: availability,
+      #                 commerce_search_and_rp_category_id: [],
+      #                 commerce_search_and_rp_condition: condition == "" ? nil : condition,
+      #                 commerce_search_and_rp_ctime_days: nil,
+      #                 filter_location_latitude: latitude,
+      #                 filter_location_longitude: longitude,
+      #                 filter_price_lower_bound: min_price ? "#{min_price}00" : 0,
+      #                 filter_price_upper_bound: max_price ? "#{max_price}00" : 214748364700,
+      #                 filter_radius_km: radius_km,
+      #               },
+      #               custom_request_params: {
+      #                 browse_context: nil,
+      #                 contextual_filters: [],
+      #                 referral_code: nil,
+      #                 saved_search_strid: nil,
+      #                 search_vertical: nil,
+      #                 seo_url: category,
+      #                 surface: "TOPIC_PAGE",
+      #                 virtual_contextual_filters: [],
+      #               },
+      #             },
+      #             savedSearchID: nil,
+      #             savedSearchQuery: nil,
+      #             scale: 2,
+      #             shouldIncludePopularSearches: false,
+      #             topicPageParams: {
+      #               location_id: "category",
+      #               url: sub_categories[category_index]["seo_url"],
+      #             },
+      #           }
 
-                # Encode the variables for the request
-                encoded_variables = URI.encode_www_form_component(variables.to_json)
-                encoded_variables2 = URI.encode_www_form_component(variables2.to_json)
+      #           # Encode the variables for the request
+      #           encoded_variables = URI.encode_www_form_component(variables.to_json)
+      #           encoded_variables2 = URI.encode_www_form_component(variables2.to_json)
 
-                # Make the request
-                response = HTTParty.post(
-                  "https://www.facebook.com/api/graphql?variables=#{encoded_variables}&doc_id=6978471575593570",
-                  headers: { "Content-Type" => "application/json" },
-                )
-                # response2 = HTTParty.post(
-                #   "https://www.facebook.com/api/graphql?variables=#{encoded_variables2}&doc_id=8996372187041574",
-                #     headers: { 'Content-Type' => 'application/json' })
-                # Parse the response
-                # result = JSON.parse(response.body) rescue {}
-                result2 = JSON.parse(response2.body) rescue {}
-                # puts result
-                # sub_categories = result2.dig('data', 'marketplace_seo_page', 'seo_navigation')
-                sizes = result.dig("data", "viewer", "marketplace_structured_fields")
-                sizes = sizes.filter { |el| el["filter_key"] != "price" && el["filter_key"] != "deliveryMethodSERP" && el["filter_key"] != "itemCondition" }
-                sub_categories[category_index][:fields] = sizes
-                # sub_categories[category_index][:sub_categories] = sub_categories
-              end
-            end
+      #           # Make the request
+      #           response = HTTParty.post(
+      #             "https://www.facebook.com/api/graphql?variables=#{encoded_variables}&doc_id=6978471575593570",
+      #             headers: { "Content-Type" => "application/json" },
+      #           )
+      #           # response2 = HTTParty.post(
+      #           #   "https://www.facebook.com/api/graphql?variables=#{encoded_variables2}&doc_id=8996372187041574",
+      #           #     headers: { 'Content-Type' => 'application/json' })
+      #           # Parse the response
+      #           # result = JSON.parse(response.body) rescue {}
+      #           result2 = JSON.parse(response2.body) rescue {}
+      #           # puts result
+      #           # sub_categories = result2.dig('data', 'marketplace_seo_page', 'seo_navigation')
+      #           sizes = result.dig("data", "viewer", "marketplace_structured_fields")
+      #           sizes = sizes.filter { |el| el["filter_key"] != "price" && el["filter_key"] != "deliveryMethodSERP" && el["filter_key"] != "itemCondition" }
+      #           sub_categories[category_index][:fields] = sizes
+      #           # sub_categories[category_index][:sub_categories] = sub_categories
+      #         end
+      #       end
 
-            slug_map[category] = { sub_categories: sub_categories, fields: sizes }
-          end
-          render json: slug_map
+      #       slug_map[category] = { sub_categories: sub_categories, fields: sizes }
+      #     end
+      #     render json: slug_map
 
-          # Write results to JSON files
-          File.write("toys_games_slug_data.json", JSON.pretty_generate(slug_map))
-          # File.write("value_data.json", JSON.pretty_generate(value_map))
+      #     # Write results to JSON files
+      #     File.write("toys_games_slug_data.json", JSON.pretty_generate(slug_map))
+      #     # File.write("value_data.json", JSON.pretty_generate(value_map))
 
-          puts "Data successfully saved!"
-        rescue StandardError => e
-          puts "Error fetching data: #{e.message}"
-        end
-      end
+      #     puts "Data successfully saved!"
+      #   rescue StandardError => e
+      #     puts "Error fetching data: #{e.message}"
+      #   end
+      # end
 
       # FETCHES VEHICLE MAKE BY MODEL AND WRITES TO JSON
       # def fetch_data
@@ -531,8 +544,8 @@ module Facebook
       #       # Construct the variables object
       #       variables = {
       #         buyLocation: {
-      #           latitude: 33.046289,
-      #           longitude: -96.994123
+      #           latitude:,
+      #           longitude:
       #         },
       #         category_ids: [],
       #         category_ranking_enabled: true,
@@ -579,13 +592,14 @@ module Facebook
       # end
 
       def marketplace_property_search
-        query = request.query_parameters["query"]
-        limit = request.query_parameters["limit"]
-        latitude = request.query_parameters["latitude"]
-        longitude = request.query_parameters["longitude"]
-        radius_km = request.query_parameters["radius_km"]
-        max_price = request.query_parameters["max_price"]
-        min_price = request.query_parameters["min_price"]
+        query = request.query_parameters[:q]
+        limit = request.query_parameters[:limit]
+        latitude = request.query_parameters[:latitude]
+        longitude = request.query_parameters[:longitude]
+        radius_km = request.query_parameters[:radius_km]
+        max_price = request.query_parameters[:max_price]
+        min_price = request.query_parameters[:min_price]
+        location_id = request.query_parameters[:location_id]
         page = request.query_parameters["page"]
         cursor = {
           pg: page,
@@ -597,8 +611,8 @@ module Facebook
         puts cursor.to_json
         variable_json = {
           buyLocation: {
-            latitude: 33.046289,
-            longitude: -96.994123,
+            latitude:,
+            longitude:,
           },
           categoryIDArray: [1468271819871448],
           count: 24,
@@ -656,13 +670,14 @@ module Facebook
       end
 
       def marketplace_apparel_search
-        query = request.query_parameters["query"]
-        limit = request.query_parameters["limit"]
-        latitude = request.query_parameters["latitude"]
-        longitude = request.query_parameters["longitude"]
-        radius_km = request.query_parameters["radius_km"]
-        max_price = request.query_parameters["max_price"]
-        min_price = request.query_parameters["min_price"]
+        query = request.query_parameters[:q]
+        limit = request.query_parameters[:limit]
+        latitude = request.query_parameters[:latitude]
+        longitude = request.query_parameters[:longitude]
+        radius_km = request.query_parameters[:radius_km]
+        max_price = request.query_parameters[:max_price]
+        min_price = request.query_parameters[:min_price]
+        location_id = request.query_parameters[:location_id]
         page = request.query_parameters["page"]
         cursor = {
           pg: page,
@@ -674,8 +689,8 @@ module Facebook
         puts cursor.to_json
         variable_json = {
           buyLocation: {
-            latitude: 33.046289,
-            longitude: -96.994123,
+            latitude:,
+            longitude:,
           },
           contextual_data: nil,
           count: 24,
@@ -683,16 +698,16 @@ module Facebook
           params: {
             bqf: {
               callsite: "COMMERCE_MKTPLACE_SEO",
-              query: "pink",
+              query:,
             },
             browse_request_params: {
 
               # LOCAL PICKUP
-              commerce_enable_local_pickup: true,
+              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
               # SHIPPING
-              commerce_enable_shipping: true,
+              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
 
-              commerce_search_and_rp_available: true,
+              commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1266429133383966,
                 931157863635831,
@@ -706,17 +721,17 @@ module Facebook
               # used like new => used_like_new
               # used good => used_good
               # used fair => used_fair
-              commerce_search_and_rp_condition: nil,
+              commerce_search_and_rp_condition: condition == "" ? nil : condition,
               commerce_search_and_rp_ctime_days: nil,
-              filter_location_latitude: 33.046289,
-              filter_location_longitude: -96.994123,
+              filter_location_latitude: latitude,
+              filter_location_longitude: longitude,
 
               # PRICE
               # amount + 00
-              filter_price_lower_bound: 0,
-              filter_price_upper_bound: 214748364700,
+              filter_price_lower_bound: min_price ? "#{min_price}00" : 0,
+              filter_price_upper_bound: max_price ? "#{max_price}00" : 214748364700,
 
-              filter_radius_km: 64,
+              filter_radius_km: radius_km,
             },
             custom_request_params: {
               browse_context: nil,
@@ -756,13 +771,14 @@ module Facebook
       end
 
       def marketplace_classifieds_search
-        query = request.query_parameters["query"]
-        limit = request.query_parameters["limit"]
-        latitude = request.query_parameters["latitude"]
-        longitude = request.query_parameters["longitude"]
-        radius_km = request.query_parameters["radius_km"]
-        max_price = request.query_parameters["max_price"]
-        min_price = request.query_parameters["min_price"]
+        query = request.query_parameters[:q]
+        limit = request.query_parameters[:limit]
+        latitude = request.query_parameters[:latitude]
+        longitude = request.query_parameters[:longitude]
+        radius_km = request.query_parameters[:radius_km]
+        max_price = request.query_parameters[:max_price]
+        min_price = request.query_parameters[:min_price]
+        location_id = request.query_parameters[:location_id]
         page = request.query_parameters["page"]
         cursor = {
           pg: page,
@@ -774,8 +790,8 @@ module Facebook
         puts cursor.to_json
         variable_json = {
           buyLocation: {
-            latitude: 33.046289,
-            longitude: -96.994123,
+            latitude:,
+            longitude:,
           },
           contextual_data: nil,
           count: 24,
@@ -788,10 +804,10 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: true,
-              commerce_enable_shipping: true,
+              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
+              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
 
-              commerce_search_and_rp_available: true,
+              commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1834536343472201,
                 895487550471874,
@@ -800,16 +816,16 @@ module Facebook
 
               # CONDITION (comma seperated)
               # used,used_like_new,used_good,used_fair
-              commerce_search_and_rp_condition: nil,
+              commerce_search_and_rp_condition: condition == "" ? nil : condition,
               commerce_search_and_rp_ctime_days: nil,
-              filter_location_latitude: 33.046289,
-              filter_location_longitude: -96.994123,
+              filter_location_latitude: latitude,
+              filter_location_longitude: longitude,
 
               # PRICE
               # amount + 00
-              filter_price_lower_bound: 0,
-              filter_price_upper_bound: 214748364700,
-              filter_radius_km: 64,
+              filter_price_lower_bound: min_price ? "#{min_price}00" : 0,
+              filter_price_upper_bound: max_price ? "#{max_price}00" : 214748364700,
+              filter_radius_km: radius_km,
             },
             custom_request_params: {
               browse_context: nil,
@@ -844,13 +860,14 @@ module Facebook
       end
 
       def marketplace_entertainment_search
-        query = request.query_parameters["query"]
-        limit = request.query_parameters["limit"]
-        latitude = request.query_parameters["latitude"]
-        longitude = request.query_parameters["longitude"]
-        radius_km = request.query_parameters["radius_km"]
-        max_price = request.query_parameters["max_price"]
-        min_price = request.query_parameters["min_price"]
+        query = request.query_parameters[:q]
+        limit = request.query_parameters[:limit]
+        latitude = request.query_parameters[:latitude]
+        longitude = request.query_parameters[:longitude]
+        radius_km = request.query_parameters[:radius_km]
+        max_price = request.query_parameters[:max_price]
+        min_price = request.query_parameters[:min_price]
+        location_id = request.query_parameters[:location_id]
         page = request.query_parameters["page"]
         cursor = {
           pg: page,
@@ -862,8 +879,8 @@ module Facebook
         puts cursor.to_json
         variable_json = {
           buyLocation: {
-            latitude: 33.046289,
-            longitude: -96.994123,
+            latitude:,
+            longitude:,
           },
           contextual_data: nil,
           count: 24,
@@ -876,25 +893,26 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: true,
-              commerce_enable_shipping: false,
-              commerce_search_and_rp_available: true,
+              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
+              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+
+              commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1792291877663080,
               ],
 
               # CONDITION (comma seperated)
               # used,used_like_new, used_good,used_fair
-              commerce_search_and_rp_condition: nil,
+              commerce_search_and_rp_condition: condition == "" ? nil : condition,
               commerce_search_and_rp_ctime_days: nil,
-              filter_location_latitude: 33.046289,
-              filter_location_longitude: -96.994123,
+              filter_location_latitude: latitude,
+              filter_location_longitude: longitude,
 
               # PRICE
               # amount + 00
-              filter_price_lower_bound: 0,
-              filter_price_upper_bound: 214748364700,
-              filter_radius_km: 64,
+              filter_price_lower_bound: min_price ? "#{min_price}00" : 0,
+              filter_price_upper_bound: max_price ? "#{max_price}00" : 214748364700,
+              filter_radius_km: radius_km,
             },
             custom_request_params: {
               browse_context: nil,
@@ -931,13 +949,14 @@ module Facebook
       end
 
       def marketplace_electronics_search
-        query = request.query_parameters["query"]
-        limit = request.query_parameters["limit"]
-        latitude = request.query_parameters["latitude"]
-        longitude = request.query_parameters["longitude"]
-        radius_km = request.query_parameters["radius_km"]
-        max_price = request.query_parameters["max_price"]
-        min_price = request.query_parameters["min_price"]
+        query = request.query_parameters[:q]
+        limit = request.query_parameters[:limit]
+        latitude = request.query_parameters[:latitude]
+        longitude = request.query_parameters[:longitude]
+        radius_km = request.query_parameters[:radius_km]
+        max_price = request.query_parameters[:max_price]
+        min_price = request.query_parameters[:min_price]
+        location_id = request.query_parameters[:location_id]
         page = request.query_parameters["page"]
         cursor = {
           pg: page,
@@ -949,8 +968,8 @@ module Facebook
         puts cursor.to_json
         variable_json = {
           buyLocation: {
-            latitude: 33.046289,
-            longitude: -96.994123,
+            latitude:,
+            longitude:,
           },
           contextual_data: nil,
           count: 24,
@@ -963,25 +982,25 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: true,
-              commerce_enable_shipping: false,
-              commerce_search_and_rp_available: true,
+              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
+              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1792291877663080,
               ],
 
               # CONDITION (comma seperated)
               # used,used_like_new, used_good,used_fair
-              commerce_search_and_rp_condition: nil,
+              commerce_search_and_rp_condition: condition == "" ? nil : condition,
               commerce_search_and_rp_ctime_days: nil,
-              filter_location_latitude: 33.046289,
-              filter_location_longitude: -96.994123,
+              filter_location_latitude: latitude,
+              filter_location_longitude: longitude,
 
               # PRICE
               # amount + 00
-              filter_price_lower_bound: 0,
-              filter_price_upper_bound: 214748364700,
-              filter_radius_km: 64,
+              filter_price_lower_bound: min_price ? "#{min_price}00" : 0,
+              filter_price_upper_bound: max_price ? "#{max_price}00" : 214748364700,
+              filter_radius_km: radius_km,
             },
             custom_request_params: {
               browse_context: nil,
@@ -1018,13 +1037,14 @@ module Facebook
       end
 
       def marketplace_family_search
-        query = request.query_parameters["query"]
-        limit = request.query_parameters["limit"]
-        latitude = request.query_parameters["latitude"]
-        longitude = request.query_parameters["longitude"]
-        radius_km = request.query_parameters["radius_km"]
-        max_price = request.query_parameters["max_price"]
-        min_price = request.query_parameters["min_price"]
+        query = request.query_parameters[:q]
+        limit = request.query_parameters[:limit]
+        latitude = request.query_parameters[:latitude]
+        longitude = request.query_parameters[:longitude]
+        radius_km = request.query_parameters[:radius_km]
+        max_price = request.query_parameters[:max_price]
+        min_price = request.query_parameters[:min_price]
+        location_id = request.query_parameters[:location_id]
         page = request.query_parameters["page"]
         cursor = {
           pg: page,
@@ -1036,8 +1056,8 @@ module Facebook
         puts cursor.to_json
         variable_json = {
           buyLocation: {
-            latitude: 33.046289,
-            longitude: -96.994123,
+            latitude:,
+            longitude:,
           },
           contextual_data: nil,
           count: 24,
@@ -1050,25 +1070,25 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: true,
-              commerce_enable_shipping: false,
-              commerce_search_and_rp_available: true,
+              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
+              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1792291877663080,
               ],
 
               # CONDITION (comma seperated)
               # used,used_like_new, used_good,used_fair
-              commerce_search_and_rp_condition: nil,
+              commerce_search_and_rp_condition: condition == "" ? nil : condition,
               commerce_search_and_rp_ctime_days: nil,
-              filter_location_latitude: 33.046289,
-              filter_location_longitude: -96.994123,
+              filter_location_latitude: latitude,
+              filter_location_longitude: longitude,
 
               # PRICE
               # amount + 00
-              filter_price_lower_bound: 0,
-              filter_price_upper_bound: 214748364700,
-              filter_radius_km: 64,
+              filter_price_lower_bound: min_price ? "#{min_price}00" : 0,
+              filter_price_upper_bound: max_price ? "#{max_price}00" : 214748364700,
+              filter_radius_km: radius_km,
             },
             custom_request_params: {
               browse_context: nil,
@@ -1105,13 +1125,14 @@ module Facebook
       end
 
       def marketplace_garden_search
-        query = request.query_parameters["query"]
-        limit = request.query_parameters["limit"]
-        latitude = request.query_parameters["latitude"]
-        longitude = request.query_parameters["longitude"]
-        radius_km = request.query_parameters["radius_km"]
-        max_price = request.query_parameters["max_price"]
-        min_price = request.query_parameters["min_price"]
+        query = request.query_parameters[:q]
+        limit = request.query_parameters[:limit]
+        latitude = request.query_parameters[:latitude]
+        longitude = request.query_parameters[:longitude]
+        radius_km = request.query_parameters[:radius_km]
+        max_price = request.query_parameters[:max_price]
+        min_price = request.query_parameters[:min_price]
+        location_id = request.query_parameters[:location_id]
         page = request.query_parameters["page"]
         cursor = {
           pg: page,
@@ -1123,8 +1144,8 @@ module Facebook
         puts cursor.to_json
         variable_json = {
           buyLocation: {
-            latitude: 33.046289,
-            longitude: -96.994123,
+            latitude:,
+            longitude:,
           },
           contextual_data: nil,
           count: 24,
@@ -1137,25 +1158,25 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: true,
-              commerce_enable_shipping: false,
-              commerce_search_and_rp_available: true,
+              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
+              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1792291877663080,
               ],
 
               # CONDITION (comma seperated)
               # used,used_like_new, used_good,used_fair
-              commerce_search_and_rp_condition: nil,
+              commerce_search_and_rp_condition: condition == "" ? nil : condition,
               commerce_search_and_rp_ctime_days: nil,
-              filter_location_latitude: 33.046289,
-              filter_location_longitude: -96.994123,
+              filter_location_latitude: latitude,
+              filter_location_longitude: longitude,
 
               # PRICE
               # amount + 00
-              filter_price_lower_bound: 0,
-              filter_price_upper_bound: 214748364700,
-              filter_radius_km: 64,
+              filter_price_lower_bound: min_price ? "#{min_price}00" : 0,
+              filter_price_upper_bound: max_price ? "#{max_price}00" : 214748364700,
+              filter_radius_km: radius_km,
             },
             custom_request_params: {
               browse_context: nil,
@@ -1192,13 +1213,14 @@ module Facebook
       end
 
       def marketplace_free_search
-        query = request.query_parameters["query"]
-        limit = request.query_parameters["limit"]
-        latitude = request.query_parameters["latitude"]
-        longitude = request.query_parameters["longitude"]
-        radius_km = request.query_parameters["radius_km"]
-        max_price = request.query_parameters["max_price"]
-        min_price = request.query_parameters["min_price"]
+        query = request.query_parameters[:q]
+        limit = request.query_parameters[:limit]
+        latitude = request.query_parameters[:latitude]
+        longitude = request.query_parameters[:longitude]
+        radius_km = request.query_parameters[:radius_km]
+        max_price = request.query_parameters[:max_price]
+        min_price = request.query_parameters[:min_price]
+        location_id = request.query_parameters[:location_id]
         page = request.query_parameters["page"]
         cursor = {
           pg: page,
@@ -1210,8 +1232,8 @@ module Facebook
         puts cursor.to_json
         variable_json = {
           buyLocation: {
-            latitude: 33.046289,
-            longitude: -96.994123,
+            latitude:,
+            longitude:,
           },
           contextual_data: nil,
           count: 24,
@@ -1224,10 +1246,10 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: true,
-              commerce_enable_shipping: true,
+              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
+              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
 
-              commerce_search_and_rp_available: true,
+              commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1834536343472201,
                 895487550471874,
@@ -1236,16 +1258,16 @@ module Facebook
 
               # CONDITION (comma seperated)
               # used,used_like_new,used_good,used_fair
-              commerce_search_and_rp_condition: nil,
+              commerce_search_and_rp_condition: condition == "" ? nil : condition,
               commerce_search_and_rp_ctime_days: nil,
-              filter_location_latitude: 33.046289,
-              filter_location_longitude: -96.994123,
+              filter_location_latitude: latitude,
+              filter_location_longitude: longitude,
 
               # PRICE
               # amount + 00
-              filter_price_lower_bound: 0,
-              filter_price_upper_bound: 214748364700,
-              filter_radius_km: 64,
+              filter_price_lower_bound: min_price ? "#{min_price}00" : 0,
+              filter_price_upper_bound: max_price ? "#{max_price}00" : 214748364700,
+              filter_radius_km: radius_km,
             },
             custom_request_params: {
               browse_context: nil,
@@ -1280,13 +1302,14 @@ module Facebook
       end
 
       def marketplace_hobbies_search
-        query = request.query_parameters["query"]
-        limit = request.query_parameters["limit"]
-        latitude = request.query_parameters["latitude"]
-        longitude = request.query_parameters["longitude"]
-        radius_km = request.query_parameters["radius_km"]
-        max_price = request.query_parameters["max_price"]
-        min_price = request.query_parameters["min_price"]
+        query = request.query_parameters[:q]
+        limit = request.query_parameters[:limit]
+        latitude = request.query_parameters[:latitude]
+        longitude = request.query_parameters[:longitude]
+        radius_km = request.query_parameters[:radius_km]
+        max_price = request.query_parameters[:max_price]
+        min_price = request.query_parameters[:min_price]
+        location_id = request.query_parameters[:location_id]
         page = request.query_parameters["page"]
         cursor = {
           pg: page,
@@ -1298,8 +1321,8 @@ module Facebook
         puts cursor.to_json
         variable_json = {
           buyLocation: {
-            latitude: 33.046289,
-            longitude: -96.994123,
+            latitude:,
+            longitude:,
           },
           contextual_data: nil,
           count: 24,
@@ -1312,25 +1335,25 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: true,
-              commerce_enable_shipping: false,
-              commerce_search_and_rp_available: true,
+              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
+              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1792291877663080,
               ],
 
               # CONDITION (comma seperated)
               # used,used_like_new, used_good,used_fair
-              commerce_search_and_rp_condition: nil,
+              commerce_search_and_rp_condition: condition == "" ? nil : condition,
               commerce_search_and_rp_ctime_days: nil,
-              filter_location_latitude: 33.046289,
-              filter_location_longitude: -96.994123,
+              filter_location_latitude: latitude,
+              filter_location_longitude: longitude,
 
               # PRICE
               # amount + 00
-              filter_price_lower_bound: 0,
-              filter_price_upper_bound: 214748364700,
-              filter_radius_km: 64,
+              filter_price_lower_bound: min_price ? "#{min_price}00" : 0,
+              filter_price_upper_bound: max_price ? "#{max_price}00" : 214748364700,
+              filter_radius_km: radius_km,
             },
             custom_request_params: {
               browse_context: nil,
@@ -1367,13 +1390,14 @@ module Facebook
       end
 
       def marketplace_home_search
-        query = request.query_parameters["query"]
-        limit = request.query_parameters["limit"]
-        latitude = request.query_parameters["latitude"]
-        longitude = request.query_parameters["longitude"]
-        radius_km = request.query_parameters["radius_km"]
-        max_price = request.query_parameters["max_price"]
-        min_price = request.query_parameters["min_price"]
+        query = request.query_parameters[:q]
+        limit = request.query_parameters[:limit]
+        latitude = request.query_parameters[:latitude]
+        longitude = request.query_parameters[:longitude]
+        radius_km = request.query_parameters[:radius_km]
+        max_price = request.query_parameters[:max_price]
+        min_price = request.query_parameters[:min_price]
+        location_id = request.query_parameters[:location_id]
         page = request.query_parameters["page"]
         cursor = {
           pg: page,
@@ -1385,8 +1409,8 @@ module Facebook
         puts cursor.to_json
         variable_json = {
           buyLocation: {
-            latitude: 33.046289,
-            longitude: -96.994123,
+            latitude:,
+            longitude:,
           },
           contextual_data: nil,
           count: 24,
@@ -1399,25 +1423,25 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: true,
-              commerce_enable_shipping: false,
-              commerce_search_and_rp_available: true,
+              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
+              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1792291877663080,
               ],
 
               # CONDITION (comma seperated)
               # used,used_like_new, used_good,used_fair
-              commerce_search_and_rp_condition: nil,
+              commerce_search_and_rp_condition: condition == "" ? nil : condition,
               commerce_search_and_rp_ctime_days: nil,
-              filter_location_latitude: 33.046289,
-              filter_location_longitude: -96.994123,
+              filter_location_latitude: latitude,
+              filter_location_longitude: longitude,
 
               # PRICE
               # amount + 00
-              filter_price_lower_bound: 0,
-              filter_price_upper_bound: 214748364700,
-              filter_radius_km: 64,
+              filter_price_lower_bound: min_price ? "#{min_price}00" : 0,
+              filter_price_upper_bound: max_price ? "#{max_price}00" : 214748364700,
+              filter_radius_km: radius_km,
             },
             custom_request_params: {
               browse_context: nil,
@@ -1454,13 +1478,14 @@ module Facebook
       end
 
       def marketplace_home_improvement_search
-        query = request.query_parameters["query"]
-        limit = request.query_parameters["limit"]
-        latitude = request.query_parameters["latitude"]
-        longitude = request.query_parameters["longitude"]
-        radius_km = request.query_parameters["radius_km"]
-        max_price = request.query_parameters["max_price"]
-        min_price = request.query_parameters["min_price"]
+        query = request.query_parameters[:q]
+        limit = request.query_parameters[:limit]
+        latitude = request.query_parameters[:latitude]
+        longitude = request.query_parameters[:longitude]
+        radius_km = request.query_parameters[:radius_km]
+        max_price = request.query_parameters[:max_price]
+        min_price = request.query_parameters[:min_price]
+        location_id = request.query_parameters[:location_id]
         page = request.query_parameters["page"]
         cursor = {
           pg: page,
@@ -1472,8 +1497,8 @@ module Facebook
         puts cursor.to_json
         variable_json = {
           buyLocation: {
-            latitude: 33.046289,
-            longitude: -96.994123,
+            latitude:,
+            longitude:,
           },
           contextual_data: nil,
           count: 24,
@@ -1486,25 +1511,25 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: true,
-              commerce_enable_shipping: false,
-              commerce_search_and_rp_available: true,
+              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
+              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1792291877663080,
               ],
 
               # CONDITION (comma seperated)
               # used,used_like_new, used_good,used_fair
-              commerce_search_and_rp_condition: nil,
+              commerce_search_and_rp_condition: condition == "" ? nil : condition,
               commerce_search_and_rp_ctime_days: nil,
-              filter_location_latitude: 33.046289,
-              filter_location_longitude: -96.994123,
+              filter_location_latitude: latitude,
+              filter_location_longitude: longitude,
 
               # PRICE
               # amount + 00
-              filter_price_lower_bound: 0,
-              filter_price_upper_bound: 214748364700,
-              filter_radius_km: 64,
+              filter_price_lower_bound: min_price ? "#{min_price}00" : 0,
+              filter_price_upper_bound: max_price ? "#{max_price}00" : 214748364700,
+              filter_radius_km: radius_km,
             },
             custom_request_params: {
               browse_context: nil,
@@ -1541,13 +1566,14 @@ module Facebook
       end
 
       def marketplace_musical_instrument_search
-        query = request.query_parameters["query"]
-        limit = request.query_parameters["limit"]
-        latitude = request.query_parameters["latitude"]
-        longitude = request.query_parameters["longitude"]
-        radius_km = request.query_parameters["radius_km"]
-        max_price = request.query_parameters["max_price"]
-        min_price = request.query_parameters["min_price"]
+        query = request.query_parameters[:q]
+        limit = request.query_parameters[:limit]
+        latitude = request.query_parameters[:latitude]
+        longitude = request.query_parameters[:longitude]
+        radius_km = request.query_parameters[:radius_km]
+        max_price = request.query_parameters[:max_price]
+        min_price = request.query_parameters[:min_price]
+        location_id = request.query_parameters[:location_id]
         page = request.query_parameters["page"]
         cursor = {
           pg: page,
@@ -1559,8 +1585,8 @@ module Facebook
         puts cursor.to_json
         variable_json = {
           buyLocation: {
-            latitude: 33.046289,
-            longitude: -96.994123,
+            latitude:,
+            longitude:,
           },
           contextual_data: nil,
           count: 24,
@@ -1573,25 +1599,25 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: true,
-              commerce_enable_shipping: false,
-              commerce_search_and_rp_available: true,
+              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
+              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1792291877663080,
               ],
 
               # CONDITION (comma seperated)
               # used,used_like_new, used_good,used_fair
-              commerce_search_and_rp_condition: nil,
+              commerce_search_and_rp_condition: condition == "" ? nil : condition,
               commerce_search_and_rp_ctime_days: nil,
-              filter_location_latitude: 33.046289,
-              filter_location_longitude: -96.994123,
+              filter_location_latitude: latitude,
+              filter_location_longitude: longitude,
 
               # PRICE
               # amount + 00
-              filter_price_lower_bound: 0,
-              filter_price_upper_bound: 214748364700,
-              filter_radius_km: 64,
+              filter_price_lower_bound: min_price ? "#{min_price}00" : 0,
+              filter_price_upper_bound: max_price ? "#{max_price}00" : 214748364700,
+              filter_radius_km: radius_km,
             },
             custom_request_params: {
               browse_context: nil,
@@ -1628,13 +1654,14 @@ module Facebook
       end
 
       def marketplace_office_supplies_search
-        query = request.query_parameters["query"]
-        limit = request.query_parameters["limit"]
-        latitude = request.query_parameters["latitude"]
-        longitude = request.query_parameters["longitude"]
-        radius_km = request.query_parameters["radius_km"]
-        max_price = request.query_parameters["max_price"]
-        min_price = request.query_parameters["min_price"]
+        query = request.query_parameters[:q]
+        limit = request.query_parameters[:limit]
+        latitude = request.query_parameters[:latitude]
+        longitude = request.query_parameters[:longitude]
+        radius_km = request.query_parameters[:radius_km]
+        max_price = request.query_parameters[:max_price]
+        min_price = request.query_parameters[:min_price]
+        location_id = request.query_parameters[:location_id]
         page = request.query_parameters["page"]
         cursor = {
           pg: page,
@@ -1646,8 +1673,8 @@ module Facebook
         puts cursor.to_json
         variable_json = {
           buyLocation: {
-            latitude: 33.046289,
-            longitude: -96.994123,
+            latitude:,
+            longitude:,
           },
           contextual_data: nil,
           count: 24,
@@ -1660,25 +1687,25 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: true,
-              commerce_enable_shipping: false,
-              commerce_search_and_rp_available: true,
+              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
+              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1792291877663080,
               ],
 
               # CONDITION (comma seperated)
               # used,used_like_new, used_good,used_fair
-              commerce_search_and_rp_condition: nil,
+              commerce_search_and_rp_condition: condition == "" ? nil : condition,
               commerce_search_and_rp_ctime_days: nil,
-              filter_location_latitude: 33.046289,
-              filter_location_longitude: -96.994123,
+              filter_location_latitude: latitude,
+              filter_location_longitude: longitude,
 
               # PRICE
               # amount + 00
-              filter_price_lower_bound: 0,
-              filter_price_upper_bound: 214748364700,
-              filter_radius_km: 64,
+              filter_price_lower_bound: min_price ? "#{min_price}00" : 0,
+              filter_price_upper_bound: max_price ? "#{max_price}00" : 214748364700,
+              filter_radius_km: radius_km,
             },
             custom_request_params: {
               browse_context: nil,
@@ -1715,13 +1742,14 @@ module Facebook
       end
 
       def marketplace_pet_supplies_search
-        query = request.query_parameters["query"]
-        limit = request.query_parameters["limit"]
-        latitude = request.query_parameters["latitude"]
-        longitude = request.query_parameters["longitude"]
-        radius_km = request.query_parameters["radius_km"]
-        max_price = request.query_parameters["max_price"]
-        min_price = request.query_parameters["min_price"]
+        query = request.query_parameters[:q]
+        limit = request.query_parameters[:limit]
+        latitude = request.query_parameters[:latitude]
+        longitude = request.query_parameters[:longitude]
+        radius_km = request.query_parameters[:radius_km]
+        max_price = request.query_parameters[:max_price]
+        min_price = request.query_parameters[:min_price]
+        location_id = request.query_parameters[:location_id]
         page = request.query_parameters["page"]
         cursor = {
           pg: page,
@@ -1733,8 +1761,8 @@ module Facebook
         puts cursor.to_json
         variable_json = {
           buyLocation: {
-            latitude: 33.046289,
-            longitude: -96.994123,
+            latitude:,
+            longitude:,
           },
           contextual_data: nil,
           count: 24,
@@ -1747,25 +1775,25 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: true,
-              commerce_enable_shipping: false,
-              commerce_search_and_rp_available: true,
+              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
+              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1792291877663080,
               ],
 
               # CONDITION (comma seperated)
               # used,used_like_new, used_good,used_fair
-              commerce_search_and_rp_condition: nil,
+              commerce_search_and_rp_condition: condition == "" ? nil : condition,
               commerce_search_and_rp_ctime_days: nil,
-              filter_location_latitude: 33.046289,
-              filter_location_longitude: -96.994123,
+              filter_location_latitude: latitude,
+              filter_location_longitude: longitude,
 
               # PRICE
               # amount + 00
-              filter_price_lower_bound: 0,
-              filter_price_upper_bound: 214748364700,
-              filter_radius_km: 64,
+              filter_price_lower_bound: min_price ? "#{min_price}00" : 0,
+              filter_price_upper_bound: max_price ? "#{max_price}00" : 214748364700,
+              filter_radius_km: radius_km,
             },
             custom_request_params: {
               browse_context: nil,
@@ -1802,13 +1830,14 @@ module Facebook
       end
 
       def marketplace_home_sales_search
-        query = request.query_parameters["query"]
-        limit = request.query_parameters["limit"]
-        latitude = request.query_parameters["latitude"]
-        longitude = request.query_parameters["longitude"]
-        radius_km = request.query_parameters["radius_km"]
-        max_price = request.query_parameters["max_price"]
-        min_price = request.query_parameters["min_price"]
+        query = request.query_parameters[:q]
+        limit = request.query_parameters[:limit]
+        latitude = request.query_parameters[:latitude]
+        longitude = request.query_parameters[:longitude]
+        radius_km = request.query_parameters[:radius_km]
+        max_price = request.query_parameters[:max_price]
+        min_price = request.query_parameters[:min_price]
+        radius_km = request.query_parameters[:radius_km]
         page = request.query_parameters["page"]
         cursor = {
           pg: page,
@@ -1820,8 +1849,8 @@ module Facebook
         puts cursor.to_json
         variable_json = {
           buyLocation: {
-            latitude: 33.046289,
-            longitude: -96.994123,
+            latitude:,
+            longitude:,
           },
           categoryIDArray: [821056594720130],
           count: 24,
@@ -1841,7 +1870,7 @@ module Facebook
           # PRICE
           # amount + 00
           priceRange: [0, 214748364700],
-          radius: 64000,
+          radius: radius_km * 1000,
           savedSearchID: "",
           scale: 2,
           stringVerticalFields: [],
@@ -1862,13 +1891,14 @@ module Facebook
       end
 
       def marketplace_sporting_goods_search
-        query = request.query_parameters["query"]
-        limit = request.query_parameters["limit"]
-        latitude = request.query_parameters["latitude"]
-        longitude = request.query_parameters["longitude"]
-        radius_km = request.query_parameters["radius_km"]
-        max_price = request.query_parameters["max_price"]
-        min_price = request.query_parameters["min_price"]
+        query = request.query_parameters[:q]
+        limit = request.query_parameters[:limit]
+        latitude = request.query_parameters[:latitude]
+        longitude = request.query_parameters[:longitude]
+        radius_km = request.query_parameters[:radius_km]
+        max_price = request.query_parameters[:max_price]
+        min_price = request.query_parameters[:min_price]
+        location_id = request.query_parameters[:location_id]
         page = request.query_parameters["page"]
         cursor = {
           pg: page,
@@ -1880,8 +1910,8 @@ module Facebook
         puts cursor.to_json
         variable_json = {
           buyLocation: {
-            latitude: 33.046289,
-            longitude: -96.994123,
+            latitude:,
+            longitude:,
           },
           contextual_data: nil,
           count: 24,
@@ -1894,10 +1924,10 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: true,
-              commerce_enable_shipping: true,
+              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
+              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
 
-              commerce_search_and_rp_available: true,
+              commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1834536343472201,
                 895487550471874,
@@ -1906,16 +1936,16 @@ module Facebook
 
               # CONDITION (comma seperated)
               # used,used_like_new,used_good,used_fair
-              commerce_search_and_rp_condition: nil,
+              commerce_search_and_rp_condition: condition == "" ? nil : condition,
               commerce_search_and_rp_ctime_days: nil,
-              filter_location_latitude: 33.046289,
-              filter_location_longitude: -96.994123,
+              filter_location_latitude: latitude,
+              filter_location_longitude: longitude,
 
               # PRICE
               # amount + 00
-              filter_price_lower_bound: 0,
-              filter_price_upper_bound: 214748364700,
-              filter_radius_km: 64,
+              filter_price_lower_bound: min_price ? "#{min_price}00" : 0,
+              filter_price_upper_bound: max_price ? "#{max_price}00" : 214748364700,
+              filter_radius_km: radius_km,
             },
             custom_request_params: {
               browse_context: nil,
@@ -1950,13 +1980,14 @@ module Facebook
       end
 
       def marketplace_toys_games_search
-        query = request.query_parameters["query"]
-        limit = request.query_parameters["limit"]
-        latitude = request.query_parameters["latitude"]
-        longitude = request.query_parameters["longitude"]
-        radius_km = request.query_parameters["radius_km"]
-        max_price = request.query_parameters["max_price"]
-        min_price = request.query_parameters["min_price"]
+        query = request.query_parameters[:q]
+        limit = request.query_parameters[:limit]
+        latitude = request.query_parameters[:latitude]
+        longitude = request.query_parameters[:longitude]
+        radius_km = request.query_parameters[:radius_km]
+        max_price = request.query_parameters[:max_price]
+        min_price = request.query_parameters[:min_price]
+        location_id = request.query_parameters[:location_id]
         page = request.query_parameters["page"]
         cursor = {
           pg: page,
@@ -1968,8 +1999,8 @@ module Facebook
         puts cursor.to_json
         variable_json = {
           buyLocation: {
-            latitude: 33.046289,
-            longitude: -96.994123,
+            latitude:,
+            longitude:,
           },
           contextual_data: nil,
           count: 24,
@@ -1982,10 +2013,10 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: true,
-              commerce_enable_shipping: true,
+              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
+              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
 
-              commerce_search_and_rp_available: true,
+              commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1834536343472201,
                 895487550471874,
@@ -1994,16 +2025,16 @@ module Facebook
 
               # CONDITION (comma seperated)
               # used,used_like_new,used_good,used_fair
-              commerce_search_and_rp_condition: nil,
+              commerce_search_and_rp_condition: condition == "" ? nil : condition,
               commerce_search_and_rp_ctime_days: nil,
-              filter_location_latitude: 33.046289,
-              filter_location_longitude: -96.994123,
+              filter_location_latitude: latitude,
+              filter_location_longitude: longitude,
 
               # PRICE
               # amount + 00
-              filter_price_lower_bound: 0,
-              filter_price_upper_bound: 214748364700,
-              filter_radius_km: 64,
+              filter_price_lower_bound: min_price ? "#{min_price}00" : 0,
+              filter_price_upper_bound: max_price ? "#{max_price}00" : 214748364700,
+              filter_radius_km: radius_km,
             },
             custom_request_params: {
               browse_context: nil,

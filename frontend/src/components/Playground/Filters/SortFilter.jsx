@@ -1,15 +1,26 @@
-import { useState } from "react";
+import { useState, useContext, useEffect } from "react";
+import { PlaygroundContext } from "../../../context/playground";
 
 export default function SortFilter({ filter }) {
     const {
         title,
+        key,
         type,
         defaultValue,
         options
     } = filter
+    const {setSearchParams} = useContext(PlaygroundContext)
     const [isExpanded, setIsExpanded] = useState(false)
-    const [selectedSort, setSelectedSort] = useState(defaultValue)
+    const [selectedValue, setSelectedValue] = useState(defaultValue)
     const toggleExpand = () => setIsExpanded(!isExpanded)
+
+    useEffect(() => {
+        setSearchParams(prev => {
+            const newParams =  {...prev}
+            newParams[key] = selectedValue
+            return {...newParams}
+        })
+    },[selectedValue])
 
     return (
         <div
@@ -31,8 +42,8 @@ export default function SortFilter({ filter }) {
                             return (
                                 <SortRadio
                                     option={option}
-                                    selectedSort={selectedSort}
-                                    setSelectedSort={setSelectedSort}
+                                    selectedValue={selectedValue}
+                                    setSelectedValue={setSelectedValue}
                                     type={type}
                                 />
                             )
@@ -40,8 +51,8 @@ export default function SortFilter({ filter }) {
                             return (
                                 <SortSelect
                                     option={option}
-                                    selectedSort={selectedSort}
-                                    setSelectedSort={setSelectedSort}
+                                    selectedValue={selectedValue}
+                                    setSelectedValue={setSelectedValue}
                                     type={type}
                                 />
                             )
@@ -54,13 +65,13 @@ export default function SortFilter({ filter }) {
 
 const SortRadio = ({
     option,
-    selectedSort,
-    setSelectedSort
+    selectedValue,
+    setSelectedValue
 }) => {
     const { title, value } = option
-    const selected = value === selectedSort
+    const selected = value === selectedValue
     const updateSelectedSort = () => {
-        setSelectedSort(value)
+        setSelectedValue(value)
     }
 
     return (
@@ -78,16 +89,16 @@ const SortRadio = ({
 
 const SortSelect = ({
     option,
-    selectedSort,
-    setSelectedSort
+    selectedValue,
+    setSelectedValue
 }) => {
     const { title, value } = option
-    const selected = selectedSort.includes(value)
+    const selected = selectedValue.includes(value)
     const updateSelectedSort = () => {
         if (!selected) {
-            setSelectedSort(prev => [...prev, value])
+            setSelectedValue(prev => [...prev, value])
         } else {
-            setSelectedSort(prev => prev.filter(selection => selection !== value))
+            setSelectedValue(prev => prev.filter(selection => selection !== value))
         }
     }
 

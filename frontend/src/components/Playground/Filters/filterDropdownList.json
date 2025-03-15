@@ -1,33 +1,35 @@
 [
     {
         "title": "Sort By",
+        "key": "sort_by",
         "type": "radio",
-        "defaultValue":"suggested",
+        "defaultValue":"BEST_MATCH",
         "options": [
             {
                 "title": "Suggested",
-                "value": "suggested"
+                "value": "BEST_MATCH"
             },
             {
                 "title": "Distance: Nearest first",
-                "value": "nearest"
+                "value": "DISTANCE_ASCEND"
             },
             {
                 "title": "Date listed: Newest first",
-                "value": "newest"
+                "value": "CREATION_TIME_DESCEND"
             },
             {
                 "title": "Price: Lowest first",
-                "value": "high"
+                "value": "PRICE_ASCEND"
             },
             {
                 "title": "Price: Highest first",
-                "value": "low"
+                "value": "PRICE_DESCEND"
             }
         ]
     },
     {
         "title": "Delivery method",
+        "key": "delivery_type",
         "type": "radio",
         "defaultValue": "all",
         "options": [
@@ -47,6 +49,7 @@
     },
     {
         "title": "Condition",
+        "key": "condition",
         "type": "select",
         "defaultValue": [],
         "options": [
@@ -70,6 +73,7 @@
     },
     {
         "title": "Date listed",
+        "key": "date_listed",
         "type": "radio",
         "defaultValue": "all",
         "options": [
@@ -93,16 +97,17 @@
     },
     {
         "title": "Availability",
+        "key": "availability",
         "type": "radio",
-        "defaultValue": "available",
+        "defaultValue": true,
         "options": [
             {
                 "title": "Available",
-                "value": "available"
+                "value": true
             },
             {
                 "title": "Sold",
-                "value": "sold"
+                "value": false
             }
         ]
     }

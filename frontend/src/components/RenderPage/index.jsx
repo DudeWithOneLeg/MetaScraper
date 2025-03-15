@@ -11,9 +11,7 @@ import Playground from "../Playground";
 
 export default function RenderPage() {
     const { selected, setSelected } = useContext(PlaygroundContext)
-    useEffect(() => {
-        console.log(selected)
-    }, [selected])
+    
     // const {featureRoute} = useParams()
 
     return (

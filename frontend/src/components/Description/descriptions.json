@@ -5,86 +5,92 @@
     },
     "vehicles": {
         "title": "",
-        "description": ""
+        "description": "",
+        "seo_url": "vehicles"
     },
-    "": {
+    "propertyRentals": {
         "title": "",
-        "description": ""
+        "description": "",
+        "seo_url": "propertyrentals"
     },
-    "": {
+    "apparel": {
         "title": "",
-        "description": ""
+        "description": "",
+        "seo_url": "apparel"
     },
-    "": {
+    "classifieds": {
         "title": "",
-        "description": ""
+        "description": "",
+        "seo_url": "classifieds"
     },
-    "": {
+    "electronics": {
         "title": "",
-        "description": ""
+        "description": "",
+        "seo_url": "electronics"
     },
-    "": {
+    "entertainment": {
         "title": "",
-        "description": ""
+        "description": "",
+        "seo_url": "entertainment"
     },
-    "": {
+    "family": {
         "title": "",
-        "description": ""
+        "description": "",
+        "seo_url": "family"
     },
-    "": {
+    "freeStuff": {
         "title": "",
-        "description": ""
+        "description": "",
+        "seo_url": "free"
     },
-    "": {
+    "gardenOutdoor": {
         "title": "",
-        "description": ""
+        "description": "",
+        "seo_url": "garden"
     },
-    "": {
+    "hobbies": {
         "title": "",
-        "description": ""
+        "description": "",
+        "seo_url": "hobbies"
     },
-    "": {
+    "homeGoods": {
         "title": "",
-        "description": ""
+        "description": "",
+        "seo_url": "home"
     },
-    "": {
+    "homeImprovementSupplies": {
         "title": "",
-        "description": ""
+        "description": "",
+        "seo_url": "home-improvements"
     },
-    "": {
+    "homeSales": {
         "title": "",
-        "description": ""
+        "description": "",
+        "seo_url": ""
     },
-    "": {
+    "musicalInstruments": {
         "title": "",
-        "description": ""
+        "description": "",
+        "seo_url": "instruments"
     },
-    "": {
+    "officeSupplies": {
         "title": "",
-        "description": ""
+        "description": "",
+        "seo_url": "office-supplies"
     },
-    "": {
+    "petSupplies": {
         "title": "",
-        "description": ""
+        "description": "",
+        "seo_url": "pets"
     },
-    "": {
+    "sportingGoods": {
         "title": "",
-        "description": ""
+        "description": "",
+        "seo_url": "sports"
     },
-    "": {
+    "toysGames": {
         "title": "",
-        "description": ""
-    },
-    "": {
-        "title": "",
-        "description": ""
-    },
-    "": {
-        "title": "",
-        "description": ""
-    },
-    "": {
-        "title": "",
-        "description": ""
+        "description": "",
+        "seo_url": "toys"
     }
 }

@@ -25,7 +25,7 @@ const setMarketplacePropertyResults = (data) => {
 }
 
 export const fetchPropertyResults = (params) => async dispatch => {
-    let url = `/facebook_marketplace_search?`
+    let url = `${baseUrl}/facebook_marketplace_search?`
 
     for (let [key, value] of Object.entries(params)) {
         url += `${key}=${value}&`

@@ -6,9 +6,9 @@ export default function PropertySearch() {
     const propertyResults = useSelector(state => state.marketplace.results)
     const dispatch = useDispatch()
 
-    useEffect(() => {
-        dispatch(fetchPropertyResults())
-    }, [dispatch])
+    // useEffect(() => {
+    //     dispatch(fetchPropertyResults())
+    // }, [dispatch])
 
     useEffect(() => {
         if (propertyResults) {
