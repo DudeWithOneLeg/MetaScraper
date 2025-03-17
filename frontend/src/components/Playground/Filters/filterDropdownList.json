@@ -28,6 +28,14 @@
         ]
     },
     {
+        "title": "Price",
+        "key": "square_feet",
+        "type": "range",
+        "defaultMin": 0,
+        "defaultMax": 214748364700,
+        "options": null
+    },
+    {
         "title": "Delivery method",
         "key": "delivery_type",
         "type": "radio",

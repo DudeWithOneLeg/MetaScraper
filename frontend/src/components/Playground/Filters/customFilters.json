@@ -1,0 +1,137 @@
+{
+    "propertyRentals": [
+        {
+            "title": "Sort By",
+            "key": "sort_by",
+            "type": "radio",
+            "defaultValue": null,
+            "options": [
+                {
+                    "title": "Recommended",
+                    "value": null
+                },
+                {
+                    "title": "Price: Lowest first",
+                    "value": "PRICE_ASCEND"
+                },
+                {
+                    "title": "Price: Highest first",
+                    "value": "PRICE_DESCEND"
+                },
+                {
+                    "title": "Distance: Nearest first",
+                    "value": "DISTANCE_ASCEND"
+                },
+                {
+                    "title": "Date listed: Newest first",
+                    "value": "CREATION_TIME_DESCEND"
+                }
+            ]
+        },
+        {
+            "title": "Bedrooms",
+            "key": "bedrooms",
+            "type": "radio",
+            "defaultValue": null,
+            "options": [
+                {
+                    "title": "All",
+                    "value": null
+                },
+                {
+                    "title": "1+",
+                    "value": 1
+                },
+                {
+                    "title": "2+",
+                    "value": 2
+                },
+                {
+                    "title": "3+",
+                    "value": 3
+                },
+                {
+                    "title": "4+",
+                    "value": 4
+                },
+                {
+                    "title": "5+",
+                    "value": 5
+                },
+                {
+                    "title": "6+",
+                    "value": 6
+                }
+            ]
+        },
+        {
+            "title": "Bathrooms",
+            "key": "bathrooms",
+            "type": "radio",
+            "defaultValue": null,
+            "options": [
+                {
+                    "title": "All",
+                    "value": null
+                },
+                {
+                    "title": "1+",
+                    "value": 4
+                },
+                {
+                    "title": "1.5+",
+                    "value": 6
+                },
+                {
+                    "title": "2+",
+                    "value": 8
+                },
+                {
+                    "title": "3+",
+                    "value": 12
+                },
+                {
+                    "title": "4+",
+                    "value": 16
+                },
+                {
+                    "title": "5+",
+                    "value": 20
+                }
+            ]
+        },
+        {
+            "title": "Square feet",
+            "key": "square_feet",
+            "type": "range",
+            "defaultMin": 0,
+            "defaultMax": 214748364700
+        },
+        {
+            "title": "Rental Type",
+            "key": "rental_type",
+            "type": "select",
+            "defaultValue": [],
+            "options": [
+                {
+                    "title": "Apartment/condo",
+                    "value": "apt-condo"
+                },
+                {
+                    "title": "House",
+                    "value": "house"
+                },
+                {
+                    "title": "Townhouse",
+                    "value": "townhouse"
+                }
+            ]
+        },
+        {
+            "title": "Private room only",
+            "key": "rental_room_type",
+            "type": "boolean",
+            "defaultValue": false
+        }
+    ]
+}

@@ -31,66 +31,78 @@
     "entertainment": {
         "title": "",
         "description": "",
-        "seo_url": "entertainment"
+        "seo_url": "entertainment",
+        "param_type" : "default"
     },
     "family": {
         "title": "",
         "description": "",
-        "seo_url": "family"
+        "seo_url": "family",
+        "param_type" : "default"
     },
     "freeStuff": {
         "title": "",
         "description": "",
-        "seo_url": "free"
+        "seo_url": "free",
+        "param_type" : "default"
     },
     "gardenOutdoor": {
         "title": "",
         "description": "",
-        "seo_url": "garden"
+        "seo_url": "garden",
+        "param_type" : "default"
     },
     "hobbies": {
         "title": "",
         "description": "",
-        "seo_url": "hobbies"
+        "seo_url": "hobbies",
+        "param_type" : "default"
     },
     "homeGoods": {
         "title": "",
         "description": "",
-        "seo_url": "home"
+        "seo_url": "home",
+        "param_type" : "default"
     },
     "homeImprovementSupplies": {
         "title": "",
         "description": "",
-        "seo_url": "home-improvements"
+        "seo_url": "home-improvements",
+        "param_type" : "default"
     },
     "homeSales": {
         "title": "",
         "description": "",
-        "seo_url": ""
+        "seo_url": null
     },
     "musicalInstruments": {
         "title": "",
         "description": "",
-        "seo_url": "instruments"
+        "seo_url": "instruments",
+        "param_type" : "default"
     },
     "officeSupplies": {
         "title": "",
         "description": "",
-        "seo_url": "office-supplies"
+        "seo_url": "office-supplies",
+        "param_type" : "default"
     },
     "petSupplies": {
         "title": "",
         "description": "",
-        "seo_url": "pets"
+        "seo_url": "pets",
+        "param_type" : "default"
     },
     "sportingGoods": {
         "title": "",
         "description": "",
-        "seo_url": "sports"
+        "seo_url": "sports",
+        "param_type" : "default"
     },
     "toysGames": {
         "title": "",
         "description": "",
-        "seo_url": "toys"
+        "seo_url": "toys",
+        "param_type" : "default"
     }
 }

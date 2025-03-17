@@ -25,6 +25,7 @@ const setMarketplacePropertyResults = (data) => {
 }
 
 export const fetchPropertyResults = (params) => async dispatch => {
+    const {next} = params
     let url = `${baseUrl}/facebook_marketplace_search?`
 
     for (let [key, value] of Object.entries(params)) {
@@ -33,7 +34,7 @@ export const fetchPropertyResults = (params) => async dispatch => {
     const res = await fetch(url)
     const data = await res.json()
 
-    dispatch(setMarketplacePropertyResults(data))
+    dispatch(setMarketplacePropertyResults({...data, next}))
 }
 
 const initialState = {}
@@ -41,7 +42,16 @@ const initialState = {}
 const marketplaceReducer = (state = initialState, action) => {
     switch (action.type) {
         case SEARCH:
-            return {...state, results: {...action.payload}}
+            const {next} = action.payload
+            if (next) {
+                const {results: newResults} = action.payload
+                const {results} = state.results
+                return {...state, results: {...action.payload, results: [...results, ...newResults]}}
+            }
+            else {
+                return {...state, results: {...action.payload}}
+
+            }
         case LOCATION_SEARCH:
             return {...state, locationResults: [...action.payload]}
         default:

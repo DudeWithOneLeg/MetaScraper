@@ -53,15 +53,13 @@ export default function Playground() {
 
 const Result = ({ result }) => {
     const {
-        primary_listing_photo: {
-            image: { uri }
-        },
         listing_price: { formatted_amount },
         custom_title,
         custom_sub_titles_with_rendering_flags: custom_subtitles,
         marketplace_listing_title
     } = result
     const display_name = result?.location?.reverse_geocode?.city_page?.display_name
+    const uri = result?.primary_listing_photo?.image?.uri
 
 
     return (

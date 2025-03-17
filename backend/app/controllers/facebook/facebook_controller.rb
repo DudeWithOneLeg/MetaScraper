@@ -39,7 +39,15 @@ module Facebook
     end
     if type == 2
       listings = response.dig("data", "marketplace_search", "feed_units", "edges")
-      page_info = response.dig("data", "marketplace_search", "feed_units", "page_info")
+      page_info = response.dig("data", "marketplace_search", "feed_units", "page_info", "end_cursor")
+      page_info = JSON.parse(page_info)
+      items = page_info.dig("it")
+      end_cursor = page_info.dig("c2c", "br")
+      page_info = {
+        end_cursor:, 
+        items:
+      }
+
       listings.each do |listing|
         info = listing.dig("node", "listing")
         if info != nil

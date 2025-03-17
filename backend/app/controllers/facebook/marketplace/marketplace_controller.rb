@@ -4,12 +4,12 @@ require "json"
 require "open-uri"
 require "nokogiri"
 require "selenium-webdriver"
-require_relative '../facebook_controller'
+require_relative "../facebook_controller"
 
 module Facebook
   module Marketplace
     class MarketplaceController < ApplicationController
-    #   include Facebook
+      #   include Facebook
       # @@proxy_url = "192.168.49.1"
       # @@proxy_port = "8000"
       @@proxy_url = nil
@@ -34,12 +34,13 @@ module Facebook
         availability = request.query_parameters[:availability]
         seo_url = request.query_parameters[:seo_url]
         location_id = request.query_parameters[:location_id]
-        page = request.query_parameters["page"]
+        page = request.query_parameters[:page]
+        next_cursor = request.query_parameters[:next_cursor]
         cursor = {
           pg: page,
           c2c: {
-            br: "AbrvkJqYcXPwR-JW82eTCB8PMU3mqW7sTa92L5bQ0F8gKoO-UVP6u305mnJTh1dwhQvozgjwXWAUolCxoUIw-RZSqkFDx40E0ysNl8SnoqMn1Cud1xjNDb2pZHFE1dbTUnQqQ-n3H-5KNKj7Fa7gxFvmH2_w8IvySHyH0_puIHx2SEGsFfFaBLOYrB2rGBE5ccEnTy52uVpU0xhSk5avpKienrkGs6h3Be2wTMfRxO_Vzput9KoitqgrAwxDV56W8iPvKNB_Qdea17-5LS2hqjp2cnYElgTQhtHNr1VreJQcQjFKl_HCAvAz2BNBVoBIBb4xmgaaZLP0XipFougXr1aTDylvFJTMFDa7XLPEQLNSOboYaVZQMsvurT55GaAmiqkIaUraxkZ20EO6rqgvPCllopIz-l1S4kIm-b51lrMZ8J3Aqh8gTA4bH3oQoFOP2AJ_1kFYWNRKXTQxG2CGkVH77iL2MTULwSgh89cmK6NYOHGU3jqO483X3fOv-ALm4HTVlPBkptTUrP-R3tSY1WgckjzRZSdqBmuijfzNY9MRPwrf1W5KwQLF3zUENE8_Aw8",
-            # br:""
+            br: next_cursor,
+          # br:""
           },
         }
         puts query
@@ -49,14 +50,14 @@ module Facebook
           params: {
             bqf: {
               callsite: "COMMERCE_MKTPLACE_WWW",
-              query:
+              query:,
             },
             browse_request_params: {
 
               # local
-              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
+              commerce_enable_local_pickup: delivery_type == "all" ? true : delivery_type == "local",
               # shipping
-              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_enable_shipping: delivery_type == "all" ? true : delivery_type == "shipping",
 
               # Availability
               # false => sold
@@ -99,14 +100,14 @@ module Facebook
 
             },
             custom_request_params: {
-              seo_url:,
+              seo_url: seo_url == "" ? nil : seo_url,
               surface: "TOPIC_PAGE",
               virtual_contextual_filters: [],
             },
             topicPageParams: {
-              location_id:"112639365418504",
-              url: seo_url == "" ? nil : seo_url
-            }
+              location_id:,
+              url: seo_url == "" ? nil : seo_url,
+            },
           },
 
           # image scale
@@ -633,7 +634,7 @@ module Facebook
 
           # amount + 00
           priceRange: [0, 214748364700],
-          radius: 64000,
+          radius: radius_km * 1000,
           savedSearchID: "",
           scale: 1,
 
@@ -642,6 +643,7 @@ module Facebook
           # apt-condo => apartment-condo
           # house => house
           # townhouse => townhouse
+          
           # PRIVATE ROOM => {"name":"rental_room_type","value":"private_room"}
           stringVerticalFields: [],
 
@@ -703,9 +705,9 @@ module Facebook
             browse_request_params: {
 
               # LOCAL PICKUP
-              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
+              commerce_enable_local_pickup: delivery_type == "all" ? true : delivery_type == "local",
               # SHIPPING
-              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_enable_shipping: delivery_type == "all" ? true : delivery_type == "shipping",
 
               commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
@@ -804,8 +806,8 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
-              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_enable_local_pickup: delivery_type == "all" ? true : delivery_type == "local",
+              commerce_enable_shipping: delivery_type == "all" ? true : delivery_type == "shipping",
 
               commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
@@ -893,8 +895,8 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
-              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_enable_local_pickup: delivery_type == "all" ? true : delivery_type == "local",
+              commerce_enable_shipping: delivery_type == "all" ? true : delivery_type == "shipping",
 
               commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
@@ -971,7 +973,16 @@ module Facebook
             latitude:,
             longitude:,
           },
-          contextual_data: nil,
+          contextual_data: [
+            {
+              "name": "seo_url",
+              "value": "\"electronics\"",
+            },
+            {
+              "name": "applied_virtual_attributes",
+              "value": "\"2806224329413131,874490466442333,177366900264876\"",
+            },
+          ],
           count: 24,
           cursor: nil,
           params: {
@@ -982,8 +993,8 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
-              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_enable_local_pickup: delivery_type == "all" ? true : delivery_type == "local",
+              commerce_enable_shipping: delivery_type == "all" ? true : delivery_type == "shipping",
               commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1792291877663080,
@@ -1070,8 +1081,8 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
-              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_enable_local_pickup: delivery_type == "all" ? true : delivery_type == "local",
+              commerce_enable_shipping: delivery_type == "all" ? true : delivery_type == "shipping",
               commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1792291877663080,
@@ -1158,8 +1169,8 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
-              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_enable_local_pickup: delivery_type == "all" ? true : delivery_type == "local",
+              commerce_enable_shipping: delivery_type == "all" ? true : delivery_type == "shipping",
               commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1792291877663080,
@@ -1246,8 +1257,8 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
-              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_enable_local_pickup: delivery_type == "all" ? true : delivery_type == "local",
+              commerce_enable_shipping: delivery_type == "all" ? true : delivery_type == "shipping",
 
               commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
@@ -1335,8 +1346,8 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
-              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_enable_local_pickup: delivery_type == "all" ? true : delivery_type == "local",
+              commerce_enable_shipping: delivery_type == "all" ? true : delivery_type == "shipping",
               commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1792291877663080,
@@ -1418,13 +1429,13 @@ module Facebook
           params: {
             bqf: {
               callsite: "COMMERCE_MKTPLACE_SEO",
-              query: "test",
+              query:,
             },
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
-              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_enable_local_pickup: delivery_type == "all" ? true : delivery_type == "local",
+              commerce_enable_shipping: delivery_type == "all" ? true : delivery_type == "shipping",
               commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1792291877663080,
@@ -1511,8 +1522,8 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
-              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_enable_local_pickup: delivery_type == "all" ? true : delivery_type == "local",
+              commerce_enable_shipping: delivery_type == "all" ? true : delivery_type == "shipping",
               commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1792291877663080,
@@ -1599,8 +1610,8 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
-              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_enable_local_pickup: delivery_type == "all" ? true : delivery_type == "local",
+              commerce_enable_shipping: delivery_type == "all" ? true : delivery_type == "shipping",
               commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1792291877663080,
@@ -1687,8 +1698,8 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
-              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_enable_local_pickup: delivery_type == "all" ? true : delivery_type == "local",
+              commerce_enable_shipping: delivery_type == "all" ? true : delivery_type == "shipping",
               commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1792291877663080,
@@ -1775,8 +1786,8 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
-              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_enable_local_pickup: delivery_type == "all" ? true : delivery_type == "local",
+              commerce_enable_shipping: delivery_type == "all" ? true : delivery_type == "shipping",
               commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
                 1792291877663080,
@@ -1924,8 +1935,8 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
-              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_enable_local_pickup: delivery_type == "all" ? true : delivery_type == "local",
+              commerce_enable_shipping: delivery_type == "all" ? true : delivery_type == "shipping",
 
               commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [
@@ -2013,8 +2024,8 @@ module Facebook
             browse_request_params: {
 
               # SHIPPING AND LOCAL PICKUP
-              commerce_enable_local_pickup: delivery_type == 'all' ? true : delivery_type == 'local',
-              commerce_enable_shipping: delivery_type == 'all' ? true : delivery_type == 'shipping',
+              commerce_enable_local_pickup: delivery_type == "all" ? true : delivery_type == "local",
+              commerce_enable_shipping: delivery_type == "all" ? true : delivery_type == "shipping",
 
               commerce_search_and_rp_available: availability,
               commerce_search_and_rp_category_id: [

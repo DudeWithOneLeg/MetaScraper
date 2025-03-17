@@ -116,8 +116,6 @@ const PriceInput = () => {
 export const MapDialog = ({ setShowMap }) => {
     const dispatch = useDispatch()
     const {
-        setLocation,
-        location,
         searchParams,
         setSearchParams
     } = useContext(PlaygroundContext)
@@ -125,8 +123,8 @@ export const MapDialog = ({ setShowMap }) => {
     const [locationInput, setLocationInput] = useState(searchParams.locationName)
     const [selectedRadius, setSelectedRadius] = useState(searchParams.radius_mi)
     const [selectedCoordinates, setSelectedCoordinates] = useState([
-        location.latitude,
-        location.longitude
+        searchParams.latitude,
+        searchParams.longitude
     ])
     const [showLocationResults, setShowLocationResults] = useState(false)
     const [showRadiusList, setShowRadiusList] = useState(false)
