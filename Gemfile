@@ -39,7 +39,7 @@ gem "thruster", require: false
 gem 'httparty'
 gem 'ogp'
 gem 'nokogiri'
-gem 'selenium-webdriver', '~> 4.28'
+gem 'selenium-webdriver', '~> 4.31'
 gem 'rufo', require: false
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
